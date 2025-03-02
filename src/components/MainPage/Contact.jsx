@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -6,10 +6,6 @@ import { styles } from "../../styles";
 import { EarthCanvas } from "../canvas";
 import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
-
-// 8D54qyP1R78P2J6v8
-//template_8uk46am
-// service_uv1s6xt
 
 const Contact = () => {
   const formRef = useRef();
@@ -42,9 +38,9 @@ const Contact = () => {
 
         {
           from_name: form.name,
-          to_name: "Abhishek Yadav",
+          to_name: "Edward Mercado",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "admin@wayalabs.com",
           message: form.message,
         },
         "8D54qyP1R78P2J6v8"
@@ -52,7 +48,6 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          console.log(error);
           alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
@@ -139,4 +134,5 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+const WrappedContact = SectionWrapper(Contact, "contact");
+export default WrappedContact;

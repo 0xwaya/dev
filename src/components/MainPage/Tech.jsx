@@ -1,39 +1,41 @@
-import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { fadeIn, textVariant } from "../../utils/motion";
+import PropTypes from 'prop-types';
 import { SectionWrapper } from "../../hoc";
 import { technologies } from "../../constants";
 import { styles } from "../../styles";
 
 const TechCard = ({ index, icon }) => {
   return (
-    <Tilt className="w-28 h-28">
-      <div
+    <Tilt className="w-28 h-28" options={{ max: 45, scale: 1, speed: 450 }}>
+      <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className=" w-full green-pink-gradient p-[1px] rounded-full shadow-card select-none"
+        className="w-full green-pink-gradient p-[1px] rounded-full shadow-card select-none"
       >
         <div
-          options={{ max: 45, scale: 1, speed: 450 }}
           className="bg-tertiary rounded-full py-5 flex justify-evenly items-center flex-col"
         >
           <img src={icon} className="w-16 h-16 object-contain" />
         </div>
-      </div>
+      </motion.div>
     </Tilt>
   );
+};
+TechCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 const Tech = () => {
   return (
     <>
-      <div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>My tools</p>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>My Stack</p>
         <h2 className={`${styles.sectionHeadText} text-center flux `}>
           Technologies.
         </h2>
-      </div>
+      </motion.div>
 
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-20">
         {technologies.map((technology) => (
@@ -44,4 +46,6 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "tech");
+const WrappedTech = SectionWrapper(Tech, "tech");
+
+export default WrappedTech;

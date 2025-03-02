@@ -6,9 +6,9 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import CV_Duncan from "./CV_Duncan.png"
 
-
+import hardhat from "./tech/hardhat.png";
+import solidity from "./tech/solidity.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -22,8 +22,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import blender from  "./tech/blender.png";
-
+import blender from "./tech/blender.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.webp";
 import starbucks from "./company/starbucks.png";
@@ -54,7 +53,6 @@ import fitt from "./certificates/fitt.png";
 
 export {
   logo,
-  CV_Duncan,
   backend,
   creator,
   mobile,
@@ -62,6 +60,8 @@ export {
   github,
   menu,
   close,
+  hardhat,
+  solidity,
   css,
   docker,
   figma,
@@ -80,25 +80,26 @@ export {
   starbucks,
   tesla,
   carrent,
-    tripguide,
+  tripguide,
   blender,
   shoppingcart,
   studynotion,
   image11,
   webdev,
+  studynotion1,
+  evovleUx,
+  nexuvents,
+  pinterest,
+  portfolio,
+  shareModal,
+  bioPage,
+  githubFetch,
+  cuberto,
+  twoGood,
+  coming,
+  holophin,
+  gitmap,
   certificate1,
   fitt,
-  studynotion1,
-evovleUx,
-nexuvents,
-pinterest,
-portfolio,
-shareModal,
-bioPage,
-githubFetch,
-cuberto,
-twoGood,
-coming,
-holophin,
-gitmap,
+
 };

@@ -15,8 +15,8 @@ const Stars = (props) => {
   })
 
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+    <group>
+      <Points ref={ref} positions={sphere} stride={3} frustumCulled rotation={[0, 0, Math.PI / 4]} {...props}>
         <PointMaterial
           transparent
           color="#f272c8"
@@ -44,17 +44,3 @@ const StarsCanvas = () => {
 }
 
 export default StarsCanvas
-
-
-
-// import React from 'react'
-
-// const Stars = () => {
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
-
-// export default Stars

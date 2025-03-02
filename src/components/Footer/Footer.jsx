@@ -1,5 +1,3 @@
-import React from "react";
-
 import { logo } from "../../assets";
 import { styles } from "../../styles";
 
@@ -10,7 +8,7 @@ const Footer = () => {
         <img src={logo} alt="logo" className="w-36  mb-5" />
 
         <p className="text-secondary text-[17px] leading-[30px] text-center   left-0 right-0 cle">
-          {new Date().getFullYear()} &copy; Abhishek. All rights reserved.
+          {new Date().getFullYear()} &copy; 0xwaya. open source code.
         </p>
       </div>
 
@@ -23,11 +21,11 @@ const Footer = () => {
             <div className="bg-white h-3 w-1 rounded-full mt-[10px] animate-bounce lg:scale-100 scale-75"></div>
           </div>
 
-          <a href="https://www.hitwebcounter.com" target="_blank">
+          <a href="https://www.hitwebcounter.com" target="_blank" rel="noreferrer">
             <img
               src="https://hitwebcounter.com/counter/counter.php?page=8792236&style=0001&nbdigits=3&type=page&initCount=1"
               title="Counter Widget"
-              Alt="Visit counter For Websites"
+              alt="Visit counter For Websites"
               border="0"
             />
           </a>

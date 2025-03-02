@@ -1,10 +1,4 @@
 import { motion } from "framer-motion";
-
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
-
-import React from "react";
 import styled from "styled-components";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -12,8 +6,12 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+
+import { styles } from "../styles";
+import { textVariant } from "../utils/motion";
 import { experiences1 } from "../constants/index.js";
-import ExperienceCard from "../Cards/ExperienceCard";
+import ExperienceCard from "../components/ExperienceCard";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,30 +39,6 @@ const Wrapper = styled.div`
     flex-direction: column;
   }
 `;
-
-const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 600;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
-`;
-
-const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 16px;
-  }
-`;
-
 const TimelineSection = styled.div`
   width: 100%;
   max-width: 1000px;
@@ -76,22 +50,22 @@ const TimelineSection = styled.div`
   gap: 12px;
 `;
 
-const index = () => {
+const Experience = () => {
   return (
     <Container id="experience">
       <Wrapper>
-        <div variants={textVariant()}>
-          <p className={`${styles.sectionSubText} text-center  `}>
+        <motion.div variants={textVariant()}>
+          <p className={`${styles.sectionSubText} text-center`}>
             What I have done so far
           </p>
           <h2 className={`${styles.sectionHeadText} text-center flux`}>
             My Experience.
           </h2>
-        </div>
+        </motion.div>
         <TimelineSection>
           <Timeline>
             {experiences1.map((experience, index) => (
-              <TimelineItem>
+              <TimelineItem key={index}>
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="secondary" />
                   {index !== experiences1.length - 1 && (
@@ -110,4 +84,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Experience;

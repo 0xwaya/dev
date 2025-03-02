@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -15,34 +11,26 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   studynotion,
-  carrent,
   tripguide,
   shoppingcart,
-  threejs,
   blender,
-  image11,
-    CV_Duncan,
   studynotion1,
   evovleUx,
   nexuvents,
   pinterest,
   portfolio,
   bioPage,
-githubFetch,
-cuberto,
-twoGood,
-shareModal,
-coming,
-webdev,
+  githubFetch,
+  cuberto,
+  twoGood,
+  shareModal,
+  coming,
+  webdev,
   certificate1,
-  fitt
+  fitt,
+
 } from "../assets";
-export const CVDuncan = CV_Duncan;
 
 export const navLinks = [
   // {
@@ -60,25 +48,7 @@ export const navLinks = [
   // },
 ];
 
-const services = [
-  {
-    title: "Web Developer ",
-    icon: mobile,
-  },
-  {
-    title: "2🌟Leetcode ",
-    icon: web,
-  },
 
-  {
-    title: "Open Source",
-    icon: backend,
-  },
-  {
-    title: "ML-Enthusiast",
-    icon: creator,
-  },
-];
 
 const technologies = [
   {
@@ -307,7 +277,7 @@ const experiences = [
 //     doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
 //   },
 // ];
-
+/*
 export const experiences1 = [
   {
     id: 0,
@@ -345,7 +315,7 @@ export const experiences1 = [
     ],
   },
   {
-    
+
     id: 2,
     img: starbucks,
     role: "Manit Bhopal Hackathon (Team Leader)",
@@ -361,7 +331,7 @@ export const experiences1 = [
     ],
     doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
   },
-  
+
   {
     id: 3,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRouPWI4bNkkmitOtgY39l_ZiwvDvPj4JqD9QX7_rDlRveUs90X_XRH9NuGrBr0jil5W8w&usqp=CAU",
@@ -423,13 +393,13 @@ export const experiences1 = [
     ],
     doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
   },
-];
+];*/
 
 const testimonials = [
   {
-    project: "Full Stack Developer",
+    project: "Responsive Web Developer",
     testimonial: webdev,
-    name: "Suraksha Sanket",
+    name: "Edward Mercado",
     designation: "Advanced CCTV analytics solution",
     company:
       " Suraksha-Sanket is a web application created to detect Crimes, Infiltration and Unauthorized access. A video analytics software that will use the Machine Learning Algorithms to detect criminal activities during live streaming of video cameras. ",
@@ -465,7 +435,7 @@ const certificates = [
   {
     project: "Full Stack Developer",
     testimonial: webdev,
-    name: "Suraksha Sanket",
+    name: "Edward Mercado",
     designation: "Advanced CCTV analytics solution",
     company:
       " Suraksha-Sanket is a web application created to detect Crimes, Infiltration and Unauthorized access. A video analytics software that will use the Machine Learning Algorithms to detect criminal activities during live streaming of video cameras. ",
@@ -698,8 +668,8 @@ const projects = [
       },
     ],
     image: bioPage,
-    image2: "https://abhishek-bio.onrender.com/",
-    source_code_link: "https://github.com/Abhishek9503/Abhishek-Bio",
+    image2: "https://0xwaya-bio.onrender.com/",
+    source_code_link: "https://github.com/0xwaya/0xwaya-Bio",
   },
   {
     name: "Share Modal",
@@ -729,7 +699,7 @@ const projects = [
       },
     ],
     image: shareModal,
-    image2: "https://github.com/Abhishek9503/",
+    image2: "https://github.com/0xwaya/",
     source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
   },
 
@@ -907,8 +877,8 @@ export const projects1 = [
     date: "Apr 2023 - May 2023",
     description:
       "Full Stack Edtech Platform built using React and Redux functionality in fronted and Express and Mongodb in Backend ",
-    image:studynotion1,
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux","Cloudinary ", "NodeMailer"],
+    image: studynotion1,
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux", "Cloudinary ", "NodeMailer"],
     category: "full stack",
     github: "https://github.com/Abhishek9503/Study-Notion",
     webapp: "https://study-notion1-ruddy.vercel.app/",
@@ -933,7 +903,7 @@ export const projects1 = [
     date: "Dec 2023 - Jan 2023",
     description:
       "NexuVents is a full-stack platform for managing events. It serves as a hub, spotlighting diverse events taking place globally.",
-    image:nexuvents,
+    image: nexuvents,
     tags: [
       "TypeScript",
       "Next Js",
@@ -954,7 +924,7 @@ export const projects1 = [
     date: "Nov 2023 - Dec-2023",
     description:
       "Travelling and camping fronted website build using Nextjs and Typescript",
-    image:evovleUx,
+    image: evovleUx,
     tags: [
       "Next.Js",
       "TypeScript",
@@ -970,7 +940,7 @@ export const projects1 = [
     date: "Jan 2023 - Mar 2023",
     description:
       "Pinterest Clone build using EJS and Multer funtionality",
-    image:pinterest,
+    image: pinterest,
     tags: ["EJS", "JavaScript", "HTML", "CSS", "Passport", "FireBase"],
     category: "full stack",
     github: "https://github.com/Abhishek9503/Pinterest",
@@ -996,21 +966,21 @@ export const projects1 = [
     date: "April 2023 - June 2023",
     description:
       "My portfolio, built with React and Three.js, showcases my work using , interactive experiences, and seamless navigation. It incorporates 3D graphics and animations, ensuring a visually engaging and responsive presentation across devices. It highlights my skills, achievements, and creativity in a dynamic and immersive manner.",
-    image:portfolio,
+    image: portfolio,
     tags: ["React", "TailwindCSS", "Three.Js", "Framer Motion"],
     category: "react",
     github: "https://github.com/Abhishek9503/My-ProtFolio",
     webapp: "https://abhishek-portfolio-ivory.vercel.app/",
   },
-  
+
   {
     id: 4,
     title: "Cuberto Clone",
     date: "Sep 2023",
     description:
       "A simple clone website to brush up myskill on HTML CSS JS and GSAP with Scroll Trigger",
-    image:cuberto,
-    tags: ["Html" , "Css", "Javascript"],
+    image: cuberto,
+    tags: ["Html", "Css", "Javascript"],
     category: "javascript",
     github: "https://github.com/Abhishek9503/Cool-Projects",
     webapp: "https://twogood-clone.onrender.com/",
@@ -1021,7 +991,7 @@ export const projects1 = [
     date: "Jun 2023",
     description:
       " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
-    image:bioPage,
+    image: bioPage,
     tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
     category: "javscript",
     github: "https://github.com/Abhishek9503/Abhishek-Bio",
@@ -1033,8 +1003,8 @@ export const projects1 = [
     date: "March 2023",
     description:
       "Share Modal Page built using HTML CSS JS",
-    image:shareModal,
-    tags: ["Html" , "Css", "Javascript"],
+    image: shareModal,
+    tags: ["Html", "Css", "Javascript"],
     category: "javascript",
     github: "https://github.com/Abhishek9503/",
     // webapp: "https://breaking-bad-webapp.netlify.app",
@@ -1045,7 +1015,7 @@ export const projects1 = [
     date: "Dec 2020 - Jan 2021",
     description:
       "Dive into a logic-based gaming adventure with our React Dice Game. Featuring a simple yet intuitive UI, this game brings strategic fun to your fingertips. Customize settings, roll the dice, and challenge friends in this logic-driven experience. Enjoy the simplicity with every move!",
-    image:coming,
+    image: coming,
     tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
     category: "react",
     github: "https://github.com/Abhishek9503/",
@@ -1057,21 +1027,21 @@ export const projects1 = [
     date: "Jan 2021",
     description:
       "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-    image:githubFetch,
-    tags: ["Html" , "Css", "Javascript"],
+    image: githubFetch,
+    tags: ["Html", "Css", "Javascript"],
     category: "javascript",
     github: "https://github.com/Abhishek9503/",
     // webapp: "https://github.com/Abhishek9503/",
   },
-  
+
   {
     id: 10,
     title: "TwoGood Clone",
     date: "Sep 2023 ",
     description:
       "Simple clone website build using HTML CSS JS and GSAP ",
-    image:twoGood,
-    tags: ["Html" , "Css", "Javascript"],
+    image: twoGood,
+    tags: ["Html", "Css", "Javascript"],
     category: "javascript",
     github: "https://github.com/Abhishek9503/Cool-Projects",
     webapp: "https://twogood-clone.onrender.com/",
@@ -1082,7 +1052,7 @@ export const projects1 = [
     date: "Dec 2020 - Jan 2021",
     description:
       "Discover tasty treats with our React Food App. It's made with React, connecting to a Food API. Easily find dishes with filters and search. Enjoy a simple and delicious way to explore food!",
-    image:coming,
+    image: coming,
     tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
     category: "react",
     github: "https://github.com/Abhishek9503/",
@@ -1094,8 +1064,8 @@ export const projects1 = [
     date: "Dec 2020 - Jan 2021",
     description:
       "The Password Generator app I created using JavaScript, HTML, and CSS is a crucial tool for enhancing online security. With a user-friendly interface, it generates strong passwords based on user preferences.It makesindispensable for safeguarding sensitive information.",
-    image:tripguide,
-    tags: ["Html" , "Css", "Javascript"],
+    image: tripguide,
+    tags: ["Html", "Css", "Javascript"],
     category: "javascript",
     github: "https://github.com/Abhishek9503/",
     // webapp: "https://github.com/Abhishek9503/",
@@ -1106,7 +1076,7 @@ export const projects1 = [
     date: "Dec 2020 - Jan 2021",
     description:
       "I leveraged the power of router technology to create a seamless and intuitive user experience. By implementing a router framework such as React Router or Vue Router, I enabled dynamic routing within the application, allowing users to navigate between different pages without requiring full page reloads.",
-    image:studynotion,
+    image: studynotion,
     tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
     category: "react",
     github: "https://github.com/Abhishek9503/",
@@ -1118,14 +1088,12 @@ export const projects1 = [
     date: "Dec 2020 - Jan 2021",
     description:
       "Shopping Cart web app leverages the Redux library to streamline and enhance the shopping experience. Through efficient state management, seamless browsing, a user-friendly cart and checkout process, real-time inventory updates, and personalized user profiles, your app simplifies and elevates online shopping.",
-    image:shoppingcart,
+    image: shoppingcart,
     tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
     category: "react",
     github: "https://github.com/Abhishek9503/",
     webapp: "https://shopping-cart-abhishek9503.netlify.app/",
   },
-  
+
 ];
-
-
-export { services, technologies, experiences, testimonials, projects , certificates};
+export { technologies, testimonials, projects, certificates };
