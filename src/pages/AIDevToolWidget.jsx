@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { callOllamaApi } from "./ollamaApi";
+import { callGroqApi } from "./groqApi";
 import AIDevAvatar3D from "./AIDevAvatar3D";
 
 const AIDevToolWidget = () => {
@@ -22,7 +22,7 @@ const AIDevToolWidget = () => {
         setLoading(true);
         setInput("");
         try {
-            const aiResponse = await callOllamaApi(input);
+            const aiResponse = await callGroqApi(input);
             setMessages((msgs) => [
                 ...msgs,
                 { role: "assistant", content: aiResponse }
@@ -30,7 +30,7 @@ const AIDevToolWidget = () => {
         } catch (err) {
             setMessages((msgs) => [
                 ...msgs,
-                { role: "assistant", content: "[Error contacting Groq API]" }
+                { role: "assistant", content: "[Error contacting Groq API. Please try again.]" }
             ]);
         }
         setLoading(false);

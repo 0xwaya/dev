@@ -17,6 +17,13 @@ File: `src/App.jsx`
 - Main page sections now load lazily: Tech, About, Works, Feedbacks, Contact.
 - The heavy visual component, `StarsCanvas`, now loads lazily.
 - Secondary routes now load lazily: Experience, Playground, ProjectPage, StatisticPage.
+
+## AI Chat (Playground)
+
+- Migrated from Ollama to [Groq](https://console.groq.com/) for chat completions.
+- API client lives in `src/pages/groqApi.js` (`callGroqApi`).
+- Model defaults to `llama-3.3-70b-versatile`; override via `VITE_GROQ_MODEL` env var.
+- Required env var: `VITE_GROQ_API_KEY` (add to `.env.local` for local dev or Vercel Settings for production).
 - Route rendering is wrapped in a top-level `Suspense` boundary with a
   lightweight fallback.
 
