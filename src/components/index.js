@@ -11,6 +11,7 @@ import Tech from "./MainPage/Tech";
 import Works from "./MainPage/Works";
 import Contact from "./MainPage/Contact";
 import Spinner from "./Loaders/Spinner";
+import { WrappedFeedbacks as Feedbacks } from "./MainPage/Feedbacks";
 
 export {
   Hero,
@@ -20,6 +21,7 @@ export {
   Works,
   Contact,
   Spinner,
+  Feedbacks,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

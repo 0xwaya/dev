@@ -51,6 +51,9 @@ export const Desc = styled.div`
 
 export const ToggleButtonGroup = styled.div`
     display: flex;
+    gap:3px;
+    padding:10px;
+    margin-left:2px;
     border: 1.5px solid ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.primary};
     font-size: 16px;
@@ -65,7 +68,7 @@ export const ToggleButtonGroup = styled.div`
 `
 
 export const ToggleButton = styled.div`
-    padding: 8px 18px;
+    padding: 4px 8px;
     border-radius: 6px;
     cursor: pointer;
     ${({ active, theme }) =>

@@ -1,2 +1,6 @@
 import Project from './Project';
-export { Project };
+import Experience from './Experience';
+import Playground from './Playground';
+import ProjectPage from './ProjectPage';
+
+export { Project, Experience, Playground, ProjectPage };

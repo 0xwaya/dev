@@ -11,1089 +11,384 @@ import {
   git,
   figma,
   docker,
+  blender,
+  hardhat,
+  solidity,
+  threejs,
   studynotion,
   tripguide,
   shoppingcart,
-  blender,
-  studynotion1,
-  evovleUx,
-  nexuvents,
-  pinterest,
-  portfolio,
   bioPage,
   githubFetch,
   cuberto,
-  twoGood,
   shareModal,
   coming,
   webdev,
   certificate1,
   fitt,
-
 } from "../assets";
 
 export const navLinks = [
-  // {
-  //   id: "about",
-  //   title: "About",
-  // },
-  // {
-  //   id: "work",
-  //   title: "Work",
-  // },
-
-  // {
-  //   id: "contact",
-  //   title: "Contact",
-  // },
+  {
+    id: "project",
+    title: "Projects",
+  },
+  {
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "play",
+    title: "Playground",
+  },
 ];
 
 
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Docker",
-    icon: docker,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "blender",
-    icon: blender,
-  },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "TypeScript", icon: typescript },
+  { name: "React JS", icon: reactjs },
+  { name: "Redux Toolkit", icon: redux },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Node JS", icon: nodejs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "Solidity", icon: solidity },
+  { name: "Hardhat", icon: hardhat },
+  { name: "Three JS", icon: threejs },
+  { name: "Docker", icon: docker },
+  { name: "git", icon: git },
+  { name: "figma", icon: figma },
 ];
 
-const experiences = [
-  {
-    title: "Manit Bhopal Hackathon (Team Leader)",
-    company_name: "Manit Bhopal",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "Feb-2023",
-    points: [
-      "This is my first  hackathon which i have in my life with the responsibilty of team leader",
-      " Here we created a web app using HTML CSS Tailwind and mongodb as Backend functionality",
-      "The Web Provide data visulization from the .csv file which are displayed on the web to understand the  data with visual and graphs easily",
-      "This hackathon help me understanding how to build any project from scratch with team and understand the edge cases while facing issue in small functionality",
-    ],
-  },
-  {
-    title: "Codespire Hackathon ",
-    company_name: "AITR Indore",
-    icon: starbucks,
-    iconBg: "#E6DEDD",
-    date: "April-2023",
-    points: [
-      "Worked as a team leader and secured 7th rank in Codespire Hackahton ",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Mern Stack Develpment",
-    company_name: "Code Help",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2023 - Current",
-    points: [
-      "Working as ull stack developer intern at codehelp ",
-      "Got an hands on experience  on html css js react and mongodb ",
-      "Work in group to create to varioius projects and gain insight of open source contribution",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "CMS Team Member ",
-    company_name: "IPS Academy Indore",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using HTML CSS JS and PHP and other related technologies.",
-      "Collaborating with cross-functional teams including designs,working, and other functionality to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback for college website",
-    ],
-  },
-  {
-    title: "C++ Certification Course  ",
-    company_name: "Universal Informatics",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan-2022 May-2022",
-    points: [
-      "Completed comprehensive C++ course covering fundamental concepts, object-oriented principles, data structures, and algorithms.",
-      "Applied learned concepts through extensive coding exercises and assignments, strengthening practical skills in C++ programming.",
-      "Collaborated with peers on real-world C++ projects, showcasing teamwork and problem-solving abilities.",
-      "Explored additional resources to expand knowledge beyond the course curriculum, staying up-to-date with emerging trends in C++ programming.",
-    ],
-  },
-];
 
-// export const experiences1 = [
-//   {
-//     id: 0,
-//     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-//     role: "DevOps & Fullstack Engineering Intern",
-//     company: "Flipr Inovations Pvt. Ltd.",
-//     date: "Aug 2023 - July 2023",
-//     desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
-//     skills: [
-//       "Docker",
-//       "Terraform",
-//       "AWS",
-//       "EC2",
-//       "Portainer",
-//       "Nginx",
-//       "JavaScript",
-//       "TypeScript",
-//       "Node Js",
-//       " Next Js",
-//     ],
-//     doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
-//   },
-//   {
-//     id: 0,
-//     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-//     role: "Frontend Engineer Intern",
-//     company: "Neurobit",
-//     date: "June 2023 - Present",
-//     desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
-//     skills: [
-//       "ReactJS",
-//       "Redux",
-//       "NodeJs",
-//       "Material UI",
-//       "HTML",
-//       "CSS",
-//       "JavaScript",
-//     ],
-//     doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
-//   },
-//   {
-//     id: 1,
-//     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-//     role: "Fullstack Externship",
-//     company: "Flipr",
-//     date: "June 2023 - July 2023",
-//     desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
-//     skills: [
-//       "ReactJS",
-//       "Redux",
-//       "NodeJs",
-//       "Material UI",
-//       "HTML",
-//       "CSS",
-//       "JavaScript",
-//       "Docker",
-//       "AWS",
-//       "MongoDB",
-//     ],
-//   },
-//   {
-//     id: 2,
-//     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-//     role: "Open Source Contributor ",
-//     company: "GirlScript Summer of Code",
-//     date: "May 2023 - Present",
-//     desc: "Contributing to different open-source projects and learn from industry experts",
-//     doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
-//   },
-//   {
-//     id: 3,
-//     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-//     role: "Android Developer",
-//     company: "DSC KIIT",
-//     date: "Nov2021 - Present",
-//     desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-//     skills: [
-//       "Leadership",
-//       "Mobile Application Development",
-//       "Kotlin",
-//       "XML",
-//       "Figma",
-//     ],
-//   },
-//   {
-//     id: 4,
-//     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-//     role: "Android Developer Intern",
-//     company: "Rudraksha Welffare Foundation",
-//     date: "June 2021 - Oct 2021",
-//     desc: "As an Android Developer Intern at Rudraksha Welfare Foundation from June 2021 to October 2021, I gained valuable hands-on experience in application development. During my tenure, I contributed to the development of the application's back-end cloud functions using Firebase and implemented a front-end with the MVVM structure, which was designed using Figma. I also added a one-to-one video call feature, conceptualized new features, and optimized app performance. This internship helped me enhance my skills in Android development and gave me an opportunity to work in a collaborative team environment.",
-//     skills: [
-//       "Android",
-//       "Java",
-//       "Kotlin",
-//       "XML",
-//       "Node Js",
-//       "Cloud Firestore",
-//       "Firebase",
-//       "Figma",
-//     ],
-//     doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-//   },
-// ];
-/*
+const experiences = [];
+
 export const experiences1 = [
   {
     id: 0,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjI15nUzWQ04tjFdhl4TQ3cAtgyKU0TqK4JVqnK35j8A&s",
-    role: "Web Developement Lead",
-    company: "GDSC IPS Academy",
-    date: "Sep-2023 - Present",
-    desc: "As an Web  developer Lead at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-    skills: [
-      "React",
-      "Node.js",
-      "Web Develoepement",
-      "Collaboration",
-      "Open Source",
-    ],
+    img: "https://avatars.githubusercontent.com/u/0xwaya?v=4",
+    role: "Founder & Lead Architect",
+    company: "wayalabs / OpenClaw",
+    date: "2025 - Present",
+    desc: "Designed and deployed OpenClaw — a fully autonomous AI agent system running natively on macOS. Built the LangGraph 16-agent CEO/CTO/CFO hierarchy (ceo-agent-system) with real-time SocketIO dashboard, artifact pipeline, and Telegram integration.",
+    skills: ["LangGraph", "LangChain", "Python", "OpenAI", "SocketIO", "Flask", "Autonomous Agents", "Multi-Agent AI"],
   },
   {
     id: 1,
-    img: shopify,
-    role: "Full Stack Web Developement",
-    company: "Code Help",
-    date: "Jan 2023 - July 2023",
-    desc: "Learned full stack web developement which include MERN stack and created several project with a Major Edtech project built on react framework",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJs",
-      "Tailwind CSS",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Express.Js",
-      "Vercel",
-      "MongoDB",
-    ],
+    img: "https://opengraph.githubassets.com/1/0xwaya/ceo-agent-system",
+    role: "Lead Developer",
+    company: "CEO Agent System",
+    date: "Feb 2025 - May 2026",
+    desc: "Built a 16-agent LangGraph multi-agent AI system featuring a CEO/CTO/CFO leadership layer, 6 domain directors, and 7 execution specialists. Includes real-time dashboard, artifact pipeline, and SocketIO chat. Published open-source.",
+    skills: ["LangGraph", "LangChain", "Python", "OpenAI", "Flask", "SocketIO", "Web3"],
   },
   {
-
     id: 2,
-    img: starbucks,
-    role: "Manit Bhopal Hackathon (Team Leader)",
-    company: "Manit Bhopal",
-    date: "Feb-2023",
-    desc: "This is my first  hackathon which i have in my life with the responsibilty of team leader.Here we created a web app using HTML CSS Tailwind and mongodb as Backend functionality",
-    skills: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Node.js",
-      "TailwindCSS",
-    ],
-    doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
+    img: "https://opengraph.githubassets.com/1/0xwaya/loro-app",
+    role: "Full Stack Web3 Developer",
+    company: "Pandemonium Squad / Loro App",
+    date: "2022 - 2024",
+    desc: "Led front-end and smart contract development for Pandemonium Squad NFT collection. Built the Loro Dapp (testnet v0.1) with NFT minting, trait-layer generation, and wallet integration. Deployed at loro.vercel.app.",
+    skills: ["Solidity", "Hardhat", "React.js", "Ethers.js", "NFT", "Web3", "IPFS"],
   },
-
   {
     id: 3,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRouPWI4bNkkmitOtgY39l_ZiwvDvPj4JqD9QX7_rDlRveUs90X_XRH9NuGrBr0jil5W8w&usqp=CAU",
-    role: "Open Source Contributor",
-    company: "HacktoberFest",
-    date: "October-2023",
-    desc: "Contributing to different open-source projects and learn from industry experts",
-    skills: [
-      "Open Source",
-      "Project Management",
-      "Real Time Collaboration",
-    ],
-    doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
+    img: "https://opengraph.githubassets.com/1/0xwaya/queencity-soundboard",
+    role: "Full Stack Developer",
+    company: "QueenCity Soundboard",
+    date: "2024 - Present",
+    desc: "Built a mobile-first event platform connecting Venezuelan artists with Midwest audiences. Full-stack Next.js + Supabase + Ticket Tailor, deployed at queencitysoundboard.com.",
+    skills: ["Next.js", "Supabase", "TypeScript", "TailwindCSS", "PostgreSQL"],
   },
   {
     id: 4,
-    img: "https://media.licdn.com/dms/image/D4D0BAQF5uiReaUPm0w/company-logo_200_200/0/1682401918714/socialsummerofcode_logo?e=2147483647&v=beta&t=xN_XaD-lLlqBEYekF6rrchicmB2gUDdDfZPzjHkV1BM",
-    role: "Open Source Contributor ",
-    company: "Social Summer of Code",
-    date: "May 2023 - Present",
-    desc: "Contributing to different open-source projects and learn from industry experts",
-    skills: [
-      "Open Source",
-      "Project Management",
-      "Real Time Collaboration",
-    ],
-    doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
-  },
-  {
-    id: 5,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKqA_PqjZnxKpdkmF1xb38ogdD9N7i8-hF_XqpF7L7zIvC1gTv2IP_zcVRNvp6rdgnVAw&usqp=CAU",
-    role: "Team Leader",
-    company: "Codespire Hackathon",
-    date: "April-2023",
-    desc: "Worked as a team leader and secured 7th rank in Codespire Hackahton Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJs",
-      "Material UI",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
-  },
-
-  {
-    id: 6,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqGn43vRBrfplky3t5_VO0D54oWuY_Dc-8j2XimuNnw&s",
-    role: "C++ Certification Course",
-    company: "Universal Informatics",
-    date: "June 2021 - Oct 2021",
-    desc: "Completed comprehensive C++ course covering fundamental concepts, object-oriented principles, data structures, and algorithms.Applied learned concepts through extensive coding exercises and assignments, strengthening practical skills in C++ programming.",
-    skills: [
-      "C",
-      "C++",
-      "OOPS",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-  },
-];*/
-
-const testimonials = [
-  {
-    project: "Responsive Web Developer",
-    testimonial: webdev,
-    name: "Edward Mercado",
-    designation: "Advanced CCTV analytics solution",
-    company:
-      " Suraksha-Sanket is a web application created to detect Crimes, Infiltration and Unauthorized access. A video analytics software that will use the Machine Learning Algorithms to detect criminal activities during live streaming of video cameras. ",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-    source_code_link: "https://github.com/Abhishek9503",
-  },
-
-  {
-    project: "Data Structure & Algo",
-    testimonial: certificate1,
-    name: "Study Notion",
-    designation: "Study Notion",
-    company:
-      "Made through MERN stack, revolutionizes education with seamless connectivity and immersive learning experiences. Embrace the future of education as we redefine knowledge acquisition and empower learners worldwide.",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-    source_code_link: "https://github.com/Abhishek9503",
-  },
-
-  {
-    project: "Ai Builder",
-    testimonial: fitt,
-    name: "Blender Projects ",
-    designation: "Udemy",
-    company:
-      "In the coming months, I will embark on an enriching journey to enhance my skills in 3D graphics and animation through the Udemy course on Blender. I will delve into the intricacies of modeling, texturing, lighting, rigging, animation, and visual effects, gaining a profound understanding of each aspect.",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    source_code_link: "https://github.com/Abhishek9503",
+    img: "https://opengraph.githubassets.com/1/0xwaya/devreluni_rss",
+    role: "Developer Relations & Open Source",
+    company: "DevRel Uni / ETHDenver",
+    date: "2022 - 2023",
+    desc: "Active in DevRel community, ETHDenver bootcamp, and ETHGlobal FVM Space Warp hackathon. Contributed to open-source Web3 tooling and created the DevRel Resources collaborative hub.",
+    skills: ["Web3", "Open Source", "Solidity", "Developer Relations", "Community Building"],
+    doc: "https://github.com/0xwaya/bufficorn.bootcamp",
   },
 ];
 
+const testimonials = [
+  {
+    project: "AI Agent Architecture",
+    testimonial: webdev,
+    name: "Edward Mercado",
+    designation: "0xwaya — CEO Agent System",
+    company: "16-agent LangGraph hierarchy with CEO/CTO/CFO layer, 6 domain directors, and 7 execution specialists. Real-time SocketIO dashboard, artifact pipeline, and autonomous task execution.",
+    image: "https://avatars.githubusercontent.com/u/0xwaya?v=4",
+    source_code_link: "https://github.com/0xwaya/ceo-agent-system",
+  },
+  {
+    project: "Web3 & NFT Development",
+    testimonial: certificate1,
+    name: "Pandemonium Squad",
+    designation: "NFT Dapp — loro.vercel.app",
+    company: "Macaw NFT collection Dapp featuring trait-layered generation, rarity scoring, and testnet minting. Built with Solidity, Hardhat, and React.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/loro-app",
+    source_code_link: "https://github.com/0xwaya/loro-app",
+  },
+  {
+    project: "Full Stack & Automation",
+    testimonial: fitt,
+    name: "QueenCity Soundboard",
+    designation: "queencitysoundboard.com",
+    company: "Mobile-first event platform for Venezuelan artists in the Midwest. Next.js + Supabase + Ticket Tailor with full ticketing and RSVP flow.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/queencity-soundboard",
+    source_code_link: "https://github.com/0xwaya/queencity-soundboard",
+  },
+];
 
 const certificates = [
   {
-    project: "Full Stack Developer",
+    project: "Multi-Agent AI Systems",
     testimonial: webdev,
     name: "Edward Mercado",
-    designation: "Advanced CCTV analytics solution",
-    company:
-      " Suraksha-Sanket is a web application created to detect Crimes, Infiltration and Unauthorized access. A video analytics software that will use the Machine Learning Algorithms to detect criminal activities during live streaming of video cameras. ",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-    source_code_link: "https://github.com/Abhishek9503",
+    designation: "LangGraph / OpenAI",
+    company: "Advanced multi-agent AI system design using LangGraph, LangChain, and OpenAI — applied directly to the ceo-agent-system project.",
+    image: "https://avatars.githubusercontent.com/u/0xwaya?v=4",
+    source_code_link: "https://github.com/0xwaya/ceo-agent-system",
   },
-
   {
-    project: "Data Structure & Algo",
+    project: "Blockchain Security",
     testimonial: certificate1,
-    name: "Study Notion",
-    designation: "Study Notion",
-    company:
-      "Made through MERN stack, revolutionizes education with seamless connectivity and immersive learning experiences. Embrace the future of education as we redefine knowledge acquisition and empower learners worldwide.",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-    source_code_link: "https://github.com/Abhishek9503",
+    name: "Cyfrin / Updraft",
+    designation: "Smart Contract Security",
+    company: "Full security course using Foundry framework — covered auditing, reentrancy, storage layout, and exploit patterns.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/simple-storage-f23",
+    source_code_link: "https://github.com/0xwaya/simple-storage-f23",
   },
-
   {
-    project: "Ai Builder",
+    project: "Web3 Development",
     testimonial: fitt,
-    name: "Blender Projects ",
-    designation: "Udemy",
-    company:
-      "In the coming months, I will embark on an enriching journey to enhance my skills in 3D graphics and animation through the Udemy course on Blender. I will delve into the intricacies of modeling, texturing, lighting, rigging, animation, and visual effects, gaining a profound understanding of each aspect.",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    source_code_link: "https://github.com/Abhishek9503",
+    name: "ETHDenver / ETHGlobal",
+    designation: "Bootcamp + Hackathon",
+    company: "ETHDenver bootcamp and ETHGlobal FVM Space Warp hackathon. Shipped on Filecoin Virtual Machine.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/space-warp",
+    source_code_link: "https://github.com/0xwaya/space-warp",
   },
 ];
 
 const projects = [
   {
-    name: "NexuVents",
+    name: "CEO Agent System",
     description:
-      "NexuVents is a full-stack platform for managing events. It serves as a hub, spotlighting diverse events taking place globally.",
+      "16-agent LangGraph AI hierarchy — CEO/CTO/CFO + domain directors + execution specialists. Real-time SocketIO dashboard and autonomous artifact pipeline.", 
     tags: [
-      {
-        name: "NextJs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Mongodb",
-        color: "pink-text-gradient",
-      },
+      { name: "LangGraph", color: "blue-text-gradient" },
+      { name: "Python", color: "green-text-gradient" },
+      { name: "OpenAI", color: "pink-text-gradient" },
     ],
-    image: nexuvents,
-    image2: "https://nexu-vents.vercel.app/",
-    source_code_link: "https://github.com/Abhishek9503/NexuVents",
+    image: "https://opengraph.githubassets.com/1/0xwaya/ceo-agent-system",
+    image2: "https://wayalabs.com",
+    source_code_link: "https://github.com/0xwaya/ceo-agent-system",
   },
   {
-    name: "Study Notion",
+    name: "Loro App — NFT Dapp",
     description:
-      "Full Stack Edtech Platform built using React and Redux functionality in fronted and Express and Mongodb in Backend",
+      "Pandemonium Squad Macaw NFT Dapp. Testnet v0.1 with trait-layer generation, rarity scoring, and wallet-connected minting.",
     tags: [
-      {
-        name: "ReactJs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "TailwindCss",
-        color: "pink-text-gradient",
-      },
+      { name: "Solidity", color: "blue-text-gradient" },
+      { name: "React.js", color: "green-text-gradient" },
+      { name: "Ethers.js", color: "pink-text-gradient" },
     ],
-    image: studynotion1,
-    image2: "https://study-notion1-ruddy.vercel.app/",
-    source_code_link: "https://github.com/Abhishek9503/Study-Notion",
+    image: "https://opengraph.githubassets.com/1/0xwaya/loro-app",
+    image2: "https://loro.vercel.app",
+    source_code_link: "https://github.com/0xwaya/loro-app",
   },
   {
-    name: "EvolveUx",
+    name: "QueenCity Soundboard",
     description:
-      "Travelling and camping fronted website build using Nextjs and Typescript",
+      "Mobile-first event platform connecting Venezuelan artists with Midwest audiences. Next.js + Supabase + Ticket Tailor with full ticketing flow.",
     tags: [
-      {
-        name: "Nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TypeScript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "TailwindCSS",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "Supabase", color: "green-text-gradient" },
+      { name: "TypeScript", color: "pink-text-gradient" },
     ],
-    image: evovleUx,
-    image2: "https://evolve-travelling.vercel.app/",
-    source_code_link:
-      "https://github.com/Abhishek9503/EvolveUx-Traveling-Camping-Website",
+    image: "https://opengraph.githubassets.com/1/0xwaya/queencity-soundboard",
+    image2: "https://queencitysoundboard.com",
+    source_code_link: "https://github.com/0xwaya/queencity-soundboard",
   },
   {
-    name: "Pinterest Clone",
-    description: "Pinterest Clone build using EJS and Multer funtionality",
+    name: "Tarot AI",
+    description:
+      "Tarot project with separate frontend and AI backend. LLM-powered card interpretation layered on traditional tarot symbolism.",
     tags: [
-      {
-        name: "Express.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TailwindCSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Mongodb",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Python", color: "green-text-gradient" },
+      { name: "AI", color: "pink-text-gradient" },
     ],
-    image: pinterest,
-    image2: "https://github.com/Abhishek9503/Pinterest",
-    source_code_link: "https://github.com/Abhishek9503/Pinterest",
+    image: "https://opengraph.githubassets.com/1/0xwaya/tarot",
+    image2: "https://github.com/0xwaya/tarot",
+    source_code_link: "https://github.com/0xwaya/tarot",
   },
   {
-    name: "My Portfolio",
+    name: "Dream Car Auto Repair",
     description:
-      " My portfolio, built with React and Three.js, showcases my work using , interactive experiences, and seamless navigation. It incorporates 3D graphics and animations, ensuring a visually engaging and responsive presentation across devices. It highlights my skills, achievements, and creativity in a dynamic and immersive manner.",
+      "Conversion-focused landing page for Dream Car Auto Repair (Norwood, OH). Mobile-first, fast-loading, and optimized for local SEO.",
     tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "three.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "HTML", color: "blue-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
     ],
-    image: portfolio,
-    image2: "https://abhishek-portfolio-ivory.vercel.app/",
-    source_code_link: "https://github.com/Abhishek9503/My-ProtFolio",
-  },
-
-  {
-    name: "TwoGood Clone",
-    description:
-      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
-    tags: [
-      {
-        name: "Html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-
-      {
-        name: "Mongodb",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: twoGood,
-    image2: "https://twogood-clone.onrender.com/",
-    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
+    image: "https://opengraph.githubassets.com/1/0xwaya/dreamcar",
+    image2: "https://0xwaya.github.io/dreamcar/",
+    source_code_link: "https://github.com/0xwaya/dreamcar",
   },
   {
-    name: "Cuberto Clone",
+    name: "DevRel Uni RSS",
     description:
-      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
+      "Collaborative hub for Developer Relations professionals. Community-driven RSS aggregator deployed at dru-resources.vercel.app.",
     tags: [
-      {
-        name: "Html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-
-      {
-        name: "Mongodb",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "RSS", color: "green-text-gradient" },
+      { name: "Community", color: "pink-text-gradient" },
     ],
-    image: cuberto,
-    image2: "https://twogood-clone.onrender.com/",
-    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
-  },
-  {
-    name: "Bio Page",
-    description:
-      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
-    tags: [
-      {
-        name: "Html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-
-      {
-        name: "Mongodb",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: bioPage,
-    image2: "https://0xwaya-bio.onrender.com/",
-    source_code_link: "https://github.com/0xwaya/0xwaya-Bio",
-  },
-  {
-    name: "Share Modal",
-    description:
-      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
-    tags: [
-      {
-        name: "Html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-
-      {
-        name: "Mongodb",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: shareModal,
-    image2: "https://github.com/0xwaya/",
-    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
-  },
-
-  {
-    name: "Dice Game",
-    description:
-      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
-    tags: [
-      {
-        name: "Html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-
-      {
-        name: "Mongodb",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: coming,
-    image2: "https://github.com/Abhishek9503/",
-    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
-  },
-  {
-    name: "Food App",
-    description:
-      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
-    tags: [
-      {
-        name: "Html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-
-      {
-        name: "Mongodb",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: coming,
-    image2: "https://github.com/Abhishek9503/",
-    source_code_link: "https://github.com/Abhishek9503/",
-  },
-
-
-  {
-    name: "Github Profile",
-    description:
-      "This Project aims to automate the process of Placement Management System and  provides graphical visualization of placement data. This web app provides data analysis ,allowing the training and placement cells to gain insights into the placement trends and needs across the institution.      ",
-    tags: [
-      {
-        name: "Html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "JS",
-        color: "green-text-gradient",
-      },
-
-      {
-        name: "Mongodb",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: githubFetch,
-    image2: "https://twogood-clone.onrender.com/",
-    source_code_link: "https://github.com/Abhishek9503/Cool-Projects",
-  },
-
-  {
-    name: "Password Generator",
-    description:
-      " The Password Generator app I created using JavaScript, HTML, and CSS is a crucial tool for enhancing online security. With a user-friendly interface, it generates strong passwords based on user preferences.It makesindispensable for safeguarding sensitive information.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javaScript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    image2: "https://password-generator-abhishek9503.onrender.com/",
-    source_code_link: "https://github.com/Abhishek9503/Password-Generator",
-  },
-  {
-    name: "Study Notion(frontend)",
-    description:
-      "  I leveraged the power of router technology to create a seamless and intuitive user experience. By implementing a router framework such as React Router or Vue Router, I enabled dynamic routing within the application, allowing users to navigate between different pages without requiring full page reloads.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javaScript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: studynotion,
-    image2: "https://study-notion.netlify.app",
-    source_code_link: "https://github.com/Abhishek9503",
-  },
-
-  {
-    name: "Shopping Cart(Redux)",
-    description:
-      "Shopping Cart web app leverages the Redux library to streamline and enhance the shopping experience. Through efficient state management, seamless browsing, a user-friendly cart and checkout process, real-time inventory updates, and personalized user profiles, your app simplifies and elevates online shopping",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javaScript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: shoppingcart,
-    image2: "https://shopping-cart-abhishek9503.netlify.app/",
-    source_code_link: "https://github.com/Abhishek9503",
+    image: "https://opengraph.githubassets.com/1/0xwaya/devreluni_rss",
+    image2: "https://dru-resources.vercel.app",
+    source_code_link: "https://github.com/0xwaya/devreluni_rss",
   },
 ];
-
-
 
 export const projects1 = [
   {
     id: 0,
-    title: "Study Notion",
-    date: "Apr 2023 - May 2023",
+    title: "CEO Agent System",
+    date: "Feb 2025 - May 2026",
     description:
-      "Full Stack Edtech Platform built using React and Redux functionality in fronted and Express and Mongodb in Backend ",
-    image: studynotion1,
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux", "Cloudinary ", "NodeMailer"],
-    category: "full stack",
-    github: "https://github.com/Abhishek9503/Study-Notion",
-    webapp: "https://study-notion1-ruddy.vercel.app/",
-    // member: [
-    //   {
-    //     name: "Rishav Chanda",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/rishavchanda/",
-    //   },
-    //   {
-    //     name: "Upasana Chaudhuri",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
-  },
-  {
-    id: 9,
-    title: "NexuVents",
-    date: "Dec 2023 - Jan 2023",
-    description:
-      "NexuVents is a full-stack platform for managing events. It serves as a hub, spotlighting diverse events taking place globally.",
-    image: nexuvents,
-    tags: [
-      "TypeScript",
-      "Next Js",
-      "MongoDb",
-      "Stripe",
-      "Node Js",
-      "Express Js",
-      "Clerk",
-      "Uploading",
-    ],
-    category: "full stack",
-    github: "https://github.com/Abhishek9503/NexuVents",
-    webapp: "https://nexu-vents.vercel.app/",
+      "16-agent LangGraph multi-agent AI system — CEO/CTO/CFO + 6 domain directors + 7 execution specialists. Real-time SocketIO dashboard, artifact pipeline, and autonomous task execution. Live at wayalabs.com.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/ceo-agent-system",
+    tags: ["LangGraph", "LangChain", "Python", "OpenAI", "Flask", "SocketIO", "Web3", "Multi-Agent AI"],
+    category: "ai agents",
+    github: "https://github.com/0xwaya/ceo-agent-system",
+    webapp: "https://wayalabs.com",
   },
   {
     id: 1,
-    title: "EvolveUx",
-    date: "Nov 2023 - Dec-2023",
+    title: "Loro App — Pandemonium Squad NFT",
+    date: "2022 - 2024",
     description:
-      "Travelling and camping fronted website build using Nextjs and Typescript",
-    image: evovleUx,
-    tags: [
-      "Next.Js",
-      "TypeScript",
-      "TailwindCSS",
-    ],
-    category: "web app",
-    github: "https://github.com/Abhishek9503/EvolveUx-Traveling-Camping-Website",
-    webapp: "https://evolve-travelling.vercel.app/",
+      "Macaw NFT collection Dapp. Pandemonium Squad Beta v0.1 testnet with trait-layer generation, rarity engine, and wallet-connected minting.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/loro-app",
+    tags: ["Solidity", "Hardhat", "React.js", "Ethers.js", "NFT", "IPFS"],
+    category: "web3",
+    github: "https://github.com/0xwaya/loro-app",
+    webapp: "https://loro.vercel.app",
   },
   {
     id: 2,
-    title: "Pinterest Clone",
-    date: "Jan 2023 - Mar 2023",
+    title: "QueenCity Soundboard",
+    date: "2024 - Present",
     description:
-      "Pinterest Clone build using EJS and Multer funtionality",
-    image: pinterest,
-    tags: ["EJS", "JavaScript", "HTML", "CSS", "Passport", "FireBase"],
+      "Mobile-first event platform connecting Venezuelan artists and Midwest audiences. Built with Next.js + Supabase + Ticket Tailor.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/queencity-soundboard",
+    tags: ["Next.js", "Supabase", "TypeScript", "TailwindCSS", "Ticket Tailor", "PostgreSQL"],
     category: "full stack",
-    github: "https://github.com/Abhishek9503/Pinterest",
-    webapp: "https://github.com/Abhishek9503/Pinterest",
-    // member: [
-    //   {
-    //     name: "Rishav Chanda",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/rishavchanda/",
-    //   },
-    //   {
-    //     name: "Upasana Chaudhuri",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
+    github: "https://github.com/0xwaya/queencity-soundboard",
+    webapp: "https://queencitysoundboard.com",
   },
   {
     id: 3,
-    title: "My Portfolio",
-    date: "April 2023 - June 2023",
+    title: "Tarot AI",
+    date: "2024 - Present",
     description:
-      "My portfolio, built with React and Three.js, showcases my work using , interactive experiences, and seamless navigation. It incorporates 3D graphics and animations, ensuring a visually engaging and responsive presentation across devices. It highlights my skills, achievements, and creativity in a dynamic and immersive manner.",
-    image: portfolio,
-    tags: ["React", "TailwindCSS", "Three.Js", "Framer Motion"],
-    category: "react",
-    github: "https://github.com/Abhishek9503/My-ProtFolio",
-    webapp: "https://abhishek-portfolio-ivory.vercel.app/",
+      "Canonical tarot project with separate frontend and AI backend. LLM-powered card interpretation layered on traditional tarot symbolism.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/tarot",
+    tags: ["React", "Python", "OpenAI", "AI", "Node.js"],
+    category: "ai agents",
+    github: "https://github.com/0xwaya/tarot",
+    webapp: "https://github.com/0xwaya/tarot",
   },
-
   {
     id: 4,
-    title: "Cuberto Clone",
-    date: "Sep 2023",
+    title: "Amazon Granite — Supplier Scraper",
+    date: "Apr 2026 - May 2026",
     description:
-      "A simple clone website to brush up myskill on HTML CSS JS and GSAP with Scroll Trigger",
-    image: cuberto,
-    tags: ["Html", "Css", "Javascript"],
-    category: "javascript",
-    github: "https://github.com/Abhishek9503/Cool-Projects",
-    webapp: "https://twogood-clone.onrender.com/",
+      "Public source snapshot of the Amazon Granite rebrand site and supplier scraper prototype for urbanstone.co.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/amazon-granite",
+    tags: ["Python", "Web Scraping", "Node.js", "React"],
+    category: "full stack",
+    github: "https://github.com/0xwaya/amazon-granite",
+    webapp: "https://urbanstone.co",
   },
   {
     id: 5,
-    title: "Bio Page",
-    date: "Jun 2023",
+    title: "RadarTV",
+    date: "2025 - Present",
     description:
-      " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
-    image: bioPage,
-    tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
-    category: "javscript",
-    github: "https://github.com/Abhishek9503/Abhishek-Bio",
-    webapp: "https://abhishek-bio.onrender.com/",
+      "Consolidating personal brand with media entity. Modern tech stack for high-performance streaming and community engagement.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/radartv",
+    tags: ["React", "Streaming", "Next.js", "TailwindCSS"],
+    category: "full stack",
+    github: "https://github.com/0xwaya/radartv",
+    webapp: "https://github.com/0xwaya/radartv",
   },
   {
     id: 6,
-    title: "Share Modal",
-    date: "March 2023",
+    title: "DevRel Uni RSS",
+    date: "May 2026",
     description:
-      "Share Modal Page built using HTML CSS JS",
-    image: shareModal,
-    tags: ["Html", "Css", "Javascript"],
-    category: "javascript",
-    github: "https://github.com/Abhishek9503/",
-    // webapp: "https://breaking-bad-webapp.netlify.app",
+      "Collaborative hub for Developer Relations professionals to share and discover resources. Community-driven RSS aggregator.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/devreluni_rss",
+    tags: ["Next.js", "RSS", "Community", "Developer Relations"],
+    category: "web app",
+    github: "https://github.com/0xwaya/devreluni_rss",
+    webapp: "https://dru-resources.vercel.app",
   },
   {
     id: 7,
-    title: "Dice Game",
-    date: "Dec 2020 - Jan 2021",
+    title: "Dream Car Auto Repair",
+    date: "May 2026",
     description:
-      "Dive into a logic-based gaming adventure with our React Dice Game. Featuring a simple yet intuitive UI, this game brings strategic fun to your fingertips. Customize settings, roll the dice, and challenge friends in this logic-driven experience. Enjoy the simplicity with every move!",
-    image: coming,
-    tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
-    category: "react",
-    github: "https://github.com/Abhishek9503/",
-    // webapp: "https://github.com/rishavchanda/Quiz-Earn",
+      "Conversion-focused landing page for Dream Car Auto Repair (Norwood, OH). Mobile-first, local SEO optimized.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/dreamcar",
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "javascript",
+    github: "https://github.com/0xwaya/dreamcar",
+    webapp: "https://0xwaya.github.io/dreamcar/",
   },
   {
     id: 8,
-    title: "Github Profile",
-    date: "Jan 2021",
+    title: "web3-4dummies",
+    date: "2023",
     description:
-      "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-    image: githubFetch,
-    tags: ["Html", "Css", "Javascript"],
-    category: "javascript",
-    github: "https://github.com/Abhishek9503/",
-    // webapp: "https://github.com/Abhishek9503/",
+      "Web3 dapp for beginners using Next.js and a mock of create.web3.dapp. Educational resource for getting started in Web3.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/web3-4dummies",
+    tags: ["Next.js", "Web3", "Ethers.js", "React"],
+    category: "web3",
+    github: "https://github.com/0xwaya/web3-4dummies",
+    webapp: "https://github.com/0xwaya/web3-4dummies",
   },
-
+  {
+    id: 9,
+    title: "ETHGlobal Space Warp",
+    date: "Jan - Feb 2023",
+    description:
+      "ETHGlobal FVM Space Warp hackathon project. Built on Filecoin Virtual Machine exploring decentralized storage and compute.",
+    image: "https://opengraph.githubassets.com/1/0xwaya/space-warp",
+    tags: ["Solidity", "Filecoin", "FVM", "Web3", "Hardhat"],
+    category: "web3",
+    github: "https://github.com/0xwaya/space-warp",
+    webapp: "https://github.com/0xwaya/space-warp",
+  },
   {
     id: 10,
-    title: "TwoGood Clone",
-    date: "Sep 2023 ",
+    title: "0xwaya Portfolio",
+    date: "2025 - Present",
     description:
-      "Simple clone website build using HTML CSS JS and GSAP ",
-    image: twoGood,
-    tags: ["Html", "Css", "Javascript"],
-    category: "javascript",
-    github: "https://github.com/Abhishek9503/Cool-Projects",
-    webapp: "https://twogood-clone.onrender.com/",
-  },
-  {
-    id: 11,
-    title: "Food App",
-    date: "Dec 2020 - Jan 2021",
-    description:
-      "Discover tasty treats with our React Food App. It's made with React, connecting to a Food API. Easily find dishes with filters and search. Enjoy a simple and delicious way to explore food!",
-    image: coming,
-    tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
+      "This portfolio — React + Three.js + Vite + TailwindCSS + Framer Motion. Interactive 3D elements, animated sections, full project and experience showcase.",
+    image: "https://opengraph.githubassets.com/1/0xwaya",
+    tags: ["React", "Three.js", "TailwindCSS", "Framer Motion", "Vite"],
     category: "react",
-    github: "https://github.com/Abhishek9503/",
-    // webapp: "https://github.com/Abhishek9503/",
+    github: "https://github.com/0xwaya",
+    webapp: "https://github.com/0xwaya",
   },
-  {
-    id: 12,
-    title: "Password Generator",
-    date: "Dec 2020 - Jan 2021",
-    description:
-      "The Password Generator app I created using JavaScript, HTML, and CSS is a crucial tool for enhancing online security. With a user-friendly interface, it generates strong passwords based on user preferences.It makesindispensable for safeguarding sensitive information.",
-    image: tripguide,
-    tags: ["Html", "Css", "Javascript"],
-    category: "javascript",
-    github: "https://github.com/Abhishek9503/",
-    // webapp: "https://github.com/Abhishek9503/",
-  },
-  {
-    id: 13,
-    title: "Study Notion(frontend)",
-    date: "Dec 2020 - Jan 2021",
-    description:
-      "I leveraged the power of router technology to create a seamless and intuitive user experience. By implementing a router framework such as React Router or Vue Router, I enabled dynamic routing within the application, allowing users to navigate between different pages without requiring full page reloads.",
-    image: studynotion,
-    tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
-    category: "react",
-    github: "https://github.com/Abhishek9503/",
-    webapp: "https://study-notion.netlify.app",
-  },
-  {
-    id: 14,
-    title: "Shopping Cart(Redux)",
-    date: "Dec 2020 - Jan 2021",
-    description:
-      "Shopping Cart web app leverages the Redux library to streamline and enhance the shopping experience. Through efficient state management, seamless browsing, a user-friendly cart and checkout process, real-time inventory updates, and personalized user profiles, your app simplifies and elevates online shopping.",
-    image: shoppingcart,
-    tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
-    category: "react",
-    github: "https://github.com/Abhishek9503/",
-    webapp: "https://shopping-cart-abhishek9503.netlify.app/",
-  },
-
 ];
+
 export { technologies, testimonials, projects, certificates };

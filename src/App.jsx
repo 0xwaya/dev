@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { BsArrowUp } from "react-icons/bs";
 import {
     About,
     Contact,
@@ -9,9 +8,12 @@ import {
     Tech,
     Works,
     StarsCanvas,
+    Feedbacks,
 } from "./components";
 import Footer from "./components/Footer/Footer";
-import { Project } from "./pages";
+import { BsArrowUp } from "react-icons/bs";
+import { Experience, Playground, Project, ProjectPage } from "./pages";
+import StatisticPage from "./components/MainPage/Statisticspage";
 
 const App = () => {
     const [showBackToTop, setShowBackToTop] = useState(false);
@@ -32,9 +34,6 @@ const App = () => {
     return (
         <div>
             <BrowserRouter>
-                <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-                    <Navbar />
-                </div>
                 <Routes>
                     <Route
                         path="/"
@@ -50,6 +49,7 @@ const App = () => {
                                 <Tech />
                                 <About />
                                 <Works />
+                                <Feedbacks />
                                 <div className="relative z-0">
                                     <Contact />
                                     <StarsCanvas />
@@ -60,9 +60,26 @@ const App = () => {
                     />
                     <Route
                         path="/project"
+                        element={<ProjectPage />}
+                    />
+                    <Route path="/play" element={<Playground />} />
+                    <Route
+                        path="/statistics"
                         element={
-                            <div className="proj_page relative bg-primary">
-                                <Project />
+                            <div className="bg-primary min-h-screen">
+                                <Navbar />
+                                <div className="relative z-0 sm:px-16 px-6 max-w-7xl mx-auto">
+                                    <StatisticPage />
+                                </div>
+                                <Footer />
+                            </div>
+                        }
+                    />
+                    <Route
+                        path="/experience"
+                        element={
+                            <div className="bg-primary">
+                                <Experience />
                             </div>
                         }
                     />

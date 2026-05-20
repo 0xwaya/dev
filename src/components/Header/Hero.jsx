@@ -61,7 +61,7 @@ const Hero = () => {
   return (
     <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} cursor-pointer  h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse  pl-25 md:pl-10 mt-10 sm:justify-center items-start  md:gap-20 gap-5  pt-20`}
+        className={`${styles.paddingX} cursor-pointer  h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse  pl-25 md:pl-10 sm:mt-10 sm:justify-center items-start  md:gap-20 gap-5  pt-20`}
       >
         <div>
           <div className="flex gap-3 ">
@@ -79,7 +79,7 @@ const Hero = () => {
               </h1>
 
               <p
-                className={`${styles.heroSubText} mt-2 text-white-100 max-w-lg`}
+                className={`${styles.heroSubText} h-8 mt-2 text-white-100 max-w-lg`}
               >
                 {text}{" "}
               </p>
@@ -94,6 +94,13 @@ const Hero = () => {
               <div className=" group border-[3px] border-white rounded-full md:h-12 h-10 w-7 flex justify-center lg:scale-100 scale-75">
                 <div className="bg-white h-3 w-1 rounded-full mt-[10px] animate-bounce lg:scale-100 scale-75"></div>
               </div>
+
+              <p className=" ">
+                {/* <span className="faulty-letter">Down</span><span className=" glowing-txt">Scroll</span>
+              
+               */}
+                Scroll Down
+              </p>
             </a>
           </div>
 
@@ -119,10 +126,12 @@ const Hero = () => {
               <BsInstagram className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
             </Link>
           </div>
+
+
         </div>
 
         <div ref={ref} className="w-full mt-10 ">
-          <ServiceCard reference={ref} />
+          <ServiceCard index={0} reference={ref} />
         </div>
       </div>
     </section>

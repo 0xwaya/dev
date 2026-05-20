@@ -38,7 +38,7 @@ const FeedbackCard = ({
         </div>
 
         <a
-          href="https://github.com/Abhishek9503"
+          href="https://github.com/0xwaya"
           target="_blank"
           onClick={() => window.open(source_code_link, "_blank")}
         >

@@ -1,53 +1,45 @@
-import { motion } from "framer-motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
-
 import { styles } from "../../styles";
 import { SectionWrapper } from "../../hoc";
-import { textVariant } from "../../utils/motion";
+import { projects } from "../../constants";
+import { Link } from "react-router-dom";
+import ProjectCard from "./ProjectCard";
 
 const Works = () => {
   return (
     <>
       <div className="flex justify-between mr-10">
-        <motion.div variants={textVariant()}>
-          <div>
-            {/* <p className={`${styles.sectionSubText} mt-10`}>My work</p> */}
-            <h2 className={`${styles.sectionHeadText} flux`}>Github Stats</h2>
-          </div>
-        </motion.div>
-
+        <div>
+          <p className={`${styles.sectionSubText} mt-10`}>My work</p>
+          <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        </div>
         <div
-          className="flex justify-between "
+          className="flex justify-between"
           onClick={() => {
             window.scrollTo(0, 0);
           }}
         >
-          <a
-            href="https://github.com/0xwaya"
-            target="_blank"
-            rel="noreferrer"
-            className={`${styles.sectionSubText} flex items-center`}
-          >
+          <Link to="/project" className={`${styles.sectionSubText} flex items-center`}>
             View More <AiOutlineArrowRight />
-          </a>
+          </Link>
         </div>
       </div>
-      <div className="flex flex-col items-center">
-
-        <div className="waya">
-          <img
-            width="100%"
-            src="https://github-readme-stats.vercel.app/api?username=0xwaya&show_icons=true&theme=tokyonight"
-          />
-          <img
-            width="100%"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=0xwaya&theme=tokyonight"
-          />
-        </div>
+      <div className='w-full flex'>
+        <p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+          Following projects showcase my skills and experience through
+          real-world examples of my work. Each project is briefly described with
+          links to code repositories and live demos. It reflects my
+          ability to solve complex problems, work with different technologies,
+          and manage projects effectively.
+        </p>
+      </div>
+      <div className='mt-20 flex flex-wrap gap-7'>
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
       </div>
     </>
   );
 };
 
-const WrappedWorks = SectionWrapper(Works, "");
-export default WrappedWorks;
+export default SectionWrapper(Works, "");

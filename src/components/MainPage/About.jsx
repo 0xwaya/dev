@@ -28,13 +28,19 @@ const ServiceCard = ({ title, icon }) => (
 );
 
 
+const services = [
+  { title: "Web Development", icon: "path/to/web-development-icon.png" },
+  { title: "App Development", icon: "path/to/app-development-icon.png" },
+  // Add more services as needed
+];
+
 const About = () => {
   return (
     <>
-      <div className=" mt-20 flex flex-wrap gap-10 justify-center">
-        <ServiceCard title="Web Development" icon="path/to/web-development-icon.png" />
-        <ServiceCard title="App Development" icon="path/to/app-development-icon.png" />
-        <ServiceCard title="UI/UX Design" icon="path/to/ui-ux-design-icon.png" />
+      <div className="flex flex-wrap gap-10 justify-center">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
       </div>
     </>
   );
