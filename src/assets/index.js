@@ -29,6 +29,12 @@ import gitmap from "./gitmap.png";
 
 import certificate1 from "./certificates/certificate1.png";
 import fitt from "./certificates/fitt.png";
+import certDevrel from "./certificates/devrel.png";
+import certSolidity from "./certificates/solidity.png";
+import certWebdev from "./certificates/webdev.png";
+import certCampbuidl from "./certificates/campbuidl-2023.webp";
+import certCcip from "./certificates/ccip-chainlink-masterclass.webp";
+import certChainlinkFunctions from "./certificates/chainlink-functions-masterclass.webp";
 
 export {
   logo, backend, creator, mobile, web, github, menu, close,
@@ -36,4 +42,6 @@ export {
   mongodb, nodejs, reactjs, redux, tailwind, typescript, threejs, blender,
   holophin, gitmap,
   certificate1, fitt,
+  certDevrel, certSolidity, certWebdev,
+  certCampbuidl, certCcip, certChainlinkFunctions,
 };

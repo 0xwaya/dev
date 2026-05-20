@@ -44,14 +44,14 @@ const Hero = () => {
 
   const [text] = useTypewriter({
     words: [
-      "I'm a Blockchain Researcher",
-      "I'm a Fullstack Developer",
-      "I'm a Smart Contract Developer",
+      "I build AI Agent Systems",
+      "I'm an AI Agent Architect",
+      "I'm a Full-Stack Developer",
+      "I'm a Web3 / Smart Contract Dev",
       "I'm a DevRel Captain @DevRelUNI",
-      "I'm a Web3 Security Student",
+      "I deploy on-chain & in the cloud",
       "I'm AKA 0xwaya",
-      "I'm a Nature Freak",
-      "A GUY WHO LOVES ESPRESSO",
+      "A guy who loves espresso ☕",
       "<ButLovesToCodeMore />",
     ],
     loop: true,
