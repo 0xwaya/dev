@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="src/assets/logo.png" alt="0xwaya logo" width="80" />
+<img src="https://raw.githubusercontent.com/0xwaya/dev/main/src/assets/logo.png" alt="0xwaya logo" width="80" />
 
 # 0xwaya.dev
 
@@ -86,11 +86,11 @@
 
 <div align="center">
 
-![0xwaya's GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xwaya&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=21600)
+![0xwaya's GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xwaya&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xwaya&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&langs_count=8&cache_seconds=21600)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xwaya&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&langs_count=8)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=0xwaya&theme=tokyonight&hide_border=true&background=0d1117&cache_seconds=21600)
+![GitHub Streak](https://streak-stats.demolab.com?user=0xwaya&theme=tokyonight&hide_border=true&background=0d1117)
 
 </div>
 
