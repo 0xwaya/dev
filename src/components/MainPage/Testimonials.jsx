@@ -21,13 +21,13 @@ const FeedbackCard = ({
     className="bg-black-200  p-5 rounded-3xl xs:w-[320px] w-full "
   >
     <p className="text-white font-black text-[20px]">{project}</p>
-    
+
 
     <div className="mt-3">
       {/* <p className='text-white tracking-wider text-[18px]'>{testimonial}</p> */}
       <img src={testimonial} alt="Project Image" />
 
-       <div className="mt-7 flex justify-between items-center gap-1">
+      <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
           <p className="text-yellow-400  text-[16px] font-bold">
             <span className="blue-text-gradient"></span> {name}
@@ -40,7 +40,7 @@ const FeedbackCard = ({
         <a
           href="https://github.com/0xwaya"
           target="_blank"
-          onClick={() => window.open(source_code_link, "_blank")}
+          rel="noreferrer"
         >
           <img
             src={github}
@@ -48,7 +48,7 @@ const FeedbackCard = ({
             className="w-10 h-10 rounded-full object-cover"
           />
         </a>
-      </div> 
+      </div>
     </div>
   </motion.div>
 );

@@ -70,7 +70,7 @@ export const AnimatedTestimonials = ({
                     src={testimonial.src}
                     alt={testimonial.name}
                     width={500}
-                    lazyLoading="true"
+                    loading="lazy"
                     height={500}
                     className="h-full w-full rounded-3xl object-cover object-center" />
                 </motion.div>

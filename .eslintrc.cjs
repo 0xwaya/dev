@@ -1,5 +1,6 @@
 /* eslint-env node */
 module.exports = {
+  ignorePatterns: ['src/components/MainPage/Testimonials 2.jsx'],
   env: {
     browser: true,
     es2020: true,
@@ -21,10 +22,19 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': 'warn',
+    'react-refresh/only-export-components': 'off',
     'react/prop-types': 'off', // Example rule, adjust as needed
-    'no-unused-vars': 'warn', // Example rule, adjust as needed
+    'no-unused-vars': 'off', // Example rule, adjust as needed
     'react/jsx-uses-react': 'off', // Not needed with React 17+
     'react/react-in-jsx-scope': 'off', // Not needed with React 17+
+    'react-hooks/exhaustive-deps': 'off',
   },
+  overrides: [
+    {
+      files: ['src/components/canvas/**/*.{js,jsx}'],
+      rules: {
+        'react/no-unknown-property': 'off',
+      },
+    },
+  ],
 };

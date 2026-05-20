@@ -16,7 +16,6 @@ import {
   solidity,
   threejs,
   certificate1,
-  fitt,
   certDevrel,
   certSolidity,
   certWebdev,
@@ -172,14 +171,6 @@ export const certificates = [
     company: "Foundational certification in blockchain protocols, cryptography, consensus mechanisms, and Web3 tooling.",
     source_code_link: "https://github.com/0xwaya",
   },
-  {
-    project: "Fitness & Wellness Tech",
-    image: fitt,
-    name: "FITT",
-    designation: "Fitness Tech Integration",
-    company: "Certification in fitness technology platforms and wellness application development.",
-    source_code_link: "https://github.com/0xwaya",
-  },
 ];
 
 export const projects = [
@@ -207,7 +198,7 @@ export const projects = [
       { name: "Supabase", color: "green-text-gradient" },
       { name: "TypeScript", color: "pink-text-gradient" },
     ],
-    image: SHOT("https://queencitysoundboard.com"),
+    image: "https://opengraph.githubassets.com/1/0xwaya/queencity-soundboard",
     image2: "https://queencitysoundboard.com",
     source_code_link: "https://github.com/0xwaya/queencity-soundboard",
   },

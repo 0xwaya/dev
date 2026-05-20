@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { navLinks } from "../../constants";
 import { logo, menu, close } from "../../assets";
 import resume from "/src/0xwaya-resume.pdf";
 
@@ -59,16 +58,16 @@ const Navbar = () => {
             Projects
           </Link>
 
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${active === link.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          ))}
+          <Link
+            to="/play"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className={`${active === "Playground" ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >
+            Playground
+          </Link>
 
           <Link
             ref={linkRef}
@@ -137,16 +136,16 @@ const Navbar = () => {
                 Projects
               </Link>
 
-              {navLinks.map((link) => (
-                <li
-                  key={link.id}
-                  className={`${active === link.title ? "text-white" : "text-secondary"
-                    } hover:text-white text-[18px] font-medium cursor-pointer`}
-                  onClick={() => setActive(link.title)}
-                >
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
-              ))}
+              <Link
+                to="/play"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className={`${active === "Playground" ? "text-white" : "text-secondary"
+                  } hover:text-white text-[18px] font-medium cursor-pointer`}
+              >
+                Playground
+              </Link>
 
               <Link
                 ref={linkRef}

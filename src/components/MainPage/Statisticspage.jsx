@@ -8,10 +8,10 @@ import { textVariant } from "../../utils/motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AnimatedTestimonials } from "../ui/animated-testimonals";
 import gitmap from "../../assets/gitmap.png";
-import diwali from "../../assets/my-images/diwali.jpg" ;
-import launch from "../../assets/my-images/launch.jpg" ;
-import mic from "../../assets/my-images/mic.jpg" ;
-import prize from "../../assets/my-images/prize.jpg" ;
+import diwali from "../../assets/my-images/diwali.jpg";
+import launch from "../../assets/my-images/launch.jpg";
+import mic from "../../assets/my-images/mic.jpg";
+import prize from "../../assets/my-images/prize.jpg";
 import { holophin } from "../../assets";
 
 const StatisticPage = () => {
@@ -62,6 +62,7 @@ const StatisticPage = () => {
           <a
             href="https://github.com/0xwaya"
             target="_blank"
+            rel="noreferrer"
             className={`${styles.sectionSubText} flex items-center`}
           >
             View More <AiOutlineArrowRight />
@@ -113,6 +114,7 @@ const StatisticPage = () => {
           <a
             href="https://github.com/0xwaya"
             target="_blank"
+            rel="noreferrer"
             className=" flex justify-start items-center gap-12 mt-5"
           >
             <img
@@ -131,10 +133,10 @@ const StatisticPage = () => {
         <img className="mt-1" src={holophin} alt="holphin" />
 
 
-      
 
 
-        <AnimatedTestimonials testimonials={testimonials}/>
+
+        <AnimatedTestimonials testimonials={testimonials} />
 
       </div>
     </>
