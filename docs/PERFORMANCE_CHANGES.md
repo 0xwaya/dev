@@ -68,6 +68,9 @@ Impact
 ### Secondary routes `/project`, `/play`, `/experience`, `/statistics`
 
 - Loaded on demand via route-level lazy imports.
+- `/statistics` now reuses the same live GitHub card providers as `README.md`
+  (`github-profile-summary-cards` and `streak-stats.demolab`) instead of the
+  older deprecated widget endpoints.
 
 ## Notes
 

@@ -84,6 +84,8 @@
 
 ## 📊 GitHub Stats
 
+The `/statistics` page in the portfolio mirrors these same live card providers.
+
 <div align="center">
 
 ![0xwaya's GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=0xwaya&theme=tokyonight)

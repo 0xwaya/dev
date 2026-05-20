@@ -1,13 +1,9 @@
-import React from "react";
-
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../../styles";
 import { SectionWrapper } from "../../hoc";
 import { textVariant } from "../../utils/motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AnimatedTestimonials } from "../ui/animated-testimonals";
-import gitmap from "../../assets/gitmap.png";
 import { projects1 } from "../../constants";
 
 const StatisticPage = () => {
@@ -18,18 +14,41 @@ const StatisticPage = () => {
     src: project.image,
   }));
 
+  const statCards = [
+    {
+      href: "https://github.com/0xwaya",
+      src: "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=0xwaya&theme=tokyonight",
+      alt: "0xwaya GitHub stats summary card",
+    },
+    {
+      href: "https://github.com/0xwaya?tab=repositories",
+      src: "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=0xwaya&theme=tokyonight",
+      alt: "0xwaya top languages summary card",
+    },
+    {
+      href: "https://github.com/0xwaya",
+      src: "https://streak-stats.demolab.com?user=0xwaya&theme=tokyonight&hide_border=true&background=0d1117&ring=854CE6&fire=854CE6",
+      alt: "0xwaya GitHub contribution streak",
+    },
+  ];
+
   return (
     <>
-      <div className="flex justify-between  mt-12 md:mt-2">
+      <div className="mt-6 flex flex-col gap-4 sm:mt-2 sm:flex-row sm:items-end sm:justify-between">
         <motion.div variants={textVariant()}>
           <div>
-            {/* <p className={`${styles.sectionSubText} mt-10`}>My work</p> */}
+            <p className={styles.sectionSubText}>Profile telemetry</p>
             <h2 className={`${styles.sectionHeadText} flux`}>Github Stats</h2>
+            <p className="mt-3 max-w-2xl text-[16px] leading-[28px] text-secondary">
+              Live GitHub cards mirrored from the README providers used in this repo.
+              The old stats widgets were removed because they depended on stale endpoints
+              and failed to render consistently.
+            </p>
           </div>
         </motion.div>
 
         <div
-          className="flex justify-between "
+          className="flex justify-between"
           onClick={() => {
             window.scrollTo(0, 0);
           }}
@@ -43,70 +62,46 @@ const StatisticPage = () => {
             View More <AiOutlineArrowRight />
           </a>
         </div>
-
-        {/* <div variants={textVariant()}> */}
       </div>
-      {/* <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-1 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
-        </motion.p>
-      </div> */}
 
-      <div className="mt-10 flex items-center justify-center flex-wrap gap-20">
-        <Tilt transition-all>
-          <a href="https://github.com/0xwaya" target="_blank" rel="noreferrer">
+      <div className="mt-10 grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(320px,0.8fr)] xl:items-start">
+        <div className="grid grid-cols-1 gap-5">
+          {statCards.map((card) => (
+            <a
+              key={card.src}
+              href={card.href}
+              target="_blank"
+              rel="noreferrer"
+              className="overflow-hidden rounded-2xl border border-violet-900/30 bg-[#0d1117] shadow-[0_0_32px_rgba(133,76,230,0.08)] transition-transform duration-300 hover:-translate-y-1"
+            >
+              <img
+                className="block h-auto w-full"
+                src={card.src}
+                alt={card.alt}
+                loading="lazy"
+              />
+            </a>
+          ))}
+
+          <div className="flex flex-col gap-4 rounded-2xl border border-violet-900/30 bg-[#0d1117] p-5 sm:flex-row sm:items-center sm:justify-between">
             <img
-              className=""
-              src="https://github-readme-stats.vercel.app/api/pin/?username=0xwaya&repo=ceo-agent-system&theme=tokyonight"
-              width="400"
-              alt="0xwaya's CEO Agent System"
+              src="https://komarev.com/ghpvc/?username=0xwaya&color=854CE6&style=flat-square&label=Portfolio+Views"
+              alt="0xwaya portfolio views"
             />
-          </a>
-
-          <img src="https://komarev.com/ghpvc/?username=0xwaya" alt="Profile Views" />
-
-        </Tilt>
-
-        <div className="github-stats">
-          <img
-            width="100%"
-            src="https://github-readme-stats.vercel.app/api?username=0xwaya&show_icons=true&theme=tokyonight"
-          />
-          <img
-            width="100%"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=0xwaya&theme=tokyonight"
-          />
-
-          <img src={gitmap} width={500} alt="" />
-
-          <a
-            href="https://github.com/0xwaya"
-            target="_blank"
-            rel="noreferrer"
-            className=" flex justify-start items-center gap-12 mt-5"
-          >
-            <img
-              height="36"
-              className="border-0px h-[36px] "
-              src="https://cdn.ko-fi.com/cdn/kofi4.png?v=2"
-              alt="Buy Me a Coffee at ko-fi.com"
-            />
-
-            <span className="github-star-btn">
-              ⭐⭐Give my Repo some stars⭐⭐
-            </span>
-          </a>
+            <a
+              href="https://github.com/0xwaya"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-xl bg-tertiary px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-85"
+            >
+              Explore repositories
+            </a>
+          </div>
         </div>
 
-        <AnimatedTestimonials testimonials={testimonials} />
-
+        <div className="rounded-2xl border border-violet-900/30 bg-[#0d1117]/80">
+          <AnimatedTestimonials testimonials={testimonials} />
+        </div>
       </div>
     </>
   );
