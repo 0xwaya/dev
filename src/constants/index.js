@@ -105,9 +105,9 @@ export const experiences1 = [
     id: 1,
     img: "https://avatars.githubusercontent.com/u/136913552?v=4",
     role: "Founder & Lead AI Architect",
-    company: "wayalabs · OpenClaw (LangGraph CEO Orchestrator)",
+    company: "wayalabs · OpenJaw",
     date: "May 2021 – Present",
-    desc: "Architected and deployed OpenClaw — a fully autonomous AI agent system running natively on macOS. Built a LangGraph-based CEO/CTO/CFO hierarchy (16 agents) with real-time SocketIO dashboard, artifact pipeline, and Telegram integration. Core innovation: CEO-level orchestrator making strategic decisions across 6 domain directors and 7 execution specialists.",
+    desc: "Architected and deployed OpenJaw, a hybrid platform combining OpenClaw autonomous agent capabilities with a LangGraph executive multi-agent orchestrator. Built a CEO/CTO/CFO hierarchy with 16 agents, real-time SocketIO dashboard, artifact pipeline, and Telegram integration for strategic coordination across domain directors and execution specialists.",
     skills: ["LangGraph", "LangChain", "Python", "OpenAI", "SocketIO", "Flask", "Autonomous Agents", "Multi-Agent AI"],
   },
   {
