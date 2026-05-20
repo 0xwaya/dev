@@ -34,7 +34,7 @@ const ServiceCard = ({ index }) => (
         <div className="waya hover:hoverwayabg relative overflow-hidden flex items-center justify-center lg:w-96 lg:h-96 w-[12.5rem] h-[12.5rem] max-[350px]:w-[10.5rem] max-[350px]:h-[10.5rem] mx-auto bg-gradient-to-b from-blue-800 via-purple-700 to-red-700 hero-animation will-change-transform shadow-card">
           <div className="bg-avatar wayabg hover:bg-avatar1 bg-cover bg-no-repeat bg-[50%] justify-self-center lg:w-[374px] lg:h-[374px] w-48 h-48 max-[350px]:w-40 max-[350px]:h-40 hero-animation will-change-transform" />
           <img
-            src="/Bazaart_59B58A19-7478-427B-99BE-777891EBCBB9.PNG"
+            src="/eamr.png"
             alt="Profile overlay"
             className="absolute z-20 rounded-full object-cover lg:w-[360px] lg:h-[360px] w-[11.25rem] h-[11.25rem] max-[350px]:w-[9.5rem] max-[350px]:h-[9.5rem] pointer-events-none"
           />
