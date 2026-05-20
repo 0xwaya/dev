@@ -76,7 +76,7 @@
 | **QueenCity Soundboard** | Next.js · Supabase · TypeScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/queencity-soundboard) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://queencitysoundboard.com) |
 | **Tarot AI** | React · Python · LLM | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/tarot) |
 | **Space Warp** | Solidity · FVM · ETHGlobal | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/space-warp) |
-| **Amazon Granite** | Python · Node.js · Web Scraping | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/amazon-granite) |
+| **Amazon Granite** | Python · Node.js · Web Scraping | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/amazon-granite) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://urbanstone.co) |
 | **DevRel Uni RSS** | Next.js · RSS | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/devreluni_rss) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://dru-resources.vercel.app) |
 | **Dream Car** | HTML · CSS · JS | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/dreamcar) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://0xwaya.github.io/dreamcar/) |
 
@@ -86,11 +86,11 @@
 
 <div align="center">
 
-![0xwaya's GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xwaya&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117)
+![0xwaya's GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xwaya&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=21600)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xwaya&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xwaya&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&langs_count=8&cache_seconds=21600)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=0xwaya&theme=tokyonight&hide_border=true&background=0D1117)
+![GitHub Streak](https://streak-stats.demolab.com?user=0xwaya&theme=tokyonight&hide_border=true&background=0d1117&cache_seconds=21600)
 
 </div>
 
@@ -121,9 +121,19 @@ This repo is the source for **[0xwaya.dev](https://wayalabs.com)** — built wit
 
 ```bash
 npm install
-npm run dev     # http://localhost:5173
+npm run dev -- --host --port 3000     # http://localhost:3000
 npm run build   # production build
 ```
+
+---
+
+## 🔗 GitHub Landing Page Link
+
+To make your GitHub landing page point to this `/dev` project README:
+
+1. Create a public repo named **`0xwaya`** (special GitHub profile repo).
+2. Add a `README.md` in that repo with a link to this project: **https://github.com/0xwaya/dev**.
+3. Keep this `/dev` README as the full technical portfolio source.
 
 ---
 
