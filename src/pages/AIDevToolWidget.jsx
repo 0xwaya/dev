@@ -30,7 +30,7 @@ const AIDevToolWidget = () => {
         } catch (err) {
             setMessages((msgs) => [
                 ...msgs,
-                { role: "assistant", content: "[Error contacting Ollama API]" }
+                { role: "assistant", content: "[Error contacting Groq API]" }
             ]);
         }
         setLoading(false);
@@ -58,8 +58,8 @@ const AIDevToolWidget = () => {
                             {msg.role === "user" ? "You" : "Assistant"}
                         </span>
                         <div className={`text-sm px-3 py-2 rounded-xl leading-relaxed max-w-[88%] ${msg.role === "user"
-                                ? "bg-violet-700/80 text-white rounded-br-sm"
-                                : "bg-[#1e1c30] text-gray-100 border border-violet-900/30 rounded-bl-sm"
+                            ? "bg-violet-700/80 text-white rounded-br-sm"
+                            : "bg-[#1e1c30] text-gray-100 border border-violet-900/30 rounded-bl-sm"
                             }`}>
                             {msg.content}
                         </div>
