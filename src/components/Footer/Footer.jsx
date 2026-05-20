@@ -21,12 +21,11 @@ const Footer = () => {
             <div className="bg-white h-3 w-1 rounded-full mt-[10px] animate-bounce lg:scale-100 scale-75"></div>
           </div>
 
-          <a href="https://www.hitwebcounter.com" target="_blank" rel="noreferrer">
+          <a href="https://github.com/0xwaya" target="_blank" rel="noreferrer">
             <img
-              src="https://hitwebcounter.com/counter/counter.php?page=8792236&style=0001&nbdigits=3&type=page&initCount=1"
-              title="Counter Widget"
-              alt="Visit counter For Websites"
-              border="0"
+              src="https://komarev.com/ghpvc/?username=0xwaya&color=854CE6&style=flat-square&label=Portfolio+Views"
+              title="Profile views"
+              alt="0xwaya profile views"
             />
           </a>
 

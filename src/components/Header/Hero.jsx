@@ -121,7 +121,7 @@ const Hero = () => {
             </Link>
             <Link
               target="_blank"
-              to="https://www.instagram.com/waya__yadav17_/"
+              to="https://www.instagram.com/0xwaya/"
             >
               <BsInstagram className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
             </Link>

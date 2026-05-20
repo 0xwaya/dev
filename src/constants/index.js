@@ -15,15 +15,6 @@ import {
   hardhat,
   solidity,
   threejs,
-  studynotion,
-  tripguide,
-  shoppingcart,
-  bioPage,
-  githubFetch,
-  cuberto,
-  shareModal,
-  coming,
-  webdev,
   certificate1,
   fitt,
 } from "../assets";
@@ -118,7 +109,7 @@ export const experiences1 = [
 const testimonials = [
   {
     project: "AI Agent Architecture",
-    testimonial: webdev,
+    testimonial: "https://opengraph.githubassets.com/1/0xwaya/ceo-agent-system",
     name: "Edward Mercado",
     designation: "0xwaya — CEO Agent System",
     company: "16-agent LangGraph hierarchy with CEO/CTO/CFO layer, 6 domain directors, and 7 execution specialists. Real-time SocketIO dashboard, artifact pipeline, and autonomous task execution.",
@@ -148,7 +139,7 @@ const testimonials = [
 const certificates = [
   {
     project: "Multi-Agent AI Systems",
-    testimonial: webdev,
+    testimonial: "https://opengraph.githubassets.com/1/0xwaya/ceo-agent-system",
     name: "Edward Mercado",
     designation: "LangGraph / OpenAI",
     company: "Advanced multi-agent AI system design using LangGraph, LangChain, and OpenAI — applied directly to the ceo-agent-system project.",
