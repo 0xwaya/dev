@@ -90,7 +90,7 @@
 
 ![Top Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=0xwaya&theme=tokyonight)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=0xwaya&theme=tokyonight&hide_border=true&background=0d1117)
+![GitHub Streak](https://streak-stats.demolab.com?user=0xwaya&theme=tokyonight&hide_border=true&background=0d1117&ring=854CE6&fire=854CE6)
 
 </div>
 
