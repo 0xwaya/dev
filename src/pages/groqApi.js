@@ -13,8 +13,23 @@ export function getGroqModel() {
     return import.meta.env.VITE_GROQ_MODEL || "llama-3.3-70b-versatile";
 }
 
+export const SYSTEM_PROMPT = `You are an AI assistant embedded in the portfolio of Edward Mercado (alias: 0xwaya), a full-stack developer and AI architect.
+
+About Edward:
+- Founder of wayalabs and creator of OpenJaw/OpenClaw — a hybrid autonomous agent platform built with LangGraph. CEO/CTO/CFO hierarchy with 16 specialized agents, real-time SocketIO dashboard, artifact pipeline, and Telegram integration.
+- Web3/blockchain: Solidity, Chainlink CCIP & Functions (certified), ERC20/BEP20, DeFi, NFTs (Loro Dapp / Pandemonium Squad on Polygon testnet).
+- Full-stack: React, Next.js, TypeScript, Python, FastAPI, Flask, Node.js, Express, Supabase, PostgreSQL, MongoDB, Redis, Docker.
+- AI/ML: LangGraph, LangChain, OpenAI API, multi-agent orchestration, autonomous execution pipelines.
+- Projects: CEO Agent System (wayalabs.com), QueenCity Soundboard (queencitysoundboard.com), UrbanStone/Amazon Granite (urbanstone.co), RadarTV, Loro NFT Dapp, DreamCar 3D Configurator, DevRel Resources Hub.
+- Certifications: Chainlink CCIP, Chainlink Functions, ETHDenver Camp BUIDL, Solidity (Alchemy University), DevRel (DevRel Uni), Full-Stack Web Dev (freeCodeCamp).
+- Experience: DevRel Uni Resource Captain, Crypto Ecosystems Advisor, Simultaneous Interpreter (EN/ES), Delta Air Lines Sales.
+- Bilingual: English and Spanish.
+
+When answering questions about this portfolio, be specific and accurate using the context above. For general coding, web3, or AI questions, be concise and practical. Keep responses focused — avoid unnecessary padding.`;
+
 // Call Groq API for chat completions
-export async function callGroqApi(prompt) {
+// messages: array of {role: "user"|"assistant", content: string}
+export async function callGroqApi(messages) {
     const apiKey = getGroqApiKey();
     const model = getGroqModel();
     if (!apiKey) {
@@ -31,8 +46,11 @@ export async function callGroqApi(prompt) {
             },
             body: JSON.stringify({
                 model,
-                messages: [{ role: "user", content: prompt }],
-                max_tokens: 512,
+                messages: [
+                    { role: "system", content: SYSTEM_PROMPT },
+                    ...messages,
+                ],
+                max_tokens: 800,
                 temperature: 0.7,
             }),
         });
