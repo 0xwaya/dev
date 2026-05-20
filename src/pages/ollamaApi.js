@@ -1,17 +1,21 @@
-// Utility to fetch OLLAMA API key from .env files (for dev only)
-export async function getOllamaApiKey() {
-    // In a real app, never expose secrets to the client!
-    // For local dev, fetch from a secure endpoint or env var.
-    // Here, we hardcode for demo (replace with secure fetch in prod)
-    return "b318b14aa01e43faba8b4c444650a19e.t_XaHz9Xjlh0V4AG7FIs3h1V";
+// Get Groq API key from environment
+export function getGroqApiKey() {
+    const key = import.meta.env.VITE_GROQ_API_KEY;
+    if (!key) {
+        console.error("VITE_GROQ_API_KEY not found in environment");
+        return null;
+    }
+    return key;
 }
 
-// Call Ollama API (mock for now)
+// Call Groq API for chat completions
 export async function callOllamaApi(prompt) {
-    const apiKey = await getOllamaApiKey();
-    // Example: POST to Ollama or OpenAI-compatible endpoint
-    // Replace with your Ollama endpoint if self-hosted
-    const endpoint = "https://api.ollama.com/v1/chat/completions";
+    const apiKey = getGroqApiKey();
+    if (!apiKey) {
+        return "[Error: Groq API key not configured]";
+    }
+
+    const endpoint = "https://api.groq.com/openai/v1/chat/completions";
     try {
         const res = await fetch(endpoint, {
             method: "POST",
@@ -20,15 +24,23 @@ export async function callOllamaApi(prompt) {
                 "Authorization": `Bearer ${apiKey}`,
             },
             body: JSON.stringify({
-                model: "llama3", // or your deployed model name
+                model: "mixtral-8x7b-32768", // Fast Groq model, great for portfolio
                 messages: [{ role: "user", content: prompt }],
-                max_tokens: 256,
+                max_tokens: 512,
                 temperature: 0.7,
             }),
         });
+
+        if (!res.ok) {
+            const error = await res.json();
+            console.error("Groq API error:", error);
+            return `[Error: ${error.error?.message || "API request failed"}]`;
+        }
+
         const data = await res.json();
         return data.choices?.[0]?.message?.content || "[No response]";
     } catch (e) {
-        return "[Error contacting Ollama API]";
+        console.error("Error calling Groq API:", e);
+        return "[Error contacting Groq API]";
     }
 }
