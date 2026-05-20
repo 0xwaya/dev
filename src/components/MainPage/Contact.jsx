@@ -70,43 +70,8 @@ const Contact = () => {
       window.location.href = mailtoHref;
       return;
     }
-
-    if (!hasEmailJsConfig) {
-      setLoading(false);
-      alert("Email service config missing. Opening your email app instead.");
-      window.location.href = mailtoHref;
-      return;
-    }
-
-    try {
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        {
-          from_name: trimmedForm.name,
-          to_name: "Edward Mercado",
-          from_email: trimmedForm.email,
-          to_email: CONTACT_TO_EMAIL,
-          message: trimmedForm.message,
-        },
-        EMAILJS_PUBLIC_KEY
-      );
-
-      setLoading(false);
-      alert("Thank you. I will get back to you as soon as possible.");
-
-      setForm({
-        name: "",
-        email: "",
-        message: "",
-      });
-    } catch (error) {
-      setLoading(false);
-      console.error("EmailJS send failed:", error);
-      alert("Email service is temporarily unavailable. Opening your email app...");
-      window.location.href = mailtoHref;
-    }
-  };
+          </label>
+          <label className="flex flex-col">
 
   return (
     <div
@@ -132,7 +97,7 @@ const Contact = () => {
               required
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -151,6 +116,39 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Message</span>
+            <textarea
+              rows={7}
+              name="message"
+              required
+              value={form.message}
+              onChange={handleChange}
+              placeholder="What you want to say?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+
+          <button
+            type="submit"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+          >
+            {loading ? "Sending..." : "Send"}
+          </button>
+        </form>
+      </motion.div>
+
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <EarthCanvas />
+      </motion.div>
+    </div>
+  );
+};
+
+const WrappedContact = SectionWrapper(Contact, "contact");
+export default WrappedContact;
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows={7}
