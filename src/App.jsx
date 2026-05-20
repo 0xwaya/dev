@@ -85,8 +85,12 @@ const App = () => {
                         <Route
                             path="/experience"
                             element={
-                                <div className="bg-primary">
-                                    <Experience />
+                                <div className="bg-primary min-h-screen">
+                                    <Navbar />
+                                    <div className="pt-24">
+                                        <Experience />
+                                    </div>
+                                    <Footer />
                                 </div>
                             }
                         />
