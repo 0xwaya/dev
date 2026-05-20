@@ -8,40 +8,15 @@ import { textVariant } from "../../utils/motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AnimatedTestimonials } from "../ui/animated-testimonals";
 import gitmap from "../../assets/gitmap.png";
-import diwali from "../../assets/my-images/diwali.jpg";
-import launch from "../../assets/my-images/launch.jpg";
-import mic from "../../assets/my-images/mic.jpg";
-import prize from "../../assets/my-images/prize.jpg";
-import { holophin } from "../../assets";
+import { projects1 } from "../../constants";
 
 const StatisticPage = () => {
-
-  const testimonials = [
-    {
-      quote: "The CEO Agent System is one of the most architecturally sophisticated multi-agent AI projects I've seen — 16 agents, real autonomy, real output.",
-      name: "OpenClaw Echo",
-      designation: "AI Agent Operator",
-      src: diwali,
-    },
-    {
-      quote: "Shipped on Filecoin Virtual Machine at ETHGlobal Space Warp. Proof that Edward can execute under hackathon pressure.",
-      name: "ETHGlobal",
-      designation: "Space Warp Hackathon",
-      src: launch,
-    },
-    {
-      quote: "QueenCity Soundboard — real-time audio streaming with Next.js and Supabase. Clean architecture, live product.",
-      name: "Community Feedback",
-      designation: "Web3 + Streaming",
-      src: mic,
-    },
-    {
-      quote: "Full smart contract security coursework via Cyfrin Updraft — auditing, reentrancy patterns, Foundry mastery.",
-      name: "Cyfrin / Updraft",
-      designation: "Blockchain Security",
-      src: prize,
-    },
-  ];
+  const testimonials = projects1.slice(0, 5).map((project) => ({
+    quote: project.description,
+    name: project.title,
+    designation: project.category,
+    src: project.image,
+  }));
 
   return (
     <>
@@ -129,12 +104,6 @@ const StatisticPage = () => {
             </span>
           </a>
         </div>
-
-        <img className="mt-1" src={holophin} alt="holphin" />
-
-
-
-
 
         <AnimatedTestimonials testimonials={testimonials} />
 
