@@ -49,7 +49,7 @@ const App = () => {
                                 <div className="relative z-0 bg-primary">
                                     <div className="bg-cover bg-no-repeat bg-center">
                                         <Navbar />
-                                        <div className="relative z-0">
+                                        <div className="relative z-0 pt-32 sm:pt-20">
                                             <Hero />
                                             <StarsCanvas />
                                         </div>
@@ -69,13 +69,24 @@ const App = () => {
                             path="/project"
                             element={<ProjectPage />}
                         />
-                        <Route path="/play" element={<Playground />} />
+                        <Route
+                            path="/play"
+                            element={
+                                <div className="bg-primary min-h-screen">
+                                    <Navbar />
+                                    <div className="pt-20 sm:pt-24">
+                                        <Playground />
+                                    </div>
+                                    <Footer />
+                                </div>
+                            }
+                        />
                         <Route
                             path="/statistics"
                             element={
                                 <div className="bg-primary min-h-screen">
                                     <Navbar />
-                                    <div className="relative z-0 sm:px-16 px-6 max-w-7xl mx-auto">
+                                    <div className="relative z-0 mx-auto max-w-7xl px-4 pt-28 sm:px-16 sm:pt-24">
                                         <StatisticPage />
                                     </div>
                                     <Footer />

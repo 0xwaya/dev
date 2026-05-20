@@ -7,15 +7,21 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const linkRef = useRef(null);
+  const handleNavigate = (label) => {
+    setActive(label);
+    setToggle(false);
+    window.scrollTo(0, 0);
+  };
 
   return (
-    <nav className="px-5 w-full flex justify-center items-center py-2 fixed top-0 z-20 backdrop-blur-md">
-      <div className="glow-on-hover w-full flex justify-between border rounded-lg px-2 items-center max-w-7xl">
+    <nav className="fixed top-0 z-20 flex w-full items-center justify-center px-4 py-2 backdrop-blur-md sm:px-5">
+      <div className="glow-on-hover flex w-full max-w-7xl items-center justify-between rounded-lg border px-3 py-2 sm:px-2">
         <Link
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
+            setToggle(false);
             window.scrollTo(0, 0);
           }}
         >
@@ -29,9 +35,7 @@ const Navbar = () => {
           <Link
             ref={linkRef}
             to="/project"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
+            onClick={() => handleNavigate("Projects")}
             className={`${active === "Projects" ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
           >
@@ -40,9 +44,7 @@ const Navbar = () => {
 
           <Link
             to="/play"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
+            onClick={() => handleNavigate("Playground")}
             className={`${active === "Playground" ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
           >
@@ -52,9 +54,7 @@ const Navbar = () => {
           <Link
             ref={linkRef}
             to="/experience"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
+            onClick={() => handleNavigate("Experience")}
             className={`${active === "Experience" ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
           >
@@ -63,9 +63,7 @@ const Navbar = () => {
 
           <Link
             to="/statistics"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
+            onClick={() => handleNavigate("Code Statistics")}
             className={`${active === "Code Statistics" ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
           >
@@ -82,15 +80,13 @@ const Navbar = () => {
           />
           <div
             className={`${!toggle ? "hidden" : "flex"
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+              } absolute right-0 top-[4.5rem] z-10 mx-4 my-2 min-w-[180px] rounded-xl border border-white/10 black-gradient p-6 shadow-[0_18px_40px_rgba(15,23,42,0.45)]`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               <Link
                 ref={linkRef}
                 to="/project"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={() => handleNavigate("Projects")}
                 className={`${active === "Projects" ? "text-white" : "text-secondary"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
               >
@@ -99,9 +95,7 @@ const Navbar = () => {
 
               <Link
                 to="/play"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={() => handleNavigate("Playground")}
                 className={`${active === "Playground" ? "text-white" : "text-secondary"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
               >
@@ -111,9 +105,7 @@ const Navbar = () => {
               <Link
                 ref={linkRef}
                 to="/experience"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={() => handleNavigate("Experience")}
                 className={`${active === "Experience" ? "text-white" : "text-secondary"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
               >
@@ -122,9 +114,7 @@ const Navbar = () => {
 
               <Link
                 to="/statistics"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={() => handleNavigate("Code Statistics")}
                 className={`${active === "Code Statistics" ? "text-white" : "text-secondary"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
               >
