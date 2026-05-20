@@ -37,32 +37,61 @@ const AIDevToolWidget = () => {
     };
 
     return (
-        <div className="fixed bottom-8 right-8 w-80 max-w-[90vw] bg-white/90 backdrop-blur-lg rounded-xl shadow-2xl border border-gray-200 flex flex-col z-50">
-            <div className="p-4 font-bold text-lg text-primary border-b border-gray-100 flex items-center gap-3">
-                {/* 3D Avatar */}
-                <div className="w-12 h-12 shrink-0 rounded-full overflow-hidden bg-[#16161a] border border-gray-200">
+        <div className="fixed bottom-8 right-8 w-80 max-w-[90vw] bg-[#0d0d14] backdrop-blur-lg rounded-xl shadow-2xl border border-violet-900/60 flex flex-col z-50" style={{ boxShadow: "0 0 32px 4px rgba(124,58,237,0.18)" }}>
+            {/* Header */}
+            <div className="p-3 border-b border-violet-900/40 flex items-center gap-3 bg-[#13121f] rounded-t-xl">
+                <div className="w-11 h-11 shrink-0 rounded-full overflow-hidden bg-[#1a1830] border border-violet-700/50">
                     <AIDevAvatar3D />
                 </div>
-                AI Dev Tool
+                <div>
+                    <div className="font-bold text-sm text-white leading-tight">AI Dev Assistant</div>
+                    <div className="text-[11px] text-violet-400 font-medium">Powered by LLM</div>
+                </div>
+                <span className="ml-auto w-2 h-2 rounded-full bg-emerald-400 shadow shadow-emerald-400/60" title="Online" />
             </div>
-            <div className="flex-1 overflow-y-auto p-4 space-y-2 max-h-72">
+
+            {/* Messages */}
+            <div className="flex-1 overflow-y-auto p-4 space-y-3 max-h-72 scrollbar-thin scrollbar-thumb-violet-900/50">
                 {messages.map((msg, i) => (
-                    <div key={i} className={`text-sm px-3 py-2 rounded-lg ${msg.role === "user" ? "bg-blue-100 text-right ml-8" : "bg-gray-100 text-left mr-8"}`}>
-                        {msg.content}
+                    <div key={i} className={`flex flex-col gap-1 ${msg.role === "user" ? "items-end" : "items-start"}`}>
+                        <span className="text-[10px] font-semibold tracking-wide uppercase px-1 text-gray-500">
+                            {msg.role === "user" ? "You" : "Assistant"}
+                        </span>
+                        <div className={`text-sm px-3 py-2 rounded-xl leading-relaxed max-w-[88%] ${msg.role === "user"
+                                ? "bg-violet-700/80 text-white rounded-br-sm"
+                                : "bg-[#1e1c30] text-gray-100 border border-violet-900/30 rounded-bl-sm"
+                            }`}>
+                            {msg.content}
+                        </div>
                     </div>
                 ))}
+                {loading && (
+                    <div className="flex items-start gap-2">
+                        <div className="bg-[#1e1c30] border border-violet-900/30 text-gray-400 text-sm px-3 py-2 rounded-xl rounded-bl-sm flex gap-1 items-center">
+                            <span className="animate-bounce delay-0">·</span>
+                            <span className="animate-bounce delay-75">·</span>
+                            <span className="animate-bounce delay-150">·</span>
+                        </div>
+                    </div>
+                )}
                 <div ref={messagesEndRef} />
             </div>
-            <form onSubmit={sendMessage} className="flex border-t border-gray-100">
+
+            {/* Input */}
+            <form onSubmit={sendMessage} className="flex items-center gap-2 border-t border-violet-900/40 bg-[#13121f] rounded-b-xl px-3 py-2">
                 <input
-                    className="flex-1 px-3 py-2 outline-none bg-transparent"
+                    className="flex-1 px-2 py-1.5 outline-none bg-[#1e1c30] rounded-lg text-sm text-white placeholder-gray-500 border border-violet-900/30 focus:border-violet-600/60 transition-colors"
                     type="text"
-                    placeholder="Ask a question..."
+                    placeholder="Ask anything..."
                     value={input}
                     onChange={e => setInput(e.target.value)}
                     disabled={loading}
                 />
-                <button type="submit" className="px-4 py-2 text-primary font-bold disabled:opacity-50" disabled={loading || !input.trim()}>
+                <button
+                    type="submit"
+                    className="px-3 py-1.5 bg-violet-700 hover:bg-violet-600 text-white text-sm font-semibold rounded-lg disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                    disabled={loading || !input.trim()}
+                >
                     Send
                 </button>
             </form>
