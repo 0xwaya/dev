@@ -37,28 +37,28 @@ const AIDevToolWidget = () => {
     };
 
     return (
-        <div className="fixed bottom-8 right-8 w-80 max-w-[90vw] bg-[#0d0d14] backdrop-blur-lg rounded-xl shadow-2xl border border-violet-900/60 flex flex-col z-50" style={{ boxShadow: "0 0 32px 4px rgba(124,58,237,0.18)" }}>
+        <div className="w-full max-w-2xl mx-auto bg-[#0d0d14] rounded-2xl border border-violet-900/60 flex flex-col overflow-hidden" style={{ boxShadow: "0 0 48px 6px rgba(124,58,237,0.15)" }}>
             {/* Header */}
-            <div className="p-3 border-b border-violet-900/40 flex items-center gap-3 bg-[#13121f] rounded-t-xl">
+            <div className="px-4 py-3 border-b border-violet-900/40 flex items-center gap-3 bg-[#13121f]">
                 <div className="w-11 h-11 shrink-0 rounded-full overflow-hidden bg-[#1a1830] border border-violet-700/50">
                     <AIDevAvatar3D />
                 </div>
                 <div>
                     <div className="font-bold text-sm text-white leading-tight">AI Dev Assistant</div>
-                    <div className="text-[11px] text-violet-400 font-medium">Powered by LLM</div>
+                    <div className="text-[11px] text-violet-400 font-medium">Powered by Groq · llama-3.3-70b</div>
                 </div>
-                <span className="ml-auto w-2 h-2 rounded-full bg-emerald-400 shadow shadow-emerald-400/60" title="Online" />
+                <span className="ml-auto w-2.5 h-2.5 rounded-full bg-emerald-400 shadow shadow-emerald-400/60" title="Online" />
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-3 max-h-72 scrollbar-thin scrollbar-thumb-violet-900/50">
+            <div className="flex-1 overflow-y-auto p-4 space-y-4 min-h-[320px] max-h-[480px]">
                 {messages.map((msg, i) => (
                     <div key={i} className={`flex flex-col gap-1 ${msg.role === "user" ? "items-end" : "items-start"}`}>
-                        <span className="text-[10px] font-semibold tracking-wide uppercase px-1 text-gray-500">
+                        <span className="text-[10px] font-semibold tracking-widest uppercase px-1 text-gray-500">
                             {msg.role === "user" ? "You" : "Assistant"}
                         </span>
-                        <div className={`text-sm px-3 py-2 rounded-xl leading-relaxed max-w-[88%] ${msg.role === "user"
-                            ? "bg-violet-700/80 text-white rounded-br-sm"
+                        <div className={`text-sm px-4 py-2.5 rounded-2xl leading-relaxed max-w-[85%] ${msg.role === "user"
+                            ? "bg-violet-700 text-white rounded-br-sm"
                             : "bg-[#1e1c30] text-gray-100 border border-violet-900/30 rounded-bl-sm"
                             }`}>
                             {msg.content}
@@ -67,10 +67,10 @@ const AIDevToolWidget = () => {
                 ))}
                 {loading && (
                     <div className="flex items-start gap-2">
-                        <div className="bg-[#1e1c30] border border-violet-900/30 text-gray-400 text-sm px-3 py-2 rounded-xl rounded-bl-sm flex gap-1 items-center">
-                            <span className="animate-bounce delay-0">·</span>
-                            <span className="animate-bounce delay-75">·</span>
-                            <span className="animate-bounce delay-150">·</span>
+                        <div className="bg-[#1e1c30] border border-violet-900/30 text-gray-400 text-sm px-4 py-2.5 rounded-2xl rounded-bl-sm flex gap-1.5 items-center">
+                            <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-bounce [animation-delay:0ms]" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-bounce [animation-delay:150ms]" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-bounce [animation-delay:300ms]" />
                         </div>
                     </div>
                 )}
@@ -78,18 +78,18 @@ const AIDevToolWidget = () => {
             </div>
 
             {/* Input */}
-            <form onSubmit={sendMessage} className="flex items-center gap-2 border-t border-violet-900/40 bg-[#13121f] rounded-b-xl px-3 py-2">
+            <form onSubmit={sendMessage} className="flex items-center gap-2 border-t border-violet-900/40 bg-[#13121f] px-4 py-3">
                 <input
-                    className="flex-1 px-2 py-1.5 outline-none bg-[#1e1c30] rounded-lg text-sm text-white placeholder-gray-500 border border-violet-900/30 focus:border-violet-600/60 transition-colors"
+                    className="flex-1 px-4 py-2.5 outline-none bg-[#1e1c30] rounded-xl text-sm text-white placeholder-gray-500 border border-violet-900/30 focus:border-violet-500/70 transition-colors"
                     type="text"
-                    placeholder="Ask anything..."
+                    placeholder="Ask me anything about code, web3, or this portfolio…"
                     value={input}
                     onChange={e => setInput(e.target.value)}
                     disabled={loading}
                 />
                 <button
                     type="submit"
-                    className="px-3 py-1.5 bg-violet-700 hover:bg-violet-600 text-white text-sm font-semibold rounded-lg disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                    className="px-4 py-2.5 bg-violet-700 hover:bg-violet-600 active:bg-violet-800 text-white text-sm font-semibold rounded-xl disabled:opacity-40 disabled:cursor-not-allowed transition-colors shrink-0"
                     disabled={loading || !input.trim()}
                 >
                     Send
