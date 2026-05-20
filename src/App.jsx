@@ -82,6 +82,18 @@ const App = () => {
                             }
                         />
                         <Route
+                            path="/playground"
+                            element={
+                                <div className="bg-primary min-h-screen">
+                                    <Navbar />
+                                    <div className="pt-20 sm:pt-24">
+                                        <Playground />
+                                    </div>
+                                    <Footer />
+                                </div>
+                            }
+                        />
+                        <Route
                             path="/statistics"
                             element={
                                 <div className="bg-primary min-h-screen">

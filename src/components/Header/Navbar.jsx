@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to="/play"
+            to="/playground"
             onClick={() => handleNavigate("Playground")}
             className={`${active === "Playground" ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
@@ -94,7 +94,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                to="/play"
+                to="/playground"
                 onClick={() => handleNavigate("Playground")}
                 className={`${active === "Playground" ? "text-white" : "text-secondary"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
