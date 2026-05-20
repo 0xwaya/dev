@@ -86,11 +86,11 @@
 
 <div align="center">
 
-![0xwaya's GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xwaya&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117)
+![0xwaya's GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=0xwaya&theme=tokyonight)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xwaya&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&langs_count=8)
+![Top Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=0xwaya&theme=tokyonight)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=0xwaya&theme=tokyonight&hide_border=true&background=0d1117)
+![GitHub Streak](https://streak-stats.demolab.com?user=0xwaya&theme=tokyonight&hide_border=true&background=0d1117&cache_seconds=21600)
 
 </div>
 
