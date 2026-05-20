@@ -232,7 +232,7 @@ export const projects = [
       { name: "Supabase", color: "green-text-gradient" },
       { name: "TypeScript", color: "pink-text-gradient" },
     ],
-    image: "https://opengraph.githubassets.com/1/0xwaya/queencity-soundboard",
+    image: SHOT("https://queencitysoundboard.com"),
     image2: "https://queencitysoundboard.com",
     source_code_link: "https://github.com/0xwaya/queencity-soundboard",
   },
