@@ -1,0 +1,18 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LangChain logo">
+  <defs>
+    <linearGradient id="lc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="100%" stop-color="#1C3C3C" />
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="40" fill="#111827" />
+  <g fill="none" stroke="url(#lc)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="52" y="78" width="64" height="64" rx="14" />
+    <rect x="140" y="114" width="64" height="64" rx="14" />
+    <path d="M116 110l24 22" />
+  </g>
+  <g fill="#A7F3D0">
+    <circle cx="84" cy="110" r="8" />
+    <circle cx="172" cy="146" r="8" />
+  </g>
+</svg>

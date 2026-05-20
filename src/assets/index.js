@@ -23,6 +23,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import blender from "./tech/blender.png";
+import filecoin from "./tech/filecoin.svg";
+import langchain from "./tech/langchain.svg";
+import langgraph from "./tech/langgraph.svg";
 
 import holophin from "./holophin.png";
 import gitmap from "./gitmap.png";
@@ -40,6 +43,7 @@ export {
   logo, backend, creator, mobile, web, github, menu, close,
   hardhat, solidity, css, docker, figma, git, html, javascript,
   mongodb, nodejs, reactjs, redux, tailwind, typescript, threejs, blender,
+  filecoin, langchain, langgraph,
   holophin, gitmap,
   certificate1, fitt,
   certDevrel, certSolidity, certWebdev,

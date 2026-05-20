@@ -6,7 +6,10 @@ import {
   certCampbuidl,
   certCcip,
   certChainlinkFunctions,
+  filecoin,
   hardhat,
+  langchain,
+  langgraph,
 } from "../assets";
 import {
   SiCss3,
@@ -79,15 +82,11 @@ const technologies = [
   { name: "Vercel", icon: SiVercel },
   { name: "Figma", icon: SiFigma },
   { name: "Three.js", icon: SiThreedotjs },
-  { name: "LangGraph", badge: "LG" },
-  { name: "LangChain", badge: "LC" },
+  { name: "LangGraph", iconSrc: langgraph },
+  { name: "LangChain", iconSrc: langchain },
   { name: "Ethers.js", icon: SiEthereum },
   { name: "Hardhat", iconSrc: hardhat },
-  {
-    name: "Filecoin",
-    iconSrc:
-      "https://raw.githubusercontent.com/filecoin-project/filecoin-explorer/master/src/components/nav/filecoin-logo.svg",
-  },
+  { name: "Filecoin", iconSrc: filecoin },
 ];
 
 const experiences = [];
