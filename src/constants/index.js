@@ -6,10 +6,12 @@ import {
   certCampbuidl,
   certCcip,
   certChainlinkFunctions,
+  devrelResourcesHubShot,
   filecoin,
   hardhat,
   langchain,
   langgraph,
+  queenCitySoundboardShot,
 } from "../assets";
 import {
   SiCss3,
@@ -289,7 +291,7 @@ export const projects = [
       { name: "Supabase", color: "green-text-gradient" },
       { name: "TypeScript", color: "pink-text-gradient" },
     ],
-    image: SHOT("https://queencitysoundboard.com"),
+    image: queenCitySoundboardShot,
     image2: "https://queencitysoundboard.com",
     source_code_link: "https://github.com/0xwaya/queencity-soundboard",
   },
@@ -370,7 +372,7 @@ export const projects1 = [
     date: "2024 - Present",
     description:
       "Mobile-first event platform connecting Venezuelan artists and Midwest audiences. Next.js + Supabase + Ticket Tailor with full ticketing and RSVP flow.",
-    image: SHOT("https://queencitysoundboard.com"),
+    image: queenCitySoundboardShot,
     tags: ["Next.js", "Supabase", "TypeScript", "TailwindCSS", "Ticket Tailor", "PostgreSQL"],
     category: "full stack",
     github: "https://github.com/0xwaya/queencity-soundboard",
@@ -430,7 +432,7 @@ export const projects1 = [
     date: "2022 - 2023",
     description:
       "Collaborative open-source hub for Developer Relations resources, tools, and community links. Built for the DevRel Uni community.",
-    image: SHOT("https://dru-resources.vercel.app"),
+    image: devrelResourcesHubShot,
     tags: ["Next.js", "Open Source", "Developer Relations", "Community"],
     category: "full stack",
     github: "https://github.com/0xwaya/devreluni_rss",
