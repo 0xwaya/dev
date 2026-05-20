@@ -1,4 +1,5 @@
 import { styles } from "../styles";
+import AIDevToolWidget from "./AIDevToolWidget";
 
 const Playground = () => {
   return (
@@ -7,9 +8,10 @@ const Playground = () => {
         <p className={styles.sectionSubText}>Experiments & Demos</p>
         <h2 className={`${styles.sectionHeadText} flux`}>Playground.</h2>
         <p className="mt-4 text-secondary text-[17px] leading-[30px]">
-          Coming soon — interactive demos and experiments.
+          Try the new <span className="font-bold text-primary">AI Dev Tool</span> below!
         </p>
       </div>
+      <AIDevToolWidget />
     </div>
   );
 };
