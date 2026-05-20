@@ -10,7 +10,8 @@ import { slideIn } from "../../utils/motion";
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_uv1s6xt";
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_8uk46am";
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "8D54qyP1R78P2J6v8";
-const CONTACT_TO_EMAIL = import.meta.env.VITE_CONTACT_TO_EMAIL || "admin@wayalabs.com";
+const CONTACT_TO_EMAIL = import.meta.env.VITE_CONTACT_TO_EMAIL || "admin.com";
+const CONTACT_DELIVERY = (import.meta.env.VITE_CONTACT_DELIVERY || "mailto").toLowerCase();
 
 const hasEmailJsConfig =
   Boolean(EMAILJS_SERVICE_ID) &&
@@ -64,8 +65,15 @@ const Contact = () => {
 
     const mailtoHref = buildMailtoHref(trimmedForm);
 
+    if (CONTACT_DELIVERY !== "emailjs") {
+      setLoading(false);
+      window.location.href = mailtoHref;
+      return;
+    }
+
     if (!hasEmailJsConfig) {
       setLoading(false);
+      alert("Email service config missing. Opening your email app instead.");
       window.location.href = mailtoHref;
       return;
     }
