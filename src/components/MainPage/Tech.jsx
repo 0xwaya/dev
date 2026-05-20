@@ -6,7 +6,7 @@ import { SectionWrapper } from "../../hoc";
 import { technologies } from "../../constants";
 import { styles } from "../../styles";
 
-const TechCard = ({ index, icon: Icon, name }) => {
+const TechCard = ({ index, icon: Icon, iconSrc, badge, name }) => {
   const initials = name
     .split(/\s+/)
     .slice(0, 2)
@@ -23,6 +23,16 @@ const TechCard = ({ index, icon: Icon, name }) => {
         <div className="bg-tertiary rounded-full py-5 flex justify-evenly items-center flex-col gap-1 h-full text-center">
           {Icon ? (
             <Icon className="text-4xl text-white" aria-hidden="true" />
+          ) : iconSrc ? (
+            <img
+              src={iconSrc}
+              alt={name}
+              className="w-12 h-12 object-contain"
+            />
+          ) : badge ? (
+            <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-bold tracking-[0.2em] text-white/90">
+              {badge}
+            </span>
           ) : (
             <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-bold tracking-[0.2em] text-white/90">
               {initials}
@@ -39,6 +49,8 @@ const TechCard = ({ index, icon: Icon, name }) => {
 TechCard.propTypes = {
   index: PropTypes.number.isRequired,
   icon: PropTypes.elementType,
+  iconSrc: PropTypes.string,
+  badge: PropTypes.string,
   name: PropTypes.string.isRequired,
 };
 
@@ -56,6 +68,8 @@ const Tech = () => {
         {technologies.map((technology, index) => (
           <TechCard
             icon={technology.icon}
+            iconSrc={technology.iconSrc}
+            badge={technology.badge}
             key={technology.name}
             name={technology.name}
             index={index}

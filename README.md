@@ -137,6 +137,12 @@ To make your GitHub landing page point to this `/dev` project README:
 
 ---
 
+## 📄 License
+
+This repository is licensed under the MIT License. See [LICENSE](LICENSE) for the full text.
+
+---
+
 <div align="center">
 
 ![Profile Views](https://komarev.com/ghpvc/?username=0xwaya&color=854CE6&style=flat-square)
