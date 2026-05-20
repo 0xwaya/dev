@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { callOllamaApi } from "./ollamaApi";
+import AIDevAvatar3D from "./AIDevAvatar3D";
 
 const AIDevToolWidget = () => {
     const [messages, setMessages] = useState([
@@ -37,8 +38,12 @@ const AIDevToolWidget = () => {
 
     return (
         <div className="fixed bottom-8 right-8 w-80 max-w-[90vw] bg-white/90 backdrop-blur-lg rounded-xl shadow-2xl border border-gray-200 flex flex-col z-50">
-            <div className="p-4 font-bold text-lg text-primary border-b border-gray-100 flex items-center gap-2">
-                <span role="img" aria-label="AI">🤖</span> AI Dev Tool
+            <div className="p-4 font-bold text-lg text-primary border-b border-gray-100 flex items-center gap-3">
+                {/* 3D Avatar */}
+                <div className="w-12 h-12 shrink-0 rounded-full overflow-hidden bg-[#16161a] border border-gray-200">
+                    <AIDevAvatar3D />
+                </div>
+                AI Dev Tool
             </div>
             <div className="flex-1 overflow-y-auto p-4 space-y-2 max-h-72">
                 {messages.map((msg, i) => (

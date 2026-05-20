@@ -31,7 +31,12 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['src/components/canvas/**/*.{js,jsx}'],
+      // @react-three/fiber uses custom JSX props (position, args, intensity, castShadow, etc.)
+      // that are not standard HTML attributes. Disable the rule for all R3F files.
+      files: [
+        'src/components/canvas/**/*.{js,jsx}',
+        'src/pages/AIDevAvatar3D.jsx',
+      ],
       rules: {
         'react/no-unknown-property': 'off',
       },
