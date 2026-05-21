@@ -100,7 +100,7 @@ export const experiences1 = [
   {
     id: 0,
     img: celogo,
-    logoTransform: "scale(1.9)",
+    logoTransform: "scale(1.71)",
     role: "General Manager",
     company: "C&E Granite",
     date: "Nov 2024 – Jan 2026",
@@ -110,7 +110,7 @@ export const experiences1 = [
   {
     id: 1,
     img: wayalabslogo,
-    logoTransform: "scale(1.72)",
+    logoTransform: "scale(1.55)",
     role: "Founder & Lead AI Architect",
     company: "wayalabs · OpenJaw",
     date: "May 2021 – Present",
@@ -120,7 +120,7 @@ export const experiences1 = [
   {
     id: 2,
     img: devrellogo,
-    logoTransform: "scale(1.78)",
+    logoTransform: "scale(1.6)",
     role: "Resource captain",
     company: "DevRel Uni",
     date: "Jun 2023 – Present",
