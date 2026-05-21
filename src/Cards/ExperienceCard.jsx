@@ -76,12 +76,19 @@ const Top = styled.div`
 `
 
 const Image = styled.img`
-    height: 50px;
+    width: 56px;
+    height: 56px;
     background-color: #000;
     border-radius: 10px;
+    object-fit: contain;
+    object-position: center;
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    flex-shrink: 0;
     margin-top: 4px;
     @media only screen and (max-width: 768px){
-        height: 40px;
+        width: 44px;
+        height: 44px;
     }
 `
 
@@ -159,7 +166,7 @@ const ExperienceCard = ({ experience }) => {
                 </Body>
             </Top>
             <Description>
-               
+
                 {experience?.skills &&
                     <>
 
@@ -173,7 +180,7 @@ const ExperienceCard = ({ experience }) => {
                         </Skills>
                     </>
                 }
-                 {experience?.desc &&
+                {experience?.desc &&
                     <Span className='mt-4 text-gray-400'>{experience?.desc}</Span>
 
                 }

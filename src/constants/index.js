@@ -1,4 +1,5 @@
 import {
+  celogo,
   certificate1,
   certDevrel,
   certSolidity,
@@ -12,6 +13,7 @@ import {
   langchain,
   langgraph,
   queenCitySoundboardShot,
+  wayalabslogo,
 } from "../assets";
 import {
   SiCss3,
@@ -96,7 +98,7 @@ const experiences = [];
 export const experiences1 = [
   {
     id: 0,
-    img: "https://cdn.worldvectorlogo.com/logos/c-e-granite.svg",
+    img: celogo,
     role: "General Manager",
     company: "C&E Granite",
     date: "Nov 2024 – Jan 2026",
@@ -105,7 +107,7 @@ export const experiences1 = [
   },
   {
     id: 1,
-    img: "https://avatars.githubusercontent.com/u/136913552?v=4",
+    img: wayalabslogo,
     role: "Founder & Lead AI Architect",
     company: "wayalabs · OpenJaw",
     date: "May 2021 – Present",
@@ -114,7 +116,7 @@ export const experiences1 = [
   },
   {
     id: 2,
-    img: "https://avatars.githubusercontent.com/u/136913552?v=4",
+    img: devrelResourcesHubShot,
     role: "Resource captain",
     company: "DevRel Uni",
     date: "Jun 2023 – Present",

@@ -31,6 +31,8 @@ import holophin from "./holophin.png";
 import gitmap from "./gitmap.png";
 import devrelResourcesHubShot from "./devrelrss.png";
 import queenCitySoundboardShot from "./qcs.png";
+import celogo from "./celogo.png";
+import wayalabslogo from "./wayalabslogo.png";
 
 import certificate1 from "./certificates/certificate1.png";
 import fitt from "./certificates/fitt.png";
@@ -47,6 +49,7 @@ export {
   mongodb, nodejs, reactjs, redux, tailwind, typescript, threejs, blender,
   filecoin, langchain, langgraph,
   holophin, gitmap,
+  celogo, wayalabslogo,
   devrelResourcesHubShot, queenCitySoundboardShot,
   certificate1, fitt,
   certDevrel, certSolidity, certWebdev,
