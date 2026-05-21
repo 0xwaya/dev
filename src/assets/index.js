@@ -30,6 +30,7 @@ import langgraph from "./tech/langgraph.svg";
 import holophin from "./holophin.png";
 import gitmap from "./gitmap.png";
 import devrelResourcesHubShot from "./devrelrss.png";
+import devrellogo from "./devrellogo.png";
 import queenCitySoundboardShot from "./qcs.png";
 import celogo from "./celogo.png";
 import wayalabslogo from "./wayalabslogo.png";
@@ -50,6 +51,7 @@ export {
   filecoin, langchain, langgraph,
   holophin, gitmap,
   celogo, wayalabslogo,
+  devrellogo,
   devrelResourcesHubShot, queenCitySoundboardShot,
   certificate1, fitt,
   certDevrel, certSolidity, certWebdev,

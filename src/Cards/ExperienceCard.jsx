@@ -75,21 +75,32 @@ const Top = styled.div`
     gap: 12px
 `
 
-const Image = styled.img`
-    width: 56px;
-    height: 56px;
-    background-color: #000;
-    border-radius: 10px;
-    object-fit: contain;
-    object-position: center;
-    padding: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    flex-shrink: 0;
+const LogoFrame = styled.div`
+    width: 64px;
+    height: 64px;
     margin-top: 4px;
+    background-color: #000;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
     @media only screen and (max-width: 768px){
-        width: 44px;
-        height: 44px;
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
     }
+`
+
+const Image = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: ${({ $transform }) => $transform || "scale(1)"};
+    transform-origin: center;
 `
 
 const Body = styled.div`
@@ -158,7 +169,13 @@ const ExperienceCard = ({ experience }) => {
     return (
         <Card>
             <Top>
-                <Image src={experience.img} />
+                <LogoFrame>
+                    <Image
+                        src={experience.img}
+                        alt={experience.company}
+                        $transform={experience.logoTransform}
+                    />
+                </LogoFrame>
                 <Body>
                     <Role>{experience.role}</Role>
                     <Company>{experience.company}</Company>
@@ -197,6 +214,7 @@ ExperienceCard.propTypes = {
         desc: PropTypes.string,
         skills: PropTypes.arrayOf(PropTypes.string),
         doc: PropTypes.string,
+        logoTransform: PropTypes.string,
     }).isRequired,
 };
 
