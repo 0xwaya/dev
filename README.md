@@ -77,7 +77,7 @@
 | **Urban Stone Collective** | Next.js · Node.js · Supabase | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/urbanstone) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://urbanstone.co) |
 | **CEO Agent System** | LangGraph · Python · Flask · Socket.IO | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/ceo-agent-system) |
 | **Moon Phases / tarot** | TypeScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/tarot) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://moon-phases-omega.vercel.app) |
-| **Loro** | Solidity · Next.js · Chainlink VRF | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/loro-app) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://loro.vercel.app) |
+| **Echo** | Private OpenClaw runtime | [![Case study](https://img.shields.io/badge/-Case%20study-854CE6?style=flat-square)](https://wayalabs.com/case-studies/openclaw-agent) |
 | **OpenJaw Core** | OpenClaw starter | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/openjaw-core-template) |
 | **Dream Car Auto Repair** | HTML · CSS · JavaScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/dreamcar) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://0xwaya.github.io/dreamcar/) |
 

@@ -33,7 +33,8 @@ Projects:
 - Urban Stone (urbanstone.co, github.com/0xwaya/urbanstone): countertop site, supplier scraper prototype, permit lead-sourcer. github.com/0xwaya/amazon-granite redirects to urbanstone.
 - CEO Agent System (github.com/0xwaya/ceo-agent-system, source v0.8.3): public LangGraph repo, 16-agent CEO/CTO/CFO hierarchy, Socket.IO dashboard, artifact pipeline. WayaLabs describes the orchestrator as current research, not a public production service. Do not send people to wayalabs.com as if the agent app is deployed there.
 - Moon Phases / tarot (github.com/0xwaya/tarot, https://moon-phases-omega.vercel.app).
-- Loro (loro.vercel.app, github.com/0xwaya/loro-app): Macaw NFT dapp, mint/lottery/balance, Chainlink VRF, Sepolia and Optimism testnets.
+- Echo: private OpenClaw runtime. Public note only: https://wayalabs.com/case-studies/openclaw-agent. No public github.com/0xwaya/echo-agent repository. It is not a client deployment. Do not describe a public app or metrics.
+- Loro is no longer featured on this portfolio.
 - OpenJaw Core (github.com/0xwaya/openjaw-core-template): cloneable OpenClaw starter. Not the private Echo runtime.
 - Dream Car (https://0xwaya.github.io/dreamcar/): landing page for Dream Car Auto Repair in Norwood, Ohio. Not a 3D configurator.
 - DevRel resources: github.com/0xwaya/devreluni_rss. dru-resources.vercel.app returns 404.
@@ -41,8 +42,16 @@ Projects:
 
 Credentials that are public:
 - Chainlink CCIP masterclass, August 2023, credential 6747397.
+- Chainlink Functions masterclass, May 2023, credential 6644639.
+- DevRel Uni Developer Relations Essentials, May 2023. PDF: https://storage.googleapis.com/dev_rel_uni_certificates/Cohort2/Edward_Mercado%20.pdf
+- ETHDenver smart contracts and frontend Camp BUIDL, March 2023, credential 6585990.
+- ETHGlobal Filecoin FVM Hackathon, February 2023, credential 6317930.
+- Sololearn Introduction to Python, 19 January 2023, CC-CWPDIWRB.
+- Sololearn Introduction to Java, 11 January 2023, CC-TITIZUBO.
+- Sololearn Introduction to JavaScript, 13 January 2023, CC-8F1HQOLJ.
+- ETHDenver Web3 Solidity bootcamp, December 2022, credential 1406.
 - freeCodeCamp Responsive Web Design, April 2022: https://www.freecodecamp.org/certification/0xwaya/responsive-web-design
-- Alchemy University Web3 Bootcamp Solidity, 2022–2023.
+- Education, not credential ids: Alchemy University Web3 Bootcamp Solidity, 2022–2023. Encode Club Solidity Bootcamp, 2022.
 - Do not call the freeCodeCamp credential a full-stack certification.
 
 Contact: admin@wayalabs.com and https://wayalabs.com/contact.

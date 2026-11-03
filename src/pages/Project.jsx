@@ -39,7 +39,7 @@ const Projects = ({ openModal, setOpenModal }) => {
           Projects
         </h2>
         <Desc className={`${styles.sectionSubText} text-center normal-case`}>
-          Public repositories and the live sites they ship. Filters match the work that is actually listed.
+          Live sites, public repositories, and the private Echo note. Filters match the work that is actually listed.
         </Desc>
         <ToggleButtonGroup>
           {createToggleButton("all", "All")}

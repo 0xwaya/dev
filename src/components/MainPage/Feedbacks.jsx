@@ -14,13 +14,16 @@ const CertCard = ({ index, project, company, designation, image, source_code_lin
     <div className="pointer-events-none absolute -left-8 top-0 h-24 w-24 rounded-full bg-indigo-400/20 blur-2xl transition-opacity duration-300 group-hover:opacity-90" />
     <div className="pointer-events-none absolute -right-10 -top-8 h-28 w-28 rounded-full bg-cyan-300/10 blur-2xl" />
 
-    <div className="relative mb-4 h-[160px] w-full overflow-hidden rounded-2xl border border-white/10 bg-[linear-gradient(145deg,rgba(99,102,241,0.22)_0%,rgba(15,23,42,0.2)_100%)]">
-      <img
-        src={image}
-        alt={project}
-        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
-        onError={(e) => { e.target.src = "https://opengraph.githubassets.com/1/0xwaya"; }}
-      />
+    <div className="relative mb-4 flex h-[160px] w-full items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-[linear-gradient(145deg,rgba(99,102,241,0.22)_0%,rgba(15,23,42,0.2)_100%)]">
+      {image ? (
+        <img
+          src={image}
+          alt={project}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+        />
+      ) : (
+        <p className="px-4 text-center text-sm font-semibold text-white/80">{name}</p>
+      )}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050816] via-transparent to-transparent" />
     </div>
 
@@ -35,7 +38,7 @@ CertCard.propTypes = {
   project: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   designation: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   source_code_link: PropTypes.string.isRequired,
 };
 

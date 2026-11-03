@@ -2,7 +2,7 @@ import { Tilt } from 'react-tilt';
 import PropTypes from 'prop-types';
 import { github } from "../../assets";
 
-const ProjectCard = ({ index, name, description, tags, image, image2, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, image2, source_code_link, liveLabel = "Live site" }) => {
   void index;
   return (
     <Tilt
@@ -21,17 +21,19 @@ const ProjectCard = ({ index, name, description, tags, image, image2, source_cod
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050816] via-transparent to-transparent" />
 
-          <div className="absolute inset-0 m-3 flex justify-end">
-            <a
-              href={source_code_link}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`${name} on GitHub`}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-[#050816]/80 backdrop-blur-sm transition-colors hover:border-sky-300/60"
-            >
-              <img src={github} alt="" className="h-1/2 w-1/2 object-contain" />
-            </a>
-          </div>
+          {source_code_link ? (
+            <div className="absolute inset-0 m-3 flex justify-end">
+              <a
+                href={source_code_link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${name} on GitHub`}
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-[#050816]/80 backdrop-blur-sm transition-colors hover:border-sky-300/60"
+              >
+                <img src={github} alt="" className="h-1/2 w-1/2 object-contain" />
+              </a>
+            </div>
+          ) : null}
         </div>
 
         <div className="mt-4">
@@ -58,7 +60,7 @@ const ProjectCard = ({ index, name, description, tags, image, image2, source_cod
               rel="noreferrer"
               className="inline-flex items-center rounded-full border border-sky-300/50 bg-[linear-gradient(120deg,rgba(56,189,248,0.2)_0%,rgba(99,102,241,0.24)_100%)] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-sky-100 transition-all duration-200 hover:border-sky-200 hover:text-white"
             >
-              Live site
+              {liveLabel}
             </a>
           </div>
         ) : null}
@@ -77,7 +79,8 @@ ProjectCard.propTypes = {
   })).isRequired,
   image: PropTypes.string.isRequired,
   image2: PropTypes.string,
-  source_code_link: PropTypes.string.isRequired,
+  source_code_link: PropTypes.string,
+  liveLabel: PropTypes.string,
 };
 
 export default ProjectCard;
