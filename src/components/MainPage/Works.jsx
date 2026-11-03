@@ -11,35 +11,27 @@ const Works = () => {
       <div className="pointer-events-none absolute -left-16 top-12 h-48 w-48 rounded-full bg-cyan-400/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-16 bottom-10 h-56 w-56 rounded-full bg-indigo-500/10 blur-3xl" />
 
-      <div className="relative rounded-2xl border border-white/5 px-6 py-10 sm:px-12 sm:py-14">
-        <div className="mr-10 flex justify-between">
+      <div className="relative rounded-2xl border border-white/5 px-5 py-8 sm:px-10 sm:py-12">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="space-y-2">
-            <p className={styles.sectionSubText}>My work</p>
+            <p className={styles.sectionSubText}>Selected work</p>
             <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
           </div>
-          <div
-            className="flex justify-between"
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
+          <Link
+            to="/project"
+            onClick={() => window.scrollTo(0, 0)}
+            className={`${styles.sectionSubText} inline-flex items-center gap-1`}
           >
-            <Link to="/project" className={`${styles.sectionSubText} flex items-center`}>
-              View More <AiOutlineArrowRight />
-            </Link>
-          </div>
+            View all <AiOutlineArrowRight />
+          </Link>
         </div>
 
-        <div className='w-full flex'>
-          <p className='mt-3 max-w-3xl text-[17px] leading-[30px] text-secondary'>
-            Following projects showcase my skills and experience through
-            real-world examples of my work. Each project is briefly described with
-            links to code repositories and live demos. It reflects my
-            ability to solve complex problems, work with different technologies,
-            and manage projects effectively.
-          </p>
-        </div>
+        <p className="mt-4 max-w-3xl text-[16px] leading-8 text-secondary">
+          Current public work from WayaLabs, GitHub, and the live sites those
+          repos point at. Repositories without a public app link to source only.
+        </p>
 
-        <div className='mt-10 flex flex-wrap gap-7'>
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}

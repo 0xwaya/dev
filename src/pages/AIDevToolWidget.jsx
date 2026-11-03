@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { callGroqApi, getGroqModel } from "./groqApi";
+import { callGroqApi, getGroqApiKey, getGroqModel } from "./groqApi";
 import AIDevAvatar3D from "./AIDevAvatar3D";
 
 const INITIAL_MESSAGE = {
@@ -8,12 +8,13 @@ const INITIAL_MESSAGE = {
 };
 
 const QUICK_PROMPTS = [
-    "What are your main projects?",
-    "Tell me about OpenJaw / OpenClaw",
-    "What's your Web3 stack?",
-    "What certifications do you have?",
-    "What is your AI agent architecture?",
+    "What are the main public projects?",
+    "What is WayaLabs?",
+    "What is the CEO agent system?",
+    "What certifications are public?",
 ];
+
+const HAS_GROQ_KEY = Boolean(getGroqApiKey());
 
 const MODEL_LABEL = getGroqModel();
 
@@ -90,7 +91,10 @@ const AIDevToolWidget = () => {
                     </div>
                 </div>
                 <div className="ml-auto flex items-center gap-3 shrink-0">
-                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow shadow-emerald-400/60" title="Online" />
+                    <span
+                        className={`h-2.5 w-2.5 rounded-full ${HAS_GROQ_KEY ? "bg-emerald-400 shadow shadow-emerald-400/60" : "bg-amber-400"}`}
+                        title={HAS_GROQ_KEY ? "API key configured" : "API key not configured"}
+                    />
                     {hasUserMessage && (
                         <button
                             onClick={clearChat}

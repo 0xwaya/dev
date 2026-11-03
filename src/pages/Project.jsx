@@ -38,30 +38,31 @@ const Projects = ({ openModal, setOpenModal }) => {
         >
           Projects
         </h2>
-        <Desc className={`${styles.sectionSubText} text-center`}>
-          Explore my diverse portfolio of projects, ranging from web3 Dapps to full stack applications,
-          showcasing my expertise in various technologies.
+        <Desc className={`${styles.sectionSubText} text-center normal-case`}>
+          Public repositories and the live sites they ship. Filters match the work that is actually listed.
         </Desc>
         <ToggleButtonGroup>
           {createToggleButton("all", "All")}
           <Divider />
-          {createToggleButton("full stack", "Full Stack")}
+          {createToggleButton("ai", "AI")}
           <Divider />
-          {createToggleButton("react", "React")}
+          {createToggleButton("web", "Web")}
           <Divider />
-          {createToggleButton("javascript", "JavaScript")}
-          <Divider />
-          {createToggleButton("html", "HTML&CSS")}
+          {createToggleButton("web3", "Web3")}
         </ToggleButtonGroup>
         <CardContainer>
-          {filteredProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              openModal={openModal}
-              setOpenModal={setOpenModal}
-            />
-          ))}
+          {filteredProjects.length === 0 ? (
+            <p className="text-secondary text-center py-16">No projects in this group.</p>
+          ) : (
+            filteredProjects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
+            ))
+          )}
         </CardContainer>
       </Wrapper>
     </Container>
@@ -69,7 +70,10 @@ const Projects = ({ openModal, setOpenModal }) => {
 };
 
 Projects.propTypes = {
-  openModal: PropTypes.func.isRequired,
+  openModal: PropTypes.shape({
+    state: PropTypes.bool,
+    project: PropTypes.object,
+  }).isRequired,
   setOpenModal: PropTypes.func.isRequired,
 };
 

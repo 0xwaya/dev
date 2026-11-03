@@ -64,7 +64,7 @@ const Tech = () => {
         </h2>
       </motion.div>
 
-      <div className="flex flex-row flex-wrap justify-center gap-10 mt-20">
+      <div className="mt-10 flex flex-row flex-wrap justify-center gap-5">
         {technologies.map((technology, index) => (
           <TechCard
             icon={technology.icon}
@@ -76,30 +76,6 @@ const Tech = () => {
           />
         ))}
       </div>
-
-
-      {/* <div className="flex flex-wrap  justify-center gap-10 mt-10 w-50">
-  {technologies.map((technology) => (
-    <div
-      key={technology.name}
-      className="relative group w-24 h-24 rounded-xl bg-gray-800 flex items-center justify-center transition-all duration-300"
-    >
-    
-      <div className="absolute inset-0 rounded-xl opacity-0 bg-gradient-to-r from-purple-500 via-blue-500 to-indigo-500 blur-lg transition-all duration-300 group-hover:opacity-100"></div>
-
-   
-      <div className="z-10 text-white">
-        <TechCard icon={technology.icon} />
-      </div>
-
-     
-      <div className="absolute inset-0 rounded-xl border border-transparent group-hover:border-purple-500 group-hover:shadow-[0_0_20px_rgba(128,0,255,0.7)] transition-all duration-300"></div>
-    </div>
-  ))}
-</div> */}
-
-
-
     </>
   );
 };
