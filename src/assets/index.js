@@ -35,6 +35,12 @@ import queenCitySoundboardShot from "./qcs.png";
 import celogo from "./celogo.png";
 import wayalabslogo from "./wayalabslogo.png";
 
+import shotWayalabs from "./shots/wayalabs.png";
+import shotUrbanstone from "./shots/urbanstone.png";
+import shotQueenCity from "./shots/queencity.png";
+import shotMoonPhases from "./shots/moon-phases.png";
+import shotEcho from "./shots/echo.png";
+
 import certificate1 from "./certificates/certificate1.png";
 import fitt from "./certificates/fitt.png";
 import certDevrel from "./certificates/devrel.png";
@@ -43,6 +49,9 @@ import certWebdev from "./certificates/webdev.png";
 import certCampbuidl from "./certificates/campbuidl-2023.webp";
 import certCcip from "./certificates/ccip-chainlink-masterclass.webp";
 import certChainlinkFunctions from "./certificates/chainlink-functions-masterclass.webp";
+import certSoloPython from "./certificates/sololearn-python.jpg";
+import certSoloJava from "./certificates/sololearn-java.jpg";
+import certSoloJs from "./certificates/sololearn-javascript.jpg";
 
 export {
   logo, backend, creator, mobile, web, github, menu, close,
@@ -53,7 +62,9 @@ export {
   celogo, wayalabslogo,
   devrellogo,
   devrelResourcesHubShot, queenCitySoundboardShot,
+  shotWayalabs, shotUrbanstone, shotQueenCity, shotMoonPhases, shotEcho,
   certificate1, fitt,
   certDevrel, certSolidity, certWebdev,
   certCampbuidl, certCcip, certChainlinkFunctions,
+  certSoloPython, certSoloJava, certSoloJs,
 };

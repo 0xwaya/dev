@@ -71,7 +71,7 @@ const ProjectModal = ({ openModal, setOpenModal }) => {
               rel="noreferrer"
               className="flex items-center gap-2 text-sm text-white border border-[#854CE6] px-4 py-2 rounded-lg hover:bg-[#854CE6]/20 transition"
             >
-              <HiOutlineExternalLink size={18} /> Live Demo
+              <HiOutlineExternalLink size={18} /> {project.webappLabel || "Live site"}
             </a>
           )}
         </div>

@@ -1,43 +1,46 @@
 import { logo } from "../../assets";
 import { styles } from "../../styles";
 
+const socials = [
+  { href: "https://wayalabs.com", label: "WayaLabs" },
+  { href: "https://www.linkedin.com/in/0xwaya/", label: "LinkedIn" },
+  { href: "https://github.com/0xwaya", label: "GitHub" },
+  { href: "https://x.com/0xwaya", label: "X" },
+];
+
 const Footer = () => {
   return (
     <footer className="relative mt-16 border-t border-violet-900/30 bg-[#050816]">
-      <div className={`${styles.paddingX} max-w-7xl mx-auto py-10 flex flex-col sm:flex-row items-center justify-between gap-6`}>
-        {/* Brand */}
-        <div className="flex flex-col items-center sm:items-start gap-2">
-          <img src={logo} alt="0xwaya logo" className="w-10 h-10 object-contain" />
-          <p className="text-secondary text-[14px]">
-            &copy; {new Date().getFullYear()} 0xwaya — open source.
+      <div className={`${styles.paddingX} mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 py-10 sm:flex-row`}>
+        <div className="flex flex-col items-center gap-2 sm:items-start">
+          <img src={logo} alt="0xwaya logo" className="h-10 w-10 object-contain" />
+          <p className="text-[14px] text-secondary">
+            &copy; {new Date().getFullYear()} Edward Mercado · 0xwaya
           </p>
         </div>
 
-        {/* Center: view counter */}
-        <a
-          href="https://github.com/0xwaya"
-          target="_blank"
-          rel="noreferrer"
-          className="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity"
-        >
-          <img
-            src="https://komarev.com/ghpvc/?username=0xwaya&color=854CE6&style=flat-square&label=Portfolio+Views"
-            title="Portfolio views"
-            alt="0xwaya portfolio views"
-          />
-        </a>
+        <nav className="flex flex-wrap items-center justify-center gap-4 text-sm text-secondary">
+          {socials.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-white"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
 
-        {/* Scroll to top */}
-        <a
-          href="#about"
-          className="flex items-center gap-2 bg-tertiary px-4 py-2 rounded-xl cursor-pointer hover:opacity-80 transition-opacity select-none"
-          aria-label="Scroll to top"
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="flex cursor-pointer select-none items-center gap-2 rounded-xl bg-tertiary px-4 py-2 transition-opacity hover:opacity-80"
+          aria-label="Back to top"
         >
-          <div className="border-2 border-white rounded-full h-8 w-5 flex justify-center">
-            <div className="bg-white h-2 w-0.5 rounded-full mt-1.5 animate-bounce" />
-          </div>
           <span className={`${styles.sectionSubText} text-[12px]`}>Back to top</span>
-        </a>
+        </button>
       </div>
     </footer>
   );

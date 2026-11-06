@@ -8,7 +8,7 @@ export const Container = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
+    padding-bottom: 2rem;
 `;
 
 export const Wrapper = styled.div`
@@ -62,12 +62,16 @@ export const ToggleButtonGroup = styled.div`
     margin: 22px 0px;
     border: 0.1px solid #306EE8;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    flex-wrap: wrap;
+    justify-content: center;
     @media (max-width: 768px) {
         font-size: 12px;
     }
 `
 
-export const ToggleButton = styled.div`
+export const ToggleButton = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "active",
+})`
     padding: 4px 8px;
     border-radius: 6px;
     cursor: pointer;

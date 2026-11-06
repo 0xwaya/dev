@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import { logo, menu, close } from "../../assets";
 
@@ -7,6 +7,16 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const linkRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) return;
+    const id = location.hash.replace("#", "");
+    const frame = requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [location]);
   const handleNavigate = (label) => {
     setActive(label);
     setToggle(false);
@@ -31,7 +41,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row items-center gap-10">
+        <ul className="hidden list-none flex-row items-center gap-6 sm:flex lg:gap-8">
           <Link
             ref={linkRef}
             to="/project"
@@ -65,9 +75,17 @@ const Navbar = () => {
             to="/statistics"
             onClick={() => handleNavigate("Code Statistics")}
             className={`${active === "Code Statistics" ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[16px] font-medium cursor-pointer lg:text-[18px]`}
           >
-            Code Statistics
+            Stats
+          </Link>
+          <Link
+            to="/#contact"
+            onClick={() => handleNavigate("Contact")}
+            className={`${active === "Contact" ? "text-white" : "text-secondary"
+              } hover:text-white text-[16px] font-medium cursor-pointer lg:text-[18px]`}
+          >
+            Contact
           </Link>
         </ul>
 
@@ -118,7 +136,15 @@ const Navbar = () => {
                 className={`${active === "Code Statistics" ? "text-white" : "text-secondary"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
               >
-                Code Statistics
+                Stats
+              </Link>
+              <Link
+                to="/#contact"
+                onClick={() => handleNavigate("Contact")}
+                className={`${active === "Contact" ? "text-white" : "text-secondary"
+                  } hover:text-white text-[18px] font-medium cursor-pointer`}
+              >
+                Contact
               </Link>
             </ul>
           </div>

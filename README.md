@@ -8,7 +8,8 @@
 
 [![Live](https://img.shields.io/badge/Live-Portfolio-854CE6?style=for-the-badge&logo=vercel&logoColor=white)](https://wayalabs.com)
 [![GitHub](https://img.shields.io/badge/GitHub-0xwaya-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/0xwaya)
-[![Twitter](https://img.shields.io/badge/Twitter-@0xwaya-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/0xwaya)
+[![X](https://img.shields.io/badge/X-@0xwaya-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/0xwaya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0xwaya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/0xwaya/)
 
 </div>
 
@@ -71,14 +72,14 @@
 
 | Project | Stack | Links |
 |---|---|---|
-| **CEO Agent System** | LangGraph · Python · OpenAI · Flask · SocketIO | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/ceo-agent-system) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://wayalabs.com) |
-| **Loro App — NFT Dapp** | Solidity · React · Ethers.js · Hardhat | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/loro-app) |
-| **QueenCity Soundboard** | Next.js · Supabase · TypeScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/queencity-soundboard) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://queencitysoundboard.com) |
-| **Tarot AI** | React · Python · LLM | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/tarot) |
-| **Space Warp** | Solidity · FVM · ETHGlobal | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/space-warp) |
-| **Amazon Granite** | Python · Node.js · Web Scraping | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/amazon-granite) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://urbanstone.co) |
-| **DevRel Uni RSS** | Next.js · RSS | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/devreluni_rss) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://dru-resources.vercel.app) |
-| **Dream Car** | HTML · CSS · JS | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/dreamcar) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://0xwaya.github.io/dreamcar/) |
+| **WayaLabs** | Next.js · TypeScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/wayalabs) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://wayalabs.com) |
+| **Queen City Soundboard** | Next.js · Supabase · TypeScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/queencity-soundboard) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://queencitysoundboard.com) |
+| **Urban Stone Collective** | Next.js · Node.js · Supabase | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/urbanstone) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://urbanstone.co) |
+| **CEO Agent System** | LangGraph · Python · Flask · Socket.IO | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/ceo-agent-system) |
+| **Moon Phases / tarot** | TypeScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/tarot) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://moon-phases-omega.vercel.app) |
+| **Echo** | Private OpenClaw runtime | [![Case study](https://img.shields.io/badge/-Case%20study-854CE6?style=flat-square)](https://wayalabs.com/case-studies/openclaw-agent) |
+| **OpenJaw Core** | OpenClaw starter | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/openjaw-core-template) |
+| **Dream Car Auto Repair** | HTML · CSS · JavaScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/dreamcar) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://0xwaya.github.io/dreamcar/) |
 
 ---
 
@@ -100,20 +101,20 @@ The `/statistics` page in the portfolio mirrors these same live card providers.
 
 ## 🧠 About
 
-> Principal of **OpenClaw** — an autonomous AI agent system (Echo operator).  
-> Building at the intersection of **Web3**, **AI Agents**, and **Full-Stack Engineering**.  
-> Shipped at ETHDenver, ETHGlobal Space Warp (FVM), and WayaLabs.
+> Founder — R&D at [WayaLabs](https://wayalabs.com), an AI solutions studio.  
+> GitHub bio: **Full-Stack Engineer · Web3 Builder · AI Agent Architect**.  
+> LinkedIn headline: **AI Dev · DevRel Enthusiast · builder**. Cincinnati, Ohio.
 
-- 🔭 Currently building the **CEO Agent System** — 16 LangGraph agents with autonomous artifact pipelines
-- 🌐 Principal @ [WayaLabs](https://wayalabs.com)
-- 🛠 DevRel · Smart Contract Security (Cyfrin/Updraft) · Multi-Agent AI
+- 🌐 [WayaLabs](https://wayalabs.com) — public case studies include Urban Stone Collective and Queen City Soundboard
+- 🔭 [CEO Agent System](https://github.com/0xwaya/ceo-agent-system) — public LangGraph research repo (v0.8.3). The studio site describes the orchestrator as current R&D, not a public service
+- 🛠 DevRel Uni resource captain · EVM dapps on Ethereum and Avalanche
 - 📍 Cincinnati, OH
 
 ---
 
 ## 🛠 Portfolio
 
-This repo is the source for **[0xwaya.dev](https://wayalabs.com)** — built with:
+This repo is the source for the **[0xwaya portfolio](https://wayalabs.com)** — built with:
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)

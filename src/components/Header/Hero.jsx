@@ -3,28 +3,16 @@ import { useTypewriter } from "react-simple-typewriter";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion";
-import { Link } from "react-router-dom";
 import { styles } from "../../styles";
 
-import { BsTwitter } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
+import { BsTwitter, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { HiOutlineGlobeAlt } from "react-icons/hi";
 
 import PropTypes from 'prop-types';
 
 const ServiceCard = ({ index }) => (
   <Tilt className="xs:w-[250px] w-full " options={{ max: 45, scale: 1, speed: 450 }}>
     <motion.div
-      drag
-      dragConstraints={{
-        left: -200,
-        top: -200,
-        right: 100,
-        down: -100,
-      }}
-      whileDrag={{ scale: 1.2 }}
-      dragElastic={0.2}
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className=""
     >
@@ -49,24 +37,20 @@ const Hero = () => {
 
   const [text] = useTypewriter({
     words: [
-      "I build AI Agent Systems",
-      "I'm an AI Agent Architect",
-      "I'm a Full-Stack Developer",
-      "I'm a Web3 / Smart Contract Dev",
-      "I'm a DevRel Captain @DevRelUNI",
-      "I deploy on-chain & in the cloud",
-      "I'm AKA 0xwaya",
-      "A guy who loves espresso ☕",
-      "<ButLovesToCodeMore />",
+      "Founder — R&D at WayaLabs",
+      "Full-stack engineer",
+      "Web3 builder",
+      "DevRel Uni resource captain",
+      "Also known as 0xwaya",
     ],
     loop: true,
     delaySpeed: 1000,
   });
 
   return (
-    <section className="w-full h-screen mx-auto">
+    <section className="mx-auto w-full">
       <div
-        className={`${styles.paddingX} cursor-pointer h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse pl-25 md:pl-10 sm:justify-center items-start md:gap-20 gap-5 pt-8 sm:pt-6`}
+        className={`${styles.paddingX} mx-auto flex min-h-[calc(100vh-6rem)] max-w-7xl flex-col-reverse items-center gap-10 pb-16 pt-6 lg:flex-row lg:items-center lg:justify-between lg:gap-16`}
       >
         <div>
           <div className="flex gap-3 ">
@@ -83,10 +67,13 @@ const Hero = () => {
                 </span>
               </h1>
 
+              <p className="mt-3 text-sm uppercase tracking-[0.18em] text-secondary">
+                Cincinnati · WayaLabs
+              </p>
               <p
-                className={`${styles.heroSubText} h-8 mt-2 text-white-100 max-w-lg`}
+                className={`${styles.heroSubText} mt-3 min-h-[4.5rem] max-w-lg text-white-100 sm:min-h-[3.25rem]`}
               >
-                {text}{" "}
+                {text}
               </p>
             </div>
           </div>
@@ -94,7 +81,7 @@ const Hero = () => {
           <div className="flex">
             <a
               href="#tech"
-              className="  w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none"
+              className="mx-auto mt-6 flex w-fit cursor-pointer select-none items-center justify-center gap-6 rounded-xl bg-tertiary px-4 py-2 lg:mt-8 lg:px-7 lg:py-3"
             >
               <div className=" group border-[3px] border-white rounded-full md:h-12 h-10 w-7 flex justify-center lg:scale-100 scale-75">
                 <div className="bg-white h-3 w-1 rounded-full mt-[10px] animate-bounce lg:scale-100 scale-75"></div>
@@ -109,33 +96,28 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="text-[30px] md:text-[35px] flex justify-center gap-5   items-center md:mt-10 mt-5 md:gap-12 cursor-pointer mb-20  ">
-            <Link
-              target="_blank"
-              to="https://www.linkedin.com/in/0xwaya/"
-            >
-              <BsLinkedin className=" text-white mr-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mr-0 -md:my-[1px]" />
-            </Link>
-
-            <Link target="_blank" to="https://github.com/0xwaya/">
-              <BsGithub className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
-            </Link>
-
-            <Link target="_blank" to="https://twitter.com/0xwaya/">
-              <BsTwitter className="ml-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:ml-0 -md:my-[1px]  " />
-            </Link>
-            <Link
-              target="_blank"
-              to="https://www.instagram.com/0xwaya/"
-            >
-              <BsInstagram className="mx-2 hover:translate-y-[-2px] hover:cursor-pointer transition-all ease-in duration-100 -md:mx-0 -md:my-[1px]" />
-            </Link>
+          <div className="mt-8 flex items-center justify-center gap-6 text-[28px] md:justify-start md:text-[32px]">
+            <a href="https://www.linkedin.com/in/0xwaya/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <BsLinkedin className="transition-transform duration-150 hover:-translate-y-0.5" />
+            </a>
+            <a href="https://github.com/0xwaya" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <BsGithub className="transition-transform duration-150 hover:-translate-y-0.5" />
+            </a>
+            <a href="https://x.com/0xwaya" target="_blank" rel="noreferrer" aria-label="X">
+              <BsTwitter className="transition-transform duration-150 hover:-translate-y-0.5" />
+            </a>
+            <a href="https://wayalabs.com" target="_blank" rel="noreferrer" aria-label="WayaLabs">
+              <HiOutlineGlobeAlt className="transition-transform duration-150 hover:-translate-y-0.5" />
+            </a>
+            <a href="https://www.instagram.com/0xwaya/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <BsInstagram className="transition-transform duration-150 hover:-translate-y-0.5" />
+            </a>
           </div>
 
 
         </div>
 
-        <div ref={ref} className="w-full mt-10 ">
+        <div ref={ref} className="w-full max-w-md">
           <ServiceCard index={0} reference={ref} />
         </div>
       </div>

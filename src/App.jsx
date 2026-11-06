@@ -49,7 +49,7 @@ const App = () => {
                                 <div className="relative z-0 bg-primary">
                                     <div className="bg-cover bg-no-repeat bg-center">
                                         <Navbar />
-                                        <div className="relative z-0 pt-32 sm:pt-20">
+                                        <div className="relative z-0 pt-24">
                                             <Hero />
                                             <StarsCanvas />
                                         </div>
@@ -100,6 +100,25 @@ const App = () => {
                                     <Navbar />
                                     <div className="relative z-0 mx-auto max-w-7xl px-4 pt-28 sm:px-16 sm:pt-24">
                                         <StatisticPage />
+                                    </div>
+                                    <Footer />
+                                </div>
+                            }
+                        />
+                        <Route
+                            path="*"
+                            element={
+                                <div className="bg-primary min-h-screen">
+                                    <Navbar />
+                                    <div className="mx-auto flex min-h-[70vh] max-w-3xl flex-col items-center justify-center px-6 text-center">
+                                        <p className="text-sm uppercase tracking-[0.2em] text-secondary">404</p>
+                                        <h1 className="mt-3 text-4xl font-black text-white">Page not found</h1>
+                                        <p className="mt-4 max-w-md text-secondary">
+                                            That address is not part of this site.
+                                        </p>
+                                        <a href="/" className="mt-6 rounded-xl bg-tertiary px-5 py-2 font-semibold text-white">
+                                            Back home
+                                        </a>
                                     </div>
                                     <Footer />
                                 </div>

@@ -9,13 +9,9 @@ const Playground = () => {
         <p className={styles.sectionSubText}>AI Chat · Experiments</p>
         <h2 className={`${styles.sectionHeadText} flux`}>Playground.</h2>
         <p className="mt-3 text-secondary text-[16px] sm:text-[17px] leading-[28px] max-w-2xl">
-          An AI assistant that knows this portfolio. Ask about projects, the tech stack,
-          experience, or{" "}
-          <span className="text-violet-400 font-semibold">OpenJaw</span> —
-          the autonomous multi-agent platform built here. General coding,{" "}
-          <span className="text-violet-400 font-semibold">web3</span>, and{" "}
-          <span className="text-violet-400 font-semibold">AI architecture</span>{" "}
-          questions welcome too.
+          Ask about the public portfolio: WayaLabs, Queen City Soundboard,
+          Urban Stone, the CEO agent research repo, or Web3 work. The assistant
+          only knows the facts wired into this page.
         </p>
 
         {/* Feature pills */}

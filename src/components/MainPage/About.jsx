@@ -2,35 +2,36 @@ import { Tilt } from "react-tilt";
 import PropTypes from 'prop-types';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion";
+import { styles } from "../../styles";
 
 const services = [
   {
-    title: "AI Agent Architect",
+    title: "WayaLabs",
     glyph: "🧠",
     gradient: "from-violet-900/80 via-purple-800/60 to-indigo-900/80",
     accent: "#a78bfa",
-    sub: "LangGraph · Multi-Agent · Autonomous Systems",
+    sub: "Founder — R&D · chatbots and agents",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Full-stack",
     glyph: "⚡",
     gradient: "from-sky-900/80 via-cyan-800/60 to-teal-900/80",
     accent: "#38bdf8",
-    sub: "React · Next.js · Node · Python",
+    sub: "Next.js · TypeScript · Supabase",
   },
   {
-    title: "Web3 / Smart Contracts",
+    title: "Web3",
     glyph: "🔗",
     gradient: "from-amber-900/80 via-orange-800/60 to-yellow-900/80",
     accent: "#fbbf24",
-    sub: "Solidity · Hardhat · Ethers.js · IPFS",
+    sub: "Solidity · Ethereum · Avalanche",
   },
   {
-    title: "Developer Relations",
+    title: "DevRel Uni",
     glyph: "📡",
     gradient: "from-rose-900/80 via-pink-800/60 to-fuchsia-900/80",
     accent: "#f472b6",
-    sub: "Chainlink · Filecoin · Community",
+    sub: "Resource captain · documentation",
   },
 ];
 
@@ -96,11 +97,21 @@ ServiceCard.propTypes = {
 
 const About = () => {
   return (
-    <div className="flex flex-wrap gap-8 justify-center">
-      {services.map((service, index) => (
-        <ServiceCard key={service.title} {...service} index={index} />
-      ))}
-    </div>
+    <section className={`${styles.paddingX} mx-auto max-w-7xl pb-4`}>
+      <p className={styles.sectionSubText}>About</p>
+      <h2 className={`${styles.sectionHeadText} mt-1`}>Edward Mercado.</h2>
+      <p className="mt-4 max-w-3xl text-[16px] leading-8 text-secondary">
+        Edward Mercado works from Cincinnati as 0xwaya. He is Founder — R&D at
+        WayaLabs and a DevRel Uni resource captain. Public work includes the
+        WayaLabs site, Queen City Soundboard, and Urban Stone Collective, plus
+        Web3 apps and a public LangGraph research repository.
+      </p>
+      <div className="mt-10 flex flex-wrap justify-center gap-6">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} {...service} index={index} />
+        ))}
+      </div>
+    </section>
   );
 };
 
