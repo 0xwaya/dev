@@ -10,7 +10,7 @@ const services = [
     glyph: "🧠",
     gradient: "from-violet-900/80 via-purple-800/60 to-indigo-900/80",
     accent: "#a78bfa",
-    sub: "Founder — R&D · chatbots and agents",
+    sub: "Founder — R&D · chatbots live",
   },
   {
     title: "Full-stack",
@@ -20,11 +20,11 @@ const services = [
     sub: "Next.js · TypeScript · Supabase",
   },
   {
-    title: "Web3",
-    glyph: "🔗",
+    title: "Agents",
+    glyph: "AI",
     gradient: "from-amber-900/80 via-orange-800/60 to-yellow-900/80",
     accent: "#fbbf24",
-    sub: "Solidity · Ethereum · Avalanche",
+    sub: "LangGraph research · human review",
   },
   {
     title: "DevRel Uni",
@@ -101,10 +101,10 @@ const About = () => {
       <p className={styles.sectionSubText}>About</p>
       <h2 className={`${styles.sectionHeadText} mt-1`}>Edward Mercado.</h2>
       <p className="mt-4 max-w-3xl text-[16px] leading-8 text-secondary">
-        Edward Mercado works from Cincinnati as 0xwaya. He is Founder — R&D at
-        WayaLabs and a DevRel Uni resource captain. Public work includes the
-        WayaLabs site, Queen City Soundboard, and Urban Stone Collective, plus
-        Web3 apps and a public LangGraph research repository.
+        Edward Mercado works from Cincinnati as 0xwaya. He founded WayaLabs,
+        an AI solutions studio. Chatbots and web platforms are the live work.
+        Agents and orchestrators stay in research. Public case studies include
+        Urban Stone Collective and Queen City Soundboard.
       </p>
       <div className="mt-10 flex flex-wrap justify-center gap-6">
         {services.map((service, index) => (
