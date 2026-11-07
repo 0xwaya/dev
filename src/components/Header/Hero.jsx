@@ -38,9 +38,9 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "Founder — R&D at WayaLabs",
-      "Full-stack engineer",
-      "Web3 builder",
-      "DevRel Uni resource captain",
+      "AI solutions studio",
+      "Full-stack platforms",
+      "LangGraph research",
       "Also known as 0xwaya",
     ],
     loop: true,
