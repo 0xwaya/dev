@@ -106,7 +106,7 @@ export const experiences1 = [
   {
     id: 0,
     img: wayalabslogo,
-    logoTransform: "scale(1.55)",
+    logoTransform: "scale(1)",
     role: "Founder — R&D",
     company: "WayaLabs",
     date: "May 2021 – Present",
@@ -116,7 +116,7 @@ export const experiences1 = [
   {
     id: 1,
     img: wayalabslogo,
-    logoTransform: "scale(1.55)",
+    logoTransform: "scale(1)",
     role: "Blockchain Specialist",
     company: "WayaLabs",
     date: "May 2020 – Present",
