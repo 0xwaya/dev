@@ -1,3 +1,11 @@
+<div align="center">
+
+<a href="https://wayalabs.com">
+  <img src="https://raw.githubusercontent.com/0xwaya/wayalabs/main/public/og.png" alt="Wayalabs — AI Solutions Studio" width="100%" />
+</a>
+
+</div>
+
 # Edward Mercado — personal portfolio
 
 Vite, React, and Tailwind portfolio for **Edward Mercado** (`0xwaya`), founder of [WayaLabs](https://wayalabs.com).
