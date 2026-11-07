@@ -1,155 +1,47 @@
-<div align="center">
+# Edward Mercado — personal portfolio
 
-<img src="https://raw.githubusercontent.com/0xwaya/dev/main/src/assets/logo.png" alt="0xwaya logo" width="80" />
+Vite, React, and Tailwind portfolio for **Edward Mercado** (`0xwaya`), founder of [WayaLabs](https://wayalabs.com).
 
-# 0xwaya.dev
+This repository is **not** the studio site.
 
-**Edward Mercado · Full-Stack Engineer · Web3 Builder · AI Agent Architect**
+| | |
+|---|---|
+| Studio | [wayalabs.com](https://wayalabs.com) from [0xwaya/wayalabs](https://github.com/0xwaya/wayalabs) |
+| This portfolio | [emresume.vercel.app](https://emresume.vercel.app) |
+| GitHub profile | [0xwaya/0xwaya](https://github.com/0xwaya/0xwaya) |
 
-[![Live](https://img.shields.io/badge/Live-Portfolio-854CE6?style=for-the-badge&logo=vercel&logoColor=white)](https://wayalabs.com)
-[![GitHub](https://img.shields.io/badge/GitHub-0xwaya-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/0xwaya)
-[![X](https://img.shields.io/badge/X-@0xwaya-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/0xwaya)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0xwaya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/0xwaya/)
+WayaLabs builds a custom web stack and automation for a business. Chatbots are live. Agents and orchestrators stay in research.
 
-</div>
+## What the portfolio leads with
 
----
+Live:
 
-## ⚡ Stack
+- [WayaLabs](https://wayalabs.com) — [repo](https://github.com/0xwaya/wayalabs)
+- [Urban Stone Collective](https://urbanstone.co) — [case study](https://wayalabs.com/case-studies/urban-stone) — [repo](https://github.com/0xwaya/urbanstone)
+- [Queen City Soundboard](https://queencitysoundboard.com) — [case study](https://wayalabs.com/case-studies/queen-city-soundboard) — [repo](https://github.com/0xwaya/queencity-soundboard)
 
-### Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+Research, not a client offer:
 
-### Frontend
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
+- [CEO Agent System](https://github.com/0xwaya/ceo-agent-system) — public LangGraph repo — [lab note](https://wayalabs.com/lab/ceo-agent)
+- [OpenClaw / Echo](https://wayalabs.com/case-studies/openclaw-agent) — private runtime, no public Echo repo
+- [Grok operator environments](https://wayalabs.com/case-studies/grok-operators)
 
-### Backend & APIs
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+Earlier public work stays in the site as background: Solidity and EVM apps, ETHGlobal Space Warp, and DevRel Uni. It is not the current studio offer.
 
-### AI & Agents
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![SocketIO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white)
+## Stack in this repo
 
-### Web3 & Blockchain
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
-![Hardhat](https://img.shields.io/badge/Hardhat-FFF100?style=flat-square&logo=hardhat&logoColor=black)
-![Ethers.js](https://img.shields.io/badge/Ethers.js-2535A0?style=flat-square&logo=ethereum&logoColor=white)
-![IPFS](https://img.shields.io/badge/IPFS-65C2CB?style=flat-square&logo=ipfs&logoColor=white)
-![Filecoin](https://img.shields.io/badge/Filecoin-0090FF?style=flat-square&logo=filecoin&logoColor=white)
+Vite · React · Tailwind CSS · Framer Motion · Three.js
 
-### Databases & Cloud
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+The work it points at is Python, TypeScript, Next.js, Flask, LangGraph, and Supabase.
 
-### DevOps & Tools
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-
----
-
-## 🚀 Featured Projects
-
-| Project | Stack | Links |
-|---|---|---|
-| **WayaLabs** | Next.js · TypeScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/wayalabs) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://wayalabs.com) |
-| **Queen City Soundboard** | Next.js · Supabase · TypeScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/queencity-soundboard) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://queencitysoundboard.com) |
-| **Urban Stone Collective** | Next.js · Node.js · Supabase | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/urbanstone) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://urbanstone.co) |
-| **CEO Agent System** | LangGraph · Python · Flask · Socket.IO | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/ceo-agent-system) |
-| **Moon Phases / tarot** | TypeScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/tarot) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://moon-phases-omega.vercel.app) |
-| **Echo** | Private OpenClaw runtime | [![Case study](https://img.shields.io/badge/-Case%20study-854CE6?style=flat-square)](https://wayalabs.com/case-studies/openclaw-agent) |
-| **OpenJaw Core** | OpenClaw starter | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/openjaw-core-template) |
-| **Dream Car Auto Repair** | HTML · CSS · JavaScript | [![GitHub](https://img.shields.io/badge/-Repo-181717?style=flat-square&logo=github)](https://github.com/0xwaya/dreamcar) [![Live](https://img.shields.io/badge/-Live-854CE6?style=flat-square&logo=vercel)](https://0xwaya.github.io/dreamcar/) |
-
----
-
-## 📊 GitHub Stats
-
-The `/statistics` page in the portfolio mirrors these same live card providers.
-
-<div align="center">
-
-![0xwaya's GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=0xwaya&theme=tokyonight)
-
-![Top Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=0xwaya&theme=tokyonight)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=0xwaya&theme=tokyonight&hide_border=true&background=0d1117&ring=854CE6&fire=854CE6)
-
-</div>
-
----
-
-## 🧠 About
-
-> Founder — R&D at [WayaLabs](https://wayalabs.com), an AI solutions studio.  
-> GitHub bio: **Full-Stack Engineer · Web3 Builder · AI Agent Architect**.  
-> LinkedIn headline: **AI Dev · DevRel Enthusiast · builder**. Cincinnati, Ohio.
-
-- 🌐 [WayaLabs](https://wayalabs.com) — public case studies include Urban Stone Collective and Queen City Soundboard
-- 🔭 [CEO Agent System](https://github.com/0xwaya/ceo-agent-system) — public LangGraph research repo (v0.8.3). The studio site describes the orchestrator as current R&D, not a public service
-- 🛠 DevRel Uni resource captain · EVM dapps on Ethereum and Avalanche
-- 📍 Cincinnati, OH
-
----
-
-## 🛠 Portfolio
-
-This repo is the source for the **[0xwaya portfolio](https://wayalabs.com)** — built with:
-
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+## Run locally
 
 ```bash
 npm install
-npm run dev -- --host --port 3000     # http://localhost:3000
-npm run build   # production build
+npm run dev -- --host --port 3000
+npm run build
 ```
 
----
+## License
 
-## 🔗 GitHub Landing Page Link
-
-To make your GitHub landing page point to this `/dev` project README:
-
-1. Create a public repo named **`0xwaya`** (special GitHub profile repo).
-2. Add a `README.md` in that repo with a link to this project: **https://github.com/0xwaya/dev**.
-3. Keep this `/dev` README as the full technical portfolio source.
-
----
-
-## 📄 License
-
-This repository is licensed under the MIT License. See [LICENSE](LICENSE) for the full text.
-
----
-
-<div align="center">
-
-![Profile Views](https://komarev.com/ghpvc/?username=0xwaya&color=854CE6&style=flat-square)
-
-**0xwaya · 2026**
-
-</div>
+MIT. See [LICENSE](LICENSE).
