@@ -120,7 +120,7 @@ export const experiences1 = [
     role: "Blockchain Specialist",
     company: "WayaLabs",
     date: "May 2020 – Present",
-    desc: "Architected full-stack decentralized applications with custom EVM smart contracts on Ethereum and Avalanche.",
+    desc: "Earlier WayaLabs work: full-stack EVM applications and custom contracts on Ethereum and Avalanche. The studio no longer leads with Web3.",
     skills: ["Solidity", "Ethereum", "Avalanche", "dApps"],
   },
   {
