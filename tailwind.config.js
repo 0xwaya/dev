@@ -1,48 +1,27 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
-  mode: "jit",
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
-      animation: {
-        text: "text 5s ease infinite",
-      },
-      keyframes: {
-        text: {
-          "0%, 100%": {
-            "background-size": "200% 200%",
-            "background-position": "left center",
-          },
-          "50%": {
-            "background-size": "200% 200%",
-            "background-position": "right center",
-          },
-        },
+      fontFamily: {
+        sans: ['"Inter Variable"', "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       colors: {
-        primary: "#050816",
-        secondary: "#aaa6c3",
-        tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
+        ink: "#07080c",
+        surface: "#0d0f16",
+        raised: "#12151f",
+        line: "rgba(255,255,255,0.08)",
+        muted: "#8b93a7",
+        soft: "#c4c9d6",
+        accent: "#8b8cff",
+        live: "#34d399",
+        research: "#fbbf24",
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #211e35",
-      },
-      screens: {
-        xs: "450px",
-      },
-      backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
-        "avatar": "url(/eamr.png)",
-        "abstract": "url('/src/assets/abstract.jpg')",
-        "avatar1": "url('/eamr.png')"
-        // avatar: "#100d25",
+        card: "0 1px 0 rgba(255,255,255,0.04) inset, 0 20px 50px -30px rgba(0,0,0,0.9)",
+        glow: "0 0 0 1px rgba(139,140,255,0.35), 0 20px 60px -25px rgba(139,140,255,0.45)",
       },
     },
   },
   plugins: [],
-}
-
-
+};
