@@ -1,54 +1,56 @@
-<div align="center">
+# Edward Mercado — digital résumé
 
-<a href="https://wayalabs.com">
-  <img src="https://raw.githubusercontent.com/0xwaya/wayalabs/main/public/og.png" alt="Wayalabs — AI Solutions Studio" width="100%" />
-</a>
+Single-page portfolio and résumé for **Edward Mercado** (`0xwaya`), founder of [WayaLabs](https://wayalabs.com). Live at [emresume.vercel.app](https://emresume.vercel.app).
 
-</div>
+This repository is not the studio site. The studio lives at [wayalabs.com](https://wayalabs.com) ([0xwaya/wayalabs](https://github.com/0xwaya/wayalabs)).
 
-# Edward Mercado — personal portfolio
+## What the page shows
 
-Vite, React, and Tailwind portfolio for **Edward Mercado** (`0xwaya`), founder of [WayaLabs](https://wayalabs.com).
+Hero, WayaLabs capabilities and process, selected work with thumbnails, GitHub highlights, experience, stack, credentials (certificates, POAPs minted on Gnosis, Sololearn, freeCodeCamp), and contact. `/play` is a small chat assistant that answers questions about the portfolio.
 
-This repository is **not** the studio site.
+Work is labelled honestly: **Live** (running client or studio sites), **Research** (agents and orchestration, not a client offer), **Template** and **Earlier work**. No invented metrics.
 
-| | |
+## Stack
+
+Vite 6, React 18, Tailwind CSS 3, Framer Motion, React Router, `react-icons` (named imports), self-hosted Inter. Main JS bundle is about 45 KB gzipped; the chat page is lazy-loaded.
+
+## Layout
+
+| Path | Purpose |
 |---|---|
-| Studio | [wayalabs.com](https://wayalabs.com) from [0xwaya/wayalabs](https://github.com/0xwaya/wayalabs) |
-| This portfolio | [emresume.vercel.app](https://emresume.vercel.app) |
-| GitHub profile | [0xwaya/0xwaya](https://github.com/0xwaya/0xwaya) |
-
-WayaLabs builds a custom web stack and automation for a business. Chatbots are live. Agents and orchestrators stay in research.
-
-## What the portfolio leads with
-
-Live:
-
-- [WayaLabs](https://wayalabs.com) — [repo](https://github.com/0xwaya/wayalabs)
-- [Urban Stone Collective](https://urbanstone.co) — [case study](https://wayalabs.com/case-studies/urban-stone) — [repo](https://github.com/0xwaya/urbanstone)
-- [Queen City Soundboard](https://queencitysoundboard.com) — [case study](https://wayalabs.com/case-studies/queen-city-soundboard) — [repo](https://github.com/0xwaya/queencity-soundboard)
-
-Research, not a client offer:
-
-- [CEO Agent System](https://github.com/0xwaya/ceo-agent-system) — public LangGraph repo — [lab note](https://wayalabs.com/lab/ceo-agent)
-- [OpenClaw / Echo](https://wayalabs.com/case-studies/openclaw-agent) — private runtime, no public Echo repo
-- [Grok operator environments](https://wayalabs.com/case-studies/grok-operators)
-
-Earlier public work stays in the site as background: Solidity and EVM apps, ETHGlobal Space Warp, and DevRel Uni. It is not the current studio offer.
-
-## Stack in this repo
-
-Vite · React · Tailwind CSS · Framer Motion · Three.js
-
-The work it points at is Python, TypeScript, Next.js, Flask, LangGraph, and Supabase.
+| `src/data/profile.js` | Single source of truth for the site and the PDF. Pure data, runs under plain Node. |
+| `src/data/assets.js` | Maps content keys to bundled images. |
+| `src/sections/`, `src/components/`, `src/pages/` | UI. |
+| `src/assets/` | Portrait, logos, project thumbnails (`shots/`), certificate and POAP images (`certificates/`), GitHub stat cards. |
+| `api/chat.js` | Vercel function that proxies Groq so the key never reaches the browser. |
+| `scripts/build-resume.mjs` | Builds the one-page PDF. |
+| `docs/REVIEW_AND_PLAN.md` | Review findings, what changed, open items. |
 
 ## Run locally
 
 ```bash
 npm install
-npm run dev -- --host --port 3000
+npm run dev        # http://localhost:5173
+npm run lint
 npm run build
 ```
+
+## Update the résumé PDF
+
+Edit `src/data/profile.js`, then:
+
+```bash
+npm run resume:pdf   # needs Google Chrome; set CHROME_BIN to override the path
+```
+
+This rewrites `public/Edward-Mercado-Resume.pdf` (one Letter page, clickable links). The site's "Résumé" buttons point at that file.
+
+## Environment
+
+| Variable | Where | Purpose |
+|---|---|---|
+| `GROQ_API_KEY` | Vercel project env | Enables `/api/chat` in production. Without it the chat page shows an unavailable message. |
+| `VITE_GROQ_API_KEY` | Local `.env` only | Optional dev shortcut that calls Groq directly from the browser. Never set it in production. |
 
 ## License
 
