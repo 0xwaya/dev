@@ -24,7 +24,7 @@ Needs a decision or a data source:
 
 - LinkedIn experience dates are masked in the public view and could not be compared. A LinkedIn data export would settle this.
 - Cincinnati State appears on the LinkedIn header but not in the data. It is left out until confirmed.
-- A LinkedIn post says "I run a stone fabrication business", while the data shows C&E Granite ended Jan 2026 and Urban Stone Nov 2024. Confirm current status.
+- Urban Stone Collective is shown as current (Feb 2014 to present), confirmed by the owner. C&E Granite (Nov 2024 to Jan 2026) is listed as past work.
 - The "Blockchain Specialist" role shows "Present" on LinkedIn but is treated as earlier work here.
 - FVM Space Warp POAP is dated 20 Jan 2023 on-chain; LinkedIn says Feb 2023. The POAP date is used.
 - The Tarot (Moon Phases) repo README calls it a static prototype; it is labelled that way.

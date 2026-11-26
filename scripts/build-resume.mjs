@@ -42,7 +42,7 @@ const work = ["wayalabs", "queen-city-soundboard", "urban-stone", "ceo-agent-sys
   )
   .join("");
 
-const [waya, devrel, cne, stone] = experience;
+const [waya, devrel, stone, cne] = experience;
 const job = (j, bullets) => `<article>
   <div class="row"><b>${esc(j.company)}</b><span class="muted">${esc(j.roles.map((r) => `${r.title}, ${r.dates}`).join(" · "))}</span></div>
   <ul>${bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul></article>`;
@@ -55,8 +55,8 @@ const exp = [
     "Earlier: full-stack EVM applications and custom contracts on Ethereum and Avalanche.",
   ]),
   job(devrel, ["Captain-program contributor: technical documentation and learning resources for DevRel cohorts."]),
+  job(stone, ["Own and run a granite, quartz and quartzite countertop business, operating since 2014. Site and lead system built through WayaLabs."]),
   job(cne, ["General Manager. Operations and team leadership."]),
-  job(stone, ["Owned and ran a countertop fabrication business for ten years; site and lead system rebuilt through WayaLabs."]),
 ].join("");
 
 const earlierLine = earlier.map((e) => `${esc(e.title)}, ${esc(e.org)} (${esc(e.dates.replace(/\b[A-Z][a-z]{2} /g, "").replace("–", "-"))})`).join(" · ");
