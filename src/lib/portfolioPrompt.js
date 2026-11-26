@@ -25,8 +25,7 @@ Other projects:
 Experience:
 - WayaLabs: Founder, R&D (May 2021 to present); Blockchain Specialist (May 2020 to present), earlier EVM work on Ethereum and Avalanche.
 - DevRel Uni resource captain (June 2023 to present).
-- Urban Stone Collective managing owner (February 2014 to present); Edward still owns and runs it.
-- C&E Granite general manager (November 2024 to January 2026).
+- Urban Stone Collective owner, operator and backend engineer (February 2014 to present); Edward still owns and runs it. Backend: Next.js Pages router and React 19 on Vercel; quote form, Onyx chat and contractor estimates are emailed to sales through Resend, and only after the email succeeds are the contact and intake saved to a private Supabase CRM (matched by email, phone or company). Onyx answers through Ollama with the company playbook as the prompt. Contractor portal: magic-link sign-in, Supabase access control, Resend mail. Permit lead-sourcer (Hamilton County, Cincinnati, Butler County): emails matched permits to sales and files them in the CRM; it does not contact contractors. Also a Spanish page (/es), a coverage page and Schema.org HomeAndConstructionBusiness, Service and FAQPage markup.
 - Earlier: crypto ecosystems advisor at Estudios Amazonia (2019-2021), Connectivity Director at Medrategas (2017-2021), open source contributor (2019-2023), Venezuela Information Office (2005-2006), simultaneous interpreter (2003-2005), Delta Air Lines sales specialist (1997-2002).
 
 Credentials:

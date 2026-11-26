@@ -22,7 +22,7 @@ const Logo = ({ name, company }) =>
 const Experience = () => (
   <section id="experience" className="section">
     <SectionHeading eyebrow="Experience" title="Where I have worked">
-      Current studio work first. A decade of running a local trade business sits alongside the engineering.
+      Current studio work and the production systems I run.
     </SectionHeading>
 
     <ol className="mt-10 space-y-5">

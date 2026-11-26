@@ -7,7 +7,7 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import sharp from "sharp";
 import {
-  capabilities, certifications, earlier, education, experience, github, profile, projects, skillGroups, statuses,
+  capabilities, certifications, infrastructure, earlier, education, experience, github, profile, projects, skillGroups, statuses,
 } from "../src/data/profile.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -35,14 +35,14 @@ const caps = capabilities
   .map((c) => `<li><div class="row"><b>${esc(c.title)}</b>${tag(c.status)}</div><p>${esc(c.short)}</p></li>`)
   .join("");
 
-const work = ["wayalabs", "queen-city-soundboard", "urban-stone", "ceo-agent-system", "echo", "radartv", "moon-phases", "openjaw-core"]
+const work = ["wayalabs", "queen-city-soundboard", "ceo-agent-system", "echo", "radartv"]
   .map((id) => byId[id])
   .map(
     (p) => `<li><div class="row"><a href="${link(p)}"><b>${esc(p.name)}</b></a>${tag(p.status)}</div><p>${esc(p.short)} <a class="url" href="${link(p)}">${esc(bare(link(p)))}</a></p></li>`
   )
   .join("");
 
-const [waya, devrel, stone, cne] = experience;
+const [waya, stone, devrel] = experience;
 const job = (j, bullets) => `<article>
   <div class="row"><b>${esc(j.company)}</b><span class="muted">${esc(j.roles.map((r) => `${r.title}, ${r.dates}`).join(" · "))}</span></div>
   <ul>${bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul></article>`;
@@ -50,14 +50,21 @@ const job = (j, bullets) => `<article>
 const exp = [
   job(waya, [
     "Ship custom chatbots, lead systems and web platforms for local businesses. Live client work: Urban Stone Collective and Queen City Soundboard.",
-    "Scope each engagement in a one-week discovery (written brief, go or no-go), then prototype, deploy and hand off.",
     "Research LangGraph multi-agent orchestration and sandboxed OpenClaw and Grok operator environments with gated tools and human approval, separate from client delivery.",
     "Earlier: full-stack EVM applications and custom contracts on Ethereum and Avalanche.",
   ]),
+  job(stone, ["Own and operate the company since 2014 and run its production backend (see above): Next.js on Vercel, Resend, private Supabase CRM, Ollama chat, permit lead-sourcer."]),
   job(devrel, ["Captain-program contributor: technical documentation and learning resources for DevRel cohorts."]),
-  job(stone, ["Own and run a granite, quartz and quartzite countertop business, operating since 2014. Site and lead system built through WayaLabs."]),
-  job(cne, ["General Manager. Operations and team leadership."]),
 ].join("");
+
+const infraBlock = `<div class="infra">
+  <div class="flow">${infrastructure.inputs.map((i) => `<span>${esc(i.label)}</span>`).join("")}<i>&rarr;</i><span class="hl">Next.js on Vercel</span><i>&rarr;</i><span class="hl">Resend to sales@</span><i>&rarr;</i><span class="hl">Private Supabase CRM</span></div>
+  <ul>
+    <li><b>Email first, then store.</b> The CRM write happens only after the email succeeds; contacts are matched by email, phone or company.</li>
+    <li><b>Onyx chat</b> on Ollama with the company playbook as its prompt. <b>Contractor portal</b> with magic-link sign-in and Supabase access control.</li>
+    <li><b>Permit lead-sourcer:</b> unattended job for Hamilton County, Cincinnati and Butler County permits; emails matches to sales and files them in the CRM.</li>
+    <li><b>Search:</b> Schema.org Service and FAQPage markup, coverage page, Spanish page (/es). <a class="url" href="${infrastructure.live}">urbanstone.co</a> · <a class="url" href="${infrastructure.caseStudy}">case study</a></li>
+  </ul></div>`;
 
 const earlierLine = earlier.map((e) => `${esc(e.title)}, ${esc(e.org)} (${esc(e.dates.replace(/\b[A-Z][a-z]{2} /g, "").replace("–", "-"))})`).join(" · ");
 
@@ -118,6 +125,13 @@ p{color:#2b3144}
 .tag-research{color:#a16207;border-color:#f1d9a0;background:#fff8e6}
 .tag-template{color:#4338ca;border-color:#c7c9fb;background:#f0f0ff}
 .tag-archive{color:#5d6478;border-color:#dfe2ea;background:#f5f6f9}
+.infra{background:#f5f6fb;border:1px solid #e8eaf3;border-radius:6px;padding:6px 8px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:3px;margin-bottom:4px;font-size:6.4pt}
+.flow span{padding:1px 5px;border:1px solid #d9dcec;border-radius:4px;background:#fff;color:#3a4156;font-weight:550}
+.flow span.hl{border-color:#5b5cf0;color:#3b3cc4}
+.flow i{font-style:normal;color:#5b5cf0;font-weight:700}
+.infra ul{list-style:disc;margin-left:10px}
+.infra li{font-size:7pt;line-height:1.32;color:#2b3144;margin-bottom:1px}
 .exp article{margin-bottom:5px;break-inside:avoid}
 .exp .row{font-size:7.6pt;align-items:baseline}
 .exp ul{margin:1px 0 0 10px;list-style:disc}
@@ -155,6 +169,8 @@ p{color:#2b3144}
   <p class="summary">${esc(profile.summary)}</p>
   <h2>WayaLabs highlights</h2>
   <ul class="list caps">${caps}</ul>
+  <h2>Production backend: Urban Stone Collective</h2>
+  ${infraBlock}
   <h2>Selected work</h2>
   <ul class="list">${work}</ul>
   <h2>Experience</h2>
