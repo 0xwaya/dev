@@ -6,7 +6,7 @@ This repository is not the studio site. The studio lives at [wayalabs.com](https
 
 ## What the page shows
 
-Hero, WayaLabs capabilities and process, selected work with thumbnails, GitHub highlights, experience, stack, credentials (certificates, POAPs minted on Gnosis, Sololearn, freeCodeCamp), and contact. `/play` is a small chat assistant that answers questions about the portfolio.
+Hero, WayaLabs capabilities and process, the Urban Stone Collective production backend (Next.js, Resend, Supabase CRM, Ollama, permit lead-sourcer), selected work with thumbnails, GitHub highlights, experience, stack, credentials (certificates, POAPs minted on Gnosis, Sololearn, freeCodeCamp), and contact. `/play` is a small chat assistant that answers questions about the portfolio.
 
 Work is labelled honestly: **Live** (running client or studio sites), **Research** (agents and orchestration, not a client offer), **Template** and **Earlier work**. No invented metrics.
 

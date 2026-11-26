@@ -13,7 +13,7 @@ export const profile = {
   email: "admin@wayalabs.com",
   tagline: "I build practical software that connects AI, automation, and real business.",
   summary:
-    "Founder of WayaLabs, a Cincinnati studio that builds custom software, websites and AI integrations for small businesses: lead capture, customer follow-up, chat assistants and internal workflows. Full-stack engineer working in Python, TypeScript, Next.js and Supabase, with ten years of running a local trade business. Agent and orchestration research is kept separate from client delivery.",
+    "Founder of WayaLabs, a Cincinnati studio that builds custom software, websites and AI integrations for small businesses. Full-stack engineer in Python, TypeScript, Next.js and Supabase. I also own Urban Stone Collective and run its production backend: Next.js on Vercel, a private Supabase CRM, Resend email, an Ollama chat assistant and an unattended permit lead-sourcer. Agent and orchestration research is kept separate from client delivery.",
   links: {
     site: { label: "wayalabs.com", href: "https://wayalabs.com" },
     linkedin: { label: "linkedin.com/in/0xwaya", href: "https://www.linkedin.com/in/0xwaya/" },
@@ -56,6 +56,49 @@ export const statuses = {
   research: { label: "Research", hint: "Studio R&D, not a client offer" },
   template: { label: "Template", hint: "Cloneable starter" },
   archive: { label: "Earlier work", hint: "Prior public build" },
+};
+
+// Urban Stone Collective production backend. Facts from https://wayalabs.com/case-studies/urban-stone
+export const infrastructure = {
+  title: "Urban Stone Collective: production backend",
+  intro:
+    "I own Urban Stone and run its stack in production. Every inbound lead lands in the sales inbox first, then in a private CRM, with no manual copying.",
+  live: "https://urbanstone.co",
+  caseStudy: "https://wayalabs.com/case-studies/urban-stone",
+  inputs: [
+    { label: "Quote form", note: "Website" },
+    { label: "Onyx chat", note: "Ollama + company playbook" },
+    { label: "Contractor estimates", note: "Trade partners" },
+    { label: "Permit lead-sourcer", note: "Scheduled, unattended" },
+  ],
+  pipeline: [
+    { step: "Intake", title: "Next.js on Vercel", text: "Pages router, React 19. English and Spanish (/es) from one site." },
+    { step: "Notify", title: "Resend to sales@", text: "Quote, chat and estimate leads are emailed to the sales inbox." },
+    { step: "Store", title: "Private Supabase CRM", text: "Saved only after the email succeeds. Matched to an existing contact by email, phone or company." },
+  ],
+  modules: [
+    {
+      title: "Onyx chat assistant",
+      text: "Answers through Ollama using Urban Stone's playbook as the prompt, and can hand a project to the sales inbox.",
+      tags: ["Ollama", "Prompt playbook"],
+    },
+    {
+      title: "Permit lead-sourcer",
+      text: "Unattended job for Hamilton County, Cincinnati and Butler County permits. Emails matches to sales and files them in the same CRM. It never contacts the contractor.",
+      tags: ["Scheduled job", "Node.js", "Supabase"],
+    },
+    {
+      title: "Contractor portal",
+      text: "Magic-link sign-in for trade partners, Supabase access control and Resend mail.",
+      tags: ["Supabase Auth", "Resend"],
+    },
+    {
+      title: "Search and structure",
+      text: "Schema.org HomeAndConstructionBusiness, Service and FAQPage markup, a coverage page and a Spanish-language page.",
+      tags: ["Schema.org", "SEO", "i18n"],
+    },
+  ],
+  note: "The repository is private; the live site and case study are public.",
 };
 
 export const capabilities = [
@@ -160,11 +203,11 @@ export const projects = [
   {
     id: "urban-stone",
     name: "Urban Stone Collective",
-    short: "Site, Onyx chat, private CRM, permit lead-sourcer.",
+    short: "Production backend: Resend, private Supabase CRM, Ollama chat, permit lead-sourcer.",
     status: "live",
     category: "ai",
     featured: true,
-    blurb: "Countertop site with the Onyx chat assistant, private CRM and an unattended permit lead-sourcer.",
+    blurb: "Production backend: quote and chat intake to Resend email, then a private Supabase CRM, an Ollama chat assistant, a contractor portal and an unattended permit lead-sourcer.",
     stack: ["Next.js", "Ollama", "Supabase", "Node.js"],
     image: "urbanstone",
     live: "https://urbanstone.co",
@@ -305,6 +348,20 @@ export const experience = [
     skills: ["LangGraph", "Python", "Flask", "Next.js", "TypeScript", "Supabase"],
   },
   {
+    id: "urban-stone",
+    company: "Urban Stone Collective",
+    logo: null,
+    roles: [{ title: "Owner, operator and backend engineer", dates: "Feb 2014 – Present" }],
+    place: "Cincinnati, Ohio and Northern Kentucky",
+    bullets: [
+      "Own and operate a granite, quartz and quartzite countertop company, and run its production stack end to end.",
+      "Quote, chat and contractor-estimate intake is emailed through Resend, then filed in a private Supabase CRM that matches contacts by email, phone or company.",
+      "Onyx chat assistant on Ollama with the company playbook as its prompt; contractor portal with magic-link sign-in and Supabase access control.",
+      "Unattended permit lead-sourcer for Hamilton County, Cincinnati and Butler County: emails matched permits to sales and files them in the CRM.",
+    ],
+    skills: ["Next.js", "Vercel", "Supabase", "Resend", "Ollama", "Node.js"],
+  },
+  {
     id: "devrel-uni",
     company: "DevRel Uni",
     logo: "devrel",
@@ -315,27 +372,6 @@ export const experience = [
       "Contribute to the captain resource hub, built with Nextra and MDX.",
     ],
     skills: ["Developer relations", "Technical writing", "Nextra"],
-  },
-  {
-    id: "c-and-e",
-    company: "C&E Granite",
-    logo: "ce",
-    roles: [{ title: "General Manager", dates: "Nov 2024 – Jan 2026" }],
-    place: "Cincinnati, Ohio",
-    bullets: ["General Manager. Operations and team leadership."],
-    skills: ["Operations", "Team leadership"],
-  },
-  {
-    id: "urban-stone",
-    company: "Urban Stone Collective",
-    logo: null,
-    roles: [{ title: "Managing Owner", dates: "Feb 2014 – Nov 2024" }],
-    place: "Cincinnati, Ohio and Northern Kentucky",
-    bullets: [
-      "Owned and ran a granite, quartz and quartzite countertop business for ten years.",
-      "Business website and lead system built through WayaLabs and published as a case study.",
-    ],
-    skills: ["Operations", "Sales", "Lead generation"],
   },
 ];
 
@@ -352,7 +388,7 @@ export const skillGroups = [
   { id: "ai", label: "AI & agents", items: ["LangGraph", "LangChain", "OpenAI", "Ollama", "Groq", "OpenClaw", "Socket.IO"] },
   { id: "languages", label: "Languages", items: ["Python", "TypeScript", "JavaScript", "Solidity", "HTML5", "CSS3"] },
   { id: "frontend", label: "Frontend", items: ["React", "Next.js", "Vite", "Tailwind CSS", "Framer Motion", "Three.js"] },
-  { id: "backend", label: "Backend", items: ["Node.js", "Flask", "FastAPI", "Express"] },
+  { id: "backend", label: "Backend", items: ["Node.js", "Flask", "FastAPI", "Express", "Resend"] },
   { id: "data", label: "Data & cloud", items: ["Supabase", "PostgreSQL", "MongoDB", "Redis", "Docker", "Vercel", "Git"] },
   { id: "web3", label: "Web3 (earlier work)", items: ["Ethereum", "Hardhat", "Ethers.js", "IPFS", "Filecoin"] },
 ];
@@ -487,6 +523,7 @@ export const education = [
 
 export const navSections = [
   { id: "ai", label: "WayaLabs AI" },
+  { id: "infrastructure", label: "Backend" },
   { id: "work", label: "Work" },
   { id: "experience", label: "Experience" },
   { id: "stack", label: "Stack" },

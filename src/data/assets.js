@@ -2,7 +2,6 @@ import portrait from "../assets/portrait.webp";
 import wayalabsMark from "../assets/wayalabs-mark.png";
 import waya0xMark from "../assets/0xwaya-mark.webp";
 import devrelLogo from "../assets/devrellogo.webp";
-import ceLogo from "../assets/celogo.webp";
 
 import wayalabs from "../assets/shots/wayalabs.webp";
 import queencity from "../assets/shots/queencity.webp";
@@ -31,7 +30,7 @@ import bootcamp from "../assets/certificates/ethdenver-encode-bootcamp.webp";
 import rwd from "../assets/certificates/freecodecamp-rwd.webp";
 
 export const brand = { portrait, wayalabsMark, waya0xMark };
-export const logos = { wayalabs: wayalabsMark, devrel: devrelLogo, ce: ceLogo };
+export const logos = { wayalabs: wayalabsMark, devrel: devrelLogo };
 
 export const shots = {
   wayalabs,
