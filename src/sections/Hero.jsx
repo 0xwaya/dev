@@ -7,7 +7,7 @@ import Reveal from "../components/ui/Reveal";
 const stats = [
   { value: projects.filter((p) => p.status === "live" && p.live).length, label: "live sites online" },
   { value: "16", label: "agents in the research orchestrator" },
-  { value: "10", label: "years running a trade business" },
+  { value: "12", label: "years running a trade business" },
   { value: certifications.length, label: "certifications" },
 ];
 

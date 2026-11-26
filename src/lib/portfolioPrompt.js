@@ -25,8 +25,8 @@ Other projects:
 Experience:
 - WayaLabs: Founder, R&D (May 2021 to present); Blockchain Specialist (May 2020 to present), earlier EVM work on Ethereum and Avalanche.
 - DevRel Uni resource captain (June 2023 to present).
+- Urban Stone Collective managing owner (February 2014 to present); Edward still owns and runs it.
 - C&E Granite general manager (November 2024 to January 2026).
-- Urban Stone Collective managing owner (February 2014 to November 2024).
 - Earlier: crypto ecosystems advisor at Estudios Amazonia (2019-2021), Connectivity Director at Medrategas (2017-2021), open source contributor (2019-2023), Venezuela Information Office (2005-2006), simultaneous interpreter (2003-2005), Delta Air Lines sales specialist (1997-2002).
 
 Credentials:

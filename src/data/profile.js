@@ -13,7 +13,7 @@ export const profile = {
   email: "admin@wayalabs.com",
   tagline: "I build practical software that connects AI, automation, and real business.",
   summary:
-    "Founder of WayaLabs, a Cincinnati studio that builds custom software, websites and AI integrations for small businesses: lead capture, customer follow-up, chat assistants and internal workflows. Full-stack engineer working in Python, TypeScript, Next.js and Supabase, with ten years of running a local trade business. Agent and orchestration research is kept separate from client delivery.",
+    "Founder of WayaLabs, a Cincinnati studio that builds custom software, websites and AI integrations for small businesses: lead capture, customer follow-up, chat assistants and internal workflows. Full-stack engineer working in Python, TypeScript, Next.js and Supabase, with over a decade of running a local trade business. Agent and orchestration research is kept separate from client delivery.",
   links: {
     site: { label: "wayalabs.com", href: "https://wayalabs.com" },
     linkedin: { label: "linkedin.com/in/0xwaya", href: "https://www.linkedin.com/in/0xwaya/" },
@@ -317,6 +317,18 @@ export const experience = [
     skills: ["Developer relations", "Technical writing", "Nextra"],
   },
   {
+    id: "urban-stone",
+    company: "Urban Stone Collective",
+    logo: null,
+    roles: [{ title: "Managing Owner", dates: "Feb 2014 – Present" }],
+    place: "Cincinnati, Ohio and Northern Kentucky",
+    bullets: [
+      "Own and run a granite, quartz and quartzite countertop business, operating since 2014.",
+      "Business website and lead system built through WayaLabs and published as a case study.",
+    ],
+    skills: ["Operations", "Sales", "Lead generation"],
+  },
+  {
     id: "c-and-e",
     company: "C&E Granite",
     logo: "ce",
@@ -324,18 +336,6 @@ export const experience = [
     place: "Cincinnati, Ohio",
     bullets: ["General Manager. Operations and team leadership."],
     skills: ["Operations", "Team leadership"],
-  },
-  {
-    id: "urban-stone",
-    company: "Urban Stone Collective",
-    logo: null,
-    roles: [{ title: "Managing Owner", dates: "Feb 2014 – Nov 2024" }],
-    place: "Cincinnati, Ohio and Northern Kentucky",
-    bullets: [
-      "Owned and ran a granite, quartz and quartzite countertop business for ten years.",
-      "Business website and lead system built through WayaLabs and published as a case study.",
-    ],
-    skills: ["Operations", "Sales", "Lead generation"],
   },
 ];
 
